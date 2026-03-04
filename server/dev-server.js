@@ -12,10 +12,13 @@
  */
 
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 const fetch = require('node-fetch');
 const { readFromStorage, writeToStorage } = require('./storage');
 const { createJiraClient } = require('./jira/jira-client');
 const { discoverBoards, performRefresh } = require('./jira/orchestration');
+const { fetchPersonMetrics } = require('./jira/person-metrics');
 
 // Firebase Admin for production token verification
 let firebaseAdmin = null;
@@ -470,6 +473,188 @@ app.get('/api/trend', function(req, res) {
     res.json({ months });
   } catch (error) {
     console.error('Read aggregate trend error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// ─── Routes: Roster & Person Metrics ───
+
+function sanitizeFilename(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]/g, '_');
+}
+
+function readRoster() {
+  const rosterPath = path.join(__dirname, '..', 'org-roster.json');
+  const raw = fs.readFileSync(rosterPath, 'utf8');
+  return JSON.parse(raw);
+}
+
+app.get('/api/roster', function(req, res) {
+  try {
+    const roster = readRoster();
+    res.json(roster);
+  } catch (error) {
+    console.error('Read roster error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/person/:jiraDisplayName/metrics', async function(req, res) {
+  try {
+    const name = decodeURIComponent(req.params.jiraDisplayName);
+    const key = sanitizeFilename(name);
+    const cachePath = `people/${key}.json`;
+    const forceRefresh = req.query.refresh === 'true';
+
+    // Check cache (4-hour TTL)
+    if (!forceRefresh) {
+      const cached = readFromStorage(cachePath);
+      if (cached && cached.fetchedAt) {
+        const age = Date.now() - new Date(cached.fetchedAt).getTime();
+        if (age < 4 * 60 * 60 * 1000) {
+          return res.json(cached);
+        }
+      }
+    }
+
+    // Fetch from Jira
+    const metrics = await fetchPersonMetrics(jiraRequest, name);
+    writeToStorage(cachePath, metrics);
+    res.json(metrics);
+  } catch (error) {
+    console.error(`Person metrics error (${req.params.jiraDisplayName}):`, error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/team/:teamKey/metrics', function(req, res) {
+  try {
+    const teamKey = decodeURIComponent(req.params.teamKey);
+    const roster = readRoster();
+    const team = roster.teams[teamKey];
+
+    if (!team) {
+      return res.status(404).json({ error: `Team "${teamKey}" not found in roster` });
+    }
+
+    // Deduplicate members by jiraDisplayName
+    const seen = new Set();
+    const uniqueMembers = team.members.filter(m => {
+      if (seen.has(m.jiraDisplayName)) return false;
+      seen.add(m.jiraDisplayName);
+      return true;
+    });
+
+    let resolvedCount = 0;
+    let resolvedPoints = 0;
+    let inProgressCount = 0;
+    let cycleTimesSum = 0;
+    let cycleTimesCount = 0;
+    const members = [];
+    const resolvedIssues = [];
+
+    for (const member of uniqueMembers) {
+      const key = sanitizeFilename(member.jiraDisplayName);
+      const cached = readFromStorage(`people/${key}.json`);
+      const memberData = {
+        name: member.name,
+        jiraDisplayName: member.jiraDisplayName,
+        specialty: member.specialty,
+        metrics: null
+      };
+
+      if (cached) {
+        memberData.metrics = {
+          fetchedAt: cached.fetchedAt,
+          resolvedCount: cached.resolved?.count || 0,
+          resolvedPoints: cached.resolved?.storyPoints || 0,
+          inProgressCount: cached.inProgress?.count || 0,
+          avgCycleTimeDays: cached.cycleTime?.avgDays
+        };
+        resolvedCount += cached.resolved?.count || 0;
+        resolvedPoints += cached.resolved?.storyPoints || 0;
+        inProgressCount += cached.inProgress?.count || 0;
+        if (cached.resolved?.issues) {
+          for (const issue of cached.resolved.issues) {
+            resolvedIssues.push({ ...issue, assignee: member.jiraDisplayName });
+          }
+        }
+        if (cached.cycleTime?.avgDays != null) {
+          cycleTimesSum += cached.cycleTime.avgDays;
+          cycleTimesCount++;
+        }
+      }
+
+      members.push(memberData);
+    }
+
+    res.json({
+      teamKey,
+      displayName: team.displayName,
+      memberCount: uniqueMembers.length,
+      aggregate: {
+        resolvedCount,
+        resolvedPoints,
+        inProgressCount,
+        avgCycleTimeDays: cycleTimesCount > 0 ? +(cycleTimesSum / cycleTimesCount).toFixed(1) : null
+      },
+      members,
+      resolvedIssues
+    });
+  } catch (error) {
+    console.error(`Team metrics error (${req.params.teamKey}):`, error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/api/team/:teamKey/refresh', function(req, res) {
+  try {
+    const teamKey = decodeURIComponent(req.params.teamKey);
+    const roster = readRoster();
+    const team = roster.teams[teamKey];
+
+    if (!team) {
+      return res.status(404).json({ error: `Team "${teamKey}" not found in roster` });
+    }
+
+    // Deduplicate members by jiraDisplayName
+    const seen = new Set();
+    const uniqueMembers = team.members.filter(m => {
+      if (seen.has(m.jiraDisplayName)) return false;
+      seen.add(m.jiraDisplayName);
+      return true;
+    });
+
+    res.json({ status: 'started', memberCount: uniqueMembers.length });
+
+    // Background fetch with concurrency limit of 3
+    setImmediate(async () => {
+      const CONCURRENCY = 3;
+      let i = 0;
+
+      async function next() {
+        if (i >= uniqueMembers.length) return;
+        const member = uniqueMembers[i++];
+        try {
+          console.log(`[refresh] Fetching metrics for ${member.jiraDisplayName} (${i}/${uniqueMembers.length})`);
+          const metrics = await fetchPersonMetrics(jiraRequest, member.jiraDisplayName);
+          const key = sanitizeFilename(member.jiraDisplayName);
+          writeToStorage(`people/${key}.json`, metrics);
+        } catch (error) {
+          console.error(`[refresh] Failed for ${member.jiraDisplayName}:`, error.message);
+        }
+        return next();
+      }
+
+      const workers = [];
+      for (let w = 0; w < CONCURRENCY; w++) {
+        workers.push(next());
+      }
+      await Promise.all(workers);
+      console.log(`[refresh] Team "${teamKey}" refresh complete`);
+    });
+  } catch (error) {
+    console.error(`Team refresh error (${req.params.teamKey}):`, error);
     res.status(500).json({ error: error.message });
   }
 });

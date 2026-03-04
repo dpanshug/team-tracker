@@ -1,0 +1,148 @@
+<template>
+  <div class="container mx-auto px-6 py-6">
+    <!-- Header -->
+    <div class="flex items-center gap-3 mb-6">
+      <button
+        @click="$emit('back')"
+        class="p-1 text-gray-400 hover:text-gray-600 transition-colors"
+        title="Back to Dashboard"
+      >
+        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+      </button>
+      <h2 class="text-xl font-bold text-gray-900">Reports</h2>
+    </div>
+
+    <div class="flex gap-6">
+      <!-- Sidebar -->
+      <aside class="w-72 shrink-0 space-y-6">
+        <div class="bg-white rounded-lg shadow p-4">
+          <ReportsTeamSelector :teams="teams" v-model="selectedTeamKeys" />
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <ReportsMetricSelector v-model="selectedMetrics" />
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <ReportsChartTypeSelector v-model="chartType" />
+        </div>
+        <button
+          @click="generate"
+          :disabled="loading || selectedTeamKeys.length === 0 || selectedMetrics.length === 0"
+          class="w-full px-4 py-2 bg-primary-600 text-white rounded-md font-medium hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
+        >
+          <svg v-if="loading" class="h-4 w-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+          {{ loading ? 'Loading...' : 'Generate' }}
+        </button>
+      </aside>
+
+      <!-- Main content -->
+      <div class="flex-1 space-y-6">
+        <div v-if="charts.length === 0" class="bg-white rounded-lg shadow p-12 text-center text-gray-400">
+          <p class="text-lg">Select teams and metrics, then click Generate</p>
+        </div>
+        <div
+          v-for="chart in charts"
+          :key="chart.metricKey"
+          class="bg-white rounded-lg shadow p-4"
+        >
+          <ReportChart
+            :type="chartType"
+            :labels="chart.labels"
+            :data="chart.data"
+            :title="chart.title"
+            :unit="chart.unit"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+import ReportChart from './ReportChart.vue'
+import ReportsTeamSelector from './ReportsTeamSelector.vue'
+import ReportsMetricSelector from './ReportsMetricSelector.vue'
+import ReportsChartTypeSelector from './ReportsChartTypeSelector.vue'
+import { useRoster } from '../composables/useRoster'
+import { getTeamMetrics } from '../services/api'
+
+defineEmits(['back'])
+
+const { teams } = useRoster()
+
+const selectedTeamKeys = ref([])
+const selectedMetrics = ref([])
+const chartType = ref('bar')
+const loading = ref(false)
+const metricsData = ref({})
+const charts = ref([])
+
+const METRIC_DEFS = {
+  teamSize: {
+    label: 'Team Size',
+    unit: '',
+    extract: (d) => d.memberCount ?? 0
+  },
+  resolvedCount: {
+    label: 'Issues Resolved (90d)',
+    unit: '',
+    extract: (d) => d.aggregate?.resolvedCount ?? 0
+  },
+  avgCycleTime: {
+    label: 'Avg Cycle Time',
+    unit: 'days',
+    extract: (d) => d.aggregate?.avgCycleTimeDays ?? 0
+  },
+  inProgressCount: {
+    label: 'In Progress',
+    unit: '',
+    extract: (d) => d.aggregate?.inProgressCount ?? 0
+  }
+}
+
+async function generate() {
+  loading.value = true
+  try {
+    const keysToFetch = selectedTeamKeys.value.filter(k => !metricsData.value[k])
+    const results = await Promise.all(
+      keysToFetch.map(async (key) => {
+        try {
+          const data = await getTeamMetrics(key)
+          return { key, data }
+        } catch (err) {
+          console.error(`Failed to fetch metrics for ${key}:`, err)
+          return { key, data: null }
+        }
+      })
+    )
+    for (const { key, data } of results) {
+      if (data) {
+        metricsData.value[key] = data
+      }
+    }
+
+    const teamLookup = {}
+    for (const t of teams.value) {
+      teamLookup[t.key] = t
+    }
+
+    const activeKeys = selectedTeamKeys.value.filter(k => metricsData.value[k])
+    charts.value = selectedMetrics.value.map(metricKey => {
+      const def = METRIC_DEFS[metricKey]
+      return {
+        metricKey,
+        title: def.label,
+        unit: def.unit,
+        labels: activeKeys.map(k => teamLookup[k]?.displayName ?? k),
+        data: activeKeys.map(k => def.extract(metricsData.value[k]))
+      }
+    })
+  } finally {
+    loading.value = false
+  }
+}
+</script>
