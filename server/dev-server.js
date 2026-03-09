@@ -583,6 +583,37 @@ app.get('/api/roster', function(req, res) {
   }
 });
 
+app.get('/api/people/metrics', function(req, res) {
+  try {
+    const fs = require('fs');
+    const peoplePath = path.join(__dirname, '..', 'data', 'people');
+    if (!fs.existsSync(peoplePath)) return res.json({});
+
+    const result = {};
+    const files = fs.readdirSync(peoplePath).filter(f => f.endsWith('.json'));
+    for (const file of files) {
+      try {
+        const data = JSON.parse(fs.readFileSync(path.join(peoplePath, file), 'utf8'));
+        if (data.jiraDisplayName) {
+          result[data.jiraDisplayName] = {
+            resolvedCount: data.resolved?.count ?? 0,
+            resolvedPoints: data.resolved?.storyPoints ?? 0,
+            inProgressCount: data.inProgress?.count ?? 0,
+            avgCycleTimeDays: data.cycleTime?.avgDays ?? null,
+            fetchedAt: data.fetchedAt
+          };
+        }
+      } catch (e) {
+        // skip malformed files
+      }
+    }
+    res.json(result);
+  } catch (error) {
+    console.error('Read bulk people metrics error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 app.get('/api/person/:jiraDisplayName/metrics', async function(req, res) {
   try {
     const name = decodeURIComponent(req.params.jiraDisplayName);

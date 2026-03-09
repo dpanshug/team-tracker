@@ -94,6 +94,11 @@
         />
       </main>
 
+      <!-- People View -->
+      <main v-else-if="currentView === 'people'">
+        <PeopleView />
+      </main>
+
       <!-- Reports View -->
       <main v-else-if="currentView === 'reports'">
         <ReportsView @back="navigateToDashboard" />
@@ -126,6 +131,7 @@ import LoadingOverlay from './LoadingOverlay.vue'
 import PersonDetail from './PersonDetail.vue'
 import TeamRosterView from './TeamRosterView.vue'
 import Toast from './Toast.vue'
+import PeopleView from './PeopleView.vue'
 import ReportsView from './ReportsView.vue'
 import UserManagement from './UserManagement.vue'
 import { useAuth } from '../composables/useAuth'
@@ -138,6 +144,7 @@ export default {
     AuthGuard,
     Dashboard,
     LoadingOverlay,
+    PeopleView,
     PersonDetail,
     ReportsView,
     TeamRosterView,
@@ -169,7 +176,8 @@ export default {
       avatarLoadError: false,
       toasts: [],
       navTabs: [
-        { view: 'dashboard', label: 'Dashboard' },
+        { view: 'dashboard', label: 'Teams' },
+        { view: 'people', label: 'People' },
         { view: 'reports', label: 'Reports' },
         { view: 'user-management', label: 'Users' }
       ]
@@ -216,6 +224,8 @@ export default {
         hash = `#/team/${encodeURIComponent(this.selectedTeam.key)}`
       } else if (this.currentView === 'person-detail' && this.selectedTeam && this.selectedPerson) {
         hash = `#/team/${encodeURIComponent(this.selectedTeam.key)}/person/${encodeURIComponent(this.selectedPerson.jiraDisplayName || this.selectedPerson.name)}`
+      } else if (this.currentView === 'people') {
+        hash = '#/people'
       } else if (this.currentView === 'reports') {
         hash = '#/reports'
       } else if (this.currentView === 'user-management') {
@@ -253,6 +263,9 @@ export default {
           this.currentView = 'team-roster'
           return
         }
+      } else if (parts[0] === 'people') {
+        this.currentView = 'people'
+        return
       } else if (parts[0] === 'reports') {
         this.currentView = 'reports'
         return

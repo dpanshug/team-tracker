@@ -71,6 +71,10 @@ export async function getRoster() {
   return apiRequest('/roster')
 }
 
+export async function getAllPeopleMetrics() {
+  return apiRequest('/people/metrics')
+}
+
 export async function getPersonMetrics(jiraDisplayName, { refresh = false } = {}) {
   const params = refresh ? '?refresh=true' : ''
   return apiRequest(`/person/${encodeURIComponent(jiraDisplayName)}/metrics${params}`)
