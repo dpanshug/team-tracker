@@ -637,15 +637,18 @@ app.get('/api/person/:jiraDisplayName/metrics', async function(req, res) {
     const cachePath = `people/${key}.json`;
     const forceRefresh = req.query.refresh === 'true';
 
-    // Check cache (4-hour TTL)
-    if (!forceRefresh) {
+    // Check cache (4-hour TTL, or any age in demo mode)
+    if (!forceRefresh || DEMO_MODE) {
       const cached = readFromStorage(cachePath);
-      if (cached && cached.fetchedAt) {
-        const age = Date.now() - new Date(cached.fetchedAt).getTime();
-        if (age < 4 * 60 * 60 * 1000) {
+      if (cached) {
+        if (DEMO_MODE || (cached.fetchedAt && (Date.now() - new Date(cached.fetchedAt).getTime()) < 4 * 60 * 60 * 1000)) {
           return res.json(cached);
         }
       }
+    }
+
+    if (DEMO_MODE) {
+      return res.status(404).json({ error: `No demo data for ${name}` });
     }
 
     // Fetch from Jira
