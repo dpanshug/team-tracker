@@ -1004,6 +1004,143 @@ app.post('/api/github/refresh', function(req, res) {
   }
 });
 
+// ─── Routes: GitLab Contributions ───
+
+const { fetchContributions: fetchGitlabContributions, fetchContributionHistory: fetchGitlabContributionHistory } = require('./gitlab/contributions');
+
+const GITLAB_CACHE_PATH = 'gitlab-contributions.json';
+const GITLAB_HISTORY_CACHE_PATH = 'gitlab-history.json';
+
+function readGitlabCache() {
+  return readFromStorage(GITLAB_CACHE_PATH) || { users: {}, fetchedAt: null };
+}
+
+function readGitlabHistoryCache() {
+  return readFromStorage(GITLAB_HISTORY_CACHE_PATH) || { users: {}, fetchedAt: null };
+}
+
+app.get('/api/gitlab/contributions', function(req, res) {
+  try {
+    const cache = readGitlabCache();
+    res.json(cache);
+  } catch (error) {
+    console.error('Read GitLab contributions error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/gitlab/contributions/:username', function(req, res) {
+  try {
+    const username = decodeURIComponent(req.params.username);
+    const cache = readGitlabCache();
+    const data = cache.users[username] || null;
+    res.json(data);
+  } catch (error) {
+    console.error('Read GitLab contribution error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/api/gitlab/contributions/:username/refresh', async function(req, res) {
+  try {
+    const username = decodeURIComponent(req.params.username);
+    const results = await fetchGitlabContributions([username]);
+    const cache = readGitlabCache();
+
+    if (results[username]) {
+      cache.users[username] = results[username];
+      writeToStorage(GITLAB_CACHE_PATH, cache);
+    }
+
+    res.json(results[username] || null);
+  } catch (error) {
+    console.error('GitLab single user refresh error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/api/gitlab/refresh', function(req, res) {
+  try {
+    const roster = deriveRoster();
+
+    // Collect all unique GitLab usernames across all orgs
+    const usernameMap = {}; // gitlabUsername -> person name
+    for (const org of roster.orgs) {
+      for (const team of Object.values(org.teams)) {
+        for (const member of team.members) {
+          if (member.gitlabUsername && !usernameMap[member.gitlabUsername]) {
+            usernameMap[member.gitlabUsername] = member.name;
+          }
+        }
+      }
+    }
+
+    const usernames = Object.keys(usernameMap);
+    res.json({ status: 'started', usernameCount: usernames.length });
+
+    // Fetch in background
+    setImmediate(async () => {
+      try {
+        const results = await fetchGitlabContributions(usernames);
+        const cache = readGitlabCache();
+
+        for (const [username, data] of Object.entries(results)) {
+          if (data) {
+            cache.users[username] = data;
+          }
+        }
+        cache.fetchedAt = new Date().toISOString();
+
+        writeToStorage(GITLAB_CACHE_PATH, cache);
+        console.log(`[gitlab] Refresh complete. ${Object.keys(results).length} users processed.`);
+      } catch (err) {
+        console.error('[gitlab] Refresh failed:', err.message);
+      }
+    });
+  } catch (error) {
+    console.error('GitLab refresh error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/api/trends/gitlab/refresh', function(req, res) {
+  try {
+    const roster = deriveRoster();
+    const usernames = [];
+    for (const org of roster.orgs) {
+      for (const team of Object.values(org.teams)) {
+        for (const member of team.members) {
+          if (member.gitlabUsername && !usernames.includes(member.gitlabUsername)) {
+            usernames.push(member.gitlabUsername);
+          }
+        }
+      }
+    }
+
+    res.json({ status: 'started', usernameCount: usernames.length });
+
+    setImmediate(async () => {
+      try {
+        const results = await fetchGitlabContributionHistory(usernames);
+        const cache = readGitlabHistoryCache();
+        for (const [username, data] of Object.entries(results)) {
+          if (data) {
+            cache.users[username] = data;
+          }
+        }
+        cache.fetchedAt = new Date().toISOString();
+        writeToStorage(GITLAB_HISTORY_CACHE_PATH, cache);
+        console.log(`[gitlab] History refresh complete. ${Object.keys(results).length} users processed.`);
+      } catch (err) {
+        console.error('[gitlab] History refresh failed:', err.message);
+      }
+    });
+  } catch (error) {
+    console.error('GitLab history refresh error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // ─── Routes: Trends ───
 
 const { fetchContributionHistory } = require('./github/contributions');
@@ -1136,7 +1273,8 @@ app.get('/api/trends', function(req, res) {
   try {
     const jira = buildJiraTrends();
     const github = readGithubHistoryCache();
-    res.json({ jira, github });
+    const gitlab = readGitlabHistoryCache();
+    res.json({ jira, github, gitlab });
   } catch (error) {
     console.error('Trends error:', error);
     res.status(500).json({ error: error.message });

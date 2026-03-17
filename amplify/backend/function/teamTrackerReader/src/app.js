@@ -508,6 +508,18 @@ app.get('/github/contributions', async function (req, res) {
   }
 });
 
+// ─── Routes: GitLab Contributions ───
+
+app.get('/gitlab/contributions', async function (req, res) {
+  try {
+    const cache = await readFromS3('gitlab-contributions.json');
+    res.json(cache || { users: {}, fetchedAt: null });
+  } catch (error) {
+    console.error('GitLab contributions error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // ─── Routes: Trends ───
 
 app.get('/trends', async function (req, res) {
@@ -515,7 +527,8 @@ app.get('/trends', async function (req, res) {
     const roster = await deriveRoster();
     const jira = await buildJiraTrends(roster);
     const github = await readFromS3('github-history.json') || { users: {} };
-    res.json({ jira, github });
+    const gitlab = await readFromS3('gitlab-history.json') || { users: {} };
+    res.json({ jira, github, gitlab });
   } catch (error) {
     console.error('Trends error:', error);
     res.status(500).json({ error: error.message });
