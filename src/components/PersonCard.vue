@@ -34,6 +34,12 @@
         <span v-else-if="member.githubUsername" class="text-gray-300">—</span>
         <span v-else class="text-gray-300 italic">no username</span>
       </p>
+      <p class="truncate">
+        <span class="text-gray-400">GitLab:</span>
+        <template v-if="gitlabContributions != null">{{ gitlabContributions.totalContributions }} contributions</template>
+        <span v-else-if="member.gitlabUsername" class="text-gray-300">—</span>
+        <span v-else class="text-gray-300 italic">no username</span>
+      </p>
     </div>
   </div>
 </template>
@@ -42,6 +48,7 @@
 import { computed } from 'vue'
 import SpecialtyBadge from './SpecialtyBadge.vue'
 import { useGithubStats } from '../composables/useGithubStats'
+import { useGitlabStats } from '../composables/useGitlabStats'
 
 const props = defineProps({
   member: { type: Object, required: true },
@@ -51,5 +58,7 @@ const props = defineProps({
 defineEmits(['select'])
 
 const { getContributions } = useGithubStats()
+const { getContributions: getGitlabContributionsFn } = useGitlabStats()
 const githubContributions = computed(() => getContributions(props.member.githubUsername))
+const gitlabContributions = computed(() => getGitlabContributionsFn(props.member.gitlabUsername))
 </script>

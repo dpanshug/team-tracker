@@ -51,6 +51,11 @@
             <span v-else-if="member.githubUsername" class="text-gray-300">—</span>
             <span v-else class="text-gray-300 italic">—</span>
           </td>
+          <td class="px-4 py-2 text-sm text-gray-500 whitespace-nowrap">
+            <template v-if="getGitlabContribCount(member) != null">{{ getGitlabContribCount(member) }}</template>
+            <span v-else-if="member.gitlabUsername" class="text-gray-300">—</span>
+            <span v-else class="text-gray-300 italic">—</span>
+          </td>
           <td class="px-4 py-2 text-sm whitespace-nowrap">
             <span
               v-if="getTeamCount(member) > 1"
@@ -70,8 +75,10 @@
 import { ref, computed } from 'vue'
 import SpecialtyBadge from './SpecialtyBadge.vue'
 import { useGithubStats } from '../composables/useGithubStats'
+import { useGitlabStats } from '../composables/useGitlabStats'
 
 const { getContributions } = useGithubStats()
+const { getContributions: getGitlabContributions } = useGitlabStats()
 
 const props = defineProps({
   members: { type: Array, required: true },
@@ -90,6 +97,7 @@ const columns = [
   { key: 'points', label: 'Points (90d)' },
   { key: 'cycleTime', label: 'Cycle Time' },
   { key: 'github', label: 'GitHub (1yr)' },
+  { key: 'gitlab', label: 'GitLab (1yr)' },
   { key: 'teams', label: 'Teams' }
 ]
 
@@ -119,6 +127,11 @@ function getGithubContribCount(member) {
   return getContributions(member.githubUsername)?.totalContributions ?? null
 }
 
+function getGitlabContribCount(member) {
+  if (!member.gitlabUsername) return null
+  return getGitlabContributions(member.gitlabUsername)?.totalContributions ?? null
+}
+
 const sortedMembers = computed(() => {
   const key = sortKey.value
   const asc = sortAsc.value ? 1 : -1
@@ -140,6 +153,9 @@ const sortedMembers = computed(() => {
     } else if (key === 'github') {
       va = getGithubContribCount(a) ?? -1
       vb = getGithubContribCount(b) ?? -1
+    } else if (key === 'gitlab') {
+      va = getGitlabContribCount(a) ?? -1
+      vb = getGitlabContribCount(b) ?? -1
     } else {
       va = (a[key] || '').toLowerCase()
       vb = (b[key] || '').toLowerCase()

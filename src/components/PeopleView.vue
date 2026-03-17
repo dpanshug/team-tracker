@@ -140,6 +140,9 @@
             <td class="px-4 py-2 text-sm text-gray-500 whitespace-nowrap">
               {{ person.githubContributions != null ? person.githubContributions : '—' }}
             </td>
+            <td class="px-4 py-2 text-sm text-gray-500 whitespace-nowrap">
+              {{ person.gitlabContributions != null ? person.gitlabContributions : '—' }}
+            </td>
           </tr>
         </tbody>
       </table>
@@ -152,10 +155,12 @@ import { ref, computed, onMounted, watch } from 'vue'
 import SpecialtyBadge from './SpecialtyBadge.vue'
 import { useRoster } from '../composables/useRoster'
 import { useGithubStats } from '../composables/useGithubStats'
+import { useGitlabStats } from '../composables/useGitlabStats'
 import { getAllPeopleMetrics } from '../services/api'
 
 const { orgs } = useRoster()
 const { getContributions } = useGithubStats()
+const { getContributions: getGitlabContributions, loadGitlabStats } = useGitlabStats()
 
 const selectedOrgKeys = ref([])
 const selectedTeamKeys = ref([])
@@ -174,7 +179,8 @@ const columns = [
   { key: 'resolvedCount', label: 'Resolved (90d)' },
   { key: 'resolvedPoints', label: 'Points (90d)' },
   { key: 'avgCycleTimeDays', label: 'Cycle Time' },
-  { key: 'githubContributions', label: 'GitHub (1yr)' }
+  { key: 'githubContributions', label: 'GitHub (1yr)' },
+  { key: 'gitlabContributions', label: 'GitLab (1yr)' }
 ]
 
 // Reset team filter when orgs change
@@ -230,6 +236,7 @@ const allPeople = computed(() => {
         seen.add(uniqueKey)
 
         const ghData = member.githubUsername ? getContributions(member.githubUsername) : null
+        const glData = member.gitlabUsername ? getGitlabContributions(member.gitlabUsername) : null
         const metrics = peopleMetrics.value[member.jiraDisplayName || member.name] || null
 
         people.push({
@@ -239,7 +246,8 @@ const allPeople = computed(() => {
           teamKey: `${org.key}::${teamName}`,
           teamName: team.displayName === 'Unassigned' ? '' : team.displayName,
           metrics,
-          githubContributions: ghData?.totalContributions ?? null
+          githubContributions: ghData?.totalContributions ?? null,
+          gitlabContributions: glData?.totalContributions ?? null
         })
       }
     }
@@ -301,6 +309,9 @@ const sortedPeople = computed(() => {
     } else if (key === 'githubContributions') {
       va = a.githubContributions ?? -1
       vb = b.githubContributions ?? -1
+    } else if (key === 'gitlabContributions') {
+      va = a.gitlabContributions ?? -1
+      vb = b.gitlabContributions ?? -1
     } else {
       va = (a[key] || '').toLowerCase()
       vb = (b[key] || '').toLowerCase()
@@ -313,6 +324,7 @@ const sortedPeople = computed(() => {
 
 onMounted(async () => {
   loading.value = true
+  loadGitlabStats()
   try {
     await getAllPeopleMetrics((data) => {
       peopleMetrics.value = data

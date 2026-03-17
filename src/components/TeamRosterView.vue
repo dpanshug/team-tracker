@@ -34,7 +34,7 @@
     </div>
 
     <!-- Team Metrics -->
-    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-6">
+    <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 mb-6">
       <MetricCard
         label="Issues Resolved"
         :value="teamMetrics?.aggregate?.resolvedCount"
@@ -60,6 +60,11 @@
       <MetricCard
         label="GitHub Contributions"
         :value="teamGithubTotal"
+        subtitle="Last year"
+      />
+      <MetricCard
+        label="GitLab Contributions"
+        :value="teamGitlabTotal"
         subtitle="Last year"
       />
     </div>
@@ -119,6 +124,7 @@ import ResolvedIssuesModal from './ResolvedIssuesModal.vue'
 import { useViewPreference } from '../composables/useViewPreference'
 import { useRoster } from '../composables/useRoster'
 import { useGithubStats } from '../composables/useGithubStats'
+import { useGitlabStats } from '../composables/useGitlabStats'
 import { refreshTeamMetrics, getTeamMetrics } from '../services/api'
 
 const props = defineProps({
@@ -129,6 +135,7 @@ defineEmits(['back', 'select-person'])
 const { viewPreference: viewPref } = useViewPreference()
 const { multiTeamMembers, getTeamsForPerson } = useRoster()
 const { getContributions } = useGithubStats()
+const { getContributions: getGitlabContributions, loadGitlabStats } = useGitlabStats()
 const isRefreshing = ref(false)
 const teamMetrics = ref(null)
 const showResolvedIssues = ref(false)
@@ -143,7 +150,10 @@ async function fetchTeamMetrics() {
   }
 }
 
-onMounted(fetchTeamMetrics)
+onMounted(() => {
+  fetchTeamMetrics()
+  loadGitlabStats()
+})
 
 const memberMetricsMap = computed(() => {
   const map = new Map()
@@ -175,12 +185,20 @@ const teamGithubTotal = computed(() => {
   }, 0)
 })
 
+const teamGitlabTotal = computed(() => {
+  return uniqueMembers.value.reduce((sum, m) => {
+    const c = m.gitlabUsername ? getGitlabContributions(m.gitlabUsername) : null
+    return sum + (c?.totalContributions ?? 0)
+  }, 0)
+})
+
 function exportCsv() {
-  const headers = ['Name', 'Specialty', 'Issues Resolved', 'Story Points', 'Avg Cycle Time (days)', 'In Progress', 'GitHub Contributions (1yr)', 'Teams']
+  const headers = ['Name', 'Specialty', 'Issues Resolved', 'Story Points', 'Avg Cycle Time (days)', 'In Progress', 'GitHub Contributions (1yr)', 'GitLab Contributions (1yr)', 'Teams']
   const rows = uniqueMembers.value.map(member => {
     const metrics = memberMetricsMap.value.get(member.jiraDisplayName)
     const teamCount = getTeamsForPerson(member.jiraDisplayName).length
     const ghContribs = getContributions(member.githubUsername)
+    const glContribs = getGitlabContributions(member.gitlabUsername)
     return [
       member.name,
       member.specialty || '',
@@ -189,6 +207,7 @@ function exportCsv() {
       metrics?.avgCycleTimeDays ?? '',
       metrics?.inProgressCount ?? '',
       ghContribs?.totalContributions ?? '',
+      glContribs?.totalContributions ?? '',
       teamCount
     ]
   })

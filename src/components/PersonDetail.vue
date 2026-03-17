@@ -37,6 +37,17 @@
               {{ person.githubUsername }}
             </a>
             <span v-else class="text-sm text-gray-400">| GitHub: unknown</span>
+            <a
+              v-if="gitlabProfileUrl"
+              :href="gitlabProfileUrl"
+              target="_blank"
+              class="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 transition-colors"
+              title="GitLab Profile"
+            >
+              | <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 01-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 014.82 2a.43.43 0 01.58 0 .42.42 0 01.11.18l2.44 7.49h8.1l2.44-7.49a.42.42 0 01.11-.18.43.43 0 01.58 0 .42.42 0 01.11.18l2.44 7.51L23 13.45a.84.84 0 01-.35.94z"/></svg>
+              {{ person.gitlabUsername }}
+            </a>
+            <span v-else class="text-sm text-gray-400">| GitLab: unknown</span>
           </div>
           <div v-if="personTeams.length > 1" class="mt-2 flex flex-wrap gap-1">
             <span
@@ -89,7 +100,7 @@
     <!-- Metrics content -->
     <template v-else-if="metrics">
       <!-- Metric cards -->
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-6">
+      <div class="grid grid-cols-1 md:grid-cols-6 gap-4 mb-6">
         <MetricCard
           label="Issues Resolved"
           :value="metrics.resolved.count"
@@ -117,6 +128,12 @@
           :value="githubContributions?.totalContributions ?? '—'"
           :subtitle="person.githubUsername ? 'Last year' : 'No GitHub username'"
           tooltip="Public contributions via GitHub API. May differ slightly from the GitHub profile due to week-aligned date windows."
+        />
+        <MetricCard
+          label="GitLab Contributions"
+          :value="gitlabContributions?.totalContributions ?? '—'"
+          :subtitle="person.gitlabUsername ? 'Last year' : 'No GitLab username'"
+          tooltip="Public contributions via GitLab calendar API."
         />
       </div>
 
@@ -215,6 +232,7 @@ import SpecialtyBadge from './SpecialtyBadge.vue'
 import MetricCard from './MetricCard.vue'
 import { useRoster } from '../composables/useRoster'
 import { useGithubStats } from '../composables/useGithubStats'
+import { useGitlabStats } from '../composables/useGitlabStats'
 import { getPersonMetrics } from '../services/api'
 
 const props = defineProps({
@@ -224,11 +242,17 @@ const props = defineProps({
 defineEmits(['back', 'go-dashboard'])
 
 const { getTeamsForPerson } = useRoster()
-const { getContributions, refreshUserStats } = useGithubStats()
+const { getContributions: getGithubContributions, refreshUserStats: refreshGithubUserStats } = useGithubStats()
+const { getContributions: getGitlabContributionsFn, loadGitlabStats } = useGitlabStats()
 
-const githubContributions = computed(() => getContributions(props.person.githubUsername))
+const githubContributions = computed(() => getGithubContributions(props.person.githubUsername))
 const githubProfileUrl = props.person.githubUsername
   ? `https://github.com/${props.person.githubUsername}`
+  : null
+
+const gitlabContributions = computed(() => getGitlabContributionsFn(props.person.gitlabUsername))
+const gitlabProfileUrl = props.person.gitlabUsername
+  ? `https://gitlab.com/${props.person.gitlabUsername}`
   : null
 
 const metrics = ref(null)
@@ -243,7 +267,7 @@ async function loadMetrics(refresh = false) {
   try {
     const promises = [getPersonMetrics(props.person.jiraDisplayName, { refresh })]
     if (refresh && props.person.githubUsername) {
-      promises.push(refreshUserStats(props.person.githubUsername))
+      promises.push(refreshGithubUserStats(props.person.githubUsername))
     }
     const [jiraMetrics] = await Promise.all(promises)
     metrics.value = jiraMetrics
@@ -255,5 +279,8 @@ async function loadMetrics(refresh = false) {
   }
 }
 
-onMounted(() => loadMetrics())
+onMounted(() => {
+  loadMetrics()
+  loadGitlabStats()
+})
 </script>
