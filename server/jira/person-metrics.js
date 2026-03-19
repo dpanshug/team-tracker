@@ -119,14 +119,34 @@ function mapIssue(issue) {
  * Uses a cache to avoid repeated lookups. Falls back to null
  * if no match is found (and does NOT cache failures so we retry next time).
  *
+ * Resolution order:
+ * 1. Email search (most reliable — exact match)
+ * 2. Username guess (firstInitial + lastName)
+ * 3. Last name only
+ * 4. Full display name
+ *
  * Cache format: { "Display Name": { accountId: "...", displayName: "..." } }
  */
-async function resolveJiraDisplayName(jiraRequest, rosterName, nameCache) {
+async function resolveJiraDisplayName(jiraRequest, rosterName, nameCache, email) {
   if (!nameCache) return { accountId: null, displayName: rosterName };
 
   const cached = nameCache[rosterName];
   if (cached && typeof cached === 'object' && cached.accountId) {
-    return cached;
+    // If we have an email and the cache was resolved without one (or with a different one),
+    // re-resolve to ensure correctness
+    if (!email || cached.resolvedViaEmail === email) {
+      return cached;
+    }
+  }
+
+  // Try email search first (most reliable)
+  if (email) {
+    const resolved = await tryEmailSearch(jiraRequest, email);
+    if (resolved) {
+      resolved.resolvedViaEmail = email;
+      nameCache[rosterName] = resolved;
+      return resolved;
+    }
   }
 
   // Search by display name parts
@@ -159,6 +179,29 @@ async function resolveJiraDisplayName(jiraRequest, rosterName, nameCache) {
 
   // All lookups failed — return original name, do NOT cache
   return { accountId: null, displayName: rosterName };
+}
+
+/**
+ * Search for a Jira user by email address. Returns exactly one match or null.
+ */
+async function tryEmailSearch(jiraRequest, email) {
+  try {
+    const users = await jiraRequest(`/rest/api/2/user/search?query=${encodeURIComponent(email)}`);
+    if (!Array.isArray(users) || users.length === 0) return null;
+
+    // Find exact email match
+    const match = users.find(u => u.emailAddress?.toLowerCase() === email.toLowerCase());
+    if (match) return { accountId: match.accountId, displayName: match.displayName };
+
+    // If only one result, trust it
+    if (users.length === 1) {
+      return { accountId: users[0].accountId, displayName: users[0].displayName };
+    }
+
+    return null;
+  } catch {
+    return null;
+  }
 }
 
 async function tryUserSearch(jiraRequest, query, rosterName) {
@@ -295,15 +338,17 @@ function computeAggregates(resolvedMapped) {
  * @param {number} [options.lookbackDays=365] - How far back to look for resolved issues
  * @param {object} [options.nameCache] - Mutable name resolution cache
  * @param {object} [options.existingData] - Cached person metrics for incremental refresh
+ * @param {string} [options.email] - Email address for more reliable Jira user lookup
  * @returns {Promise<object>} Person metrics object
  */
 async function fetchPersonMetrics(jiraRequest, jiraDisplayName, options = {}) {
   const lookbackDays = options.lookbackDays || 365;
   const nameCache = options.nameCache || null;
   const existingData = options.existingData || null;
+  const email = options.email || null;
 
   // Resolve the roster name to the Jira Cloud accountId
-  const resolved = await resolveJiraDisplayName(jiraRequest, jiraDisplayName, nameCache);
+  const resolved = await resolveJiraDisplayName(jiraRequest, jiraDisplayName, nameCache, email);
   const accountId = resolved.accountId;
   const resolvedDisplayName = resolved.displayName;
 

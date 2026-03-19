@@ -377,7 +377,8 @@ app.post('/api/refresh', requireAdmin, async function(req, res) {
         const existingData = force ? null : readFromStorage(`people/${sanitizeFilename(member.jiraDisplayName)}.json`);
         const metrics = await fetchPersonMetrics(jiraRequest, member.jiraDisplayName, {
           nameCache: jiraNameCache,
-          existingData
+          existingData,
+          email: member.email
         });
         if (metrics._resolvedName) delete metrics._resolvedName;
         writeToStorage(`people/${sanitizeFilename(member.jiraDisplayName)}.json`, metrics);
@@ -449,7 +450,8 @@ app.post('/api/refresh', requireAdmin, async function(req, res) {
           const existingData = force ? null : readFromStorage(`people/${sanitizeFilename(member.jiraDisplayName)}.json`);
           const metrics = await fetchPersonMetrics(jiraRequest, member.jiraDisplayName, {
             nameCache: jiraNameCache,
-            existingData
+            existingData,
+            email: member.email
           });
           if (metrics._resolvedName) {
             persistNameCache();
@@ -994,9 +996,22 @@ app.get('/api/person/:jiraDisplayName/metrics', async function(req, res) {
       return res.status(404).json({ error: `No demo data for ${name}` });
     }
 
+    // Look up email from roster for more reliable Jira resolution
+    let personEmail = null;
+    try {
+      const roster = deriveRoster();
+      for (const org of roster.orgs) {
+        for (const team of Object.values(org.teams)) {
+          const found = team.members.find(m => m.jiraDisplayName === name || m.name === name);
+          if (found) { personEmail = found.email; break; }
+        }
+        if (personEmail) break;
+      }
+    } catch { /* roster lookup is best-effort */ }
+
     // Fetch from Jira, fall back to stale cache if Jira is unavailable
     try {
-      const metrics = await fetchPersonMetrics(jiraRequest, name, { nameCache: jiraNameCache });
+      const metrics = await fetchPersonMetrics(jiraRequest, name, { nameCache: jiraNameCache, email: personEmail });
       if (metrics._resolvedName) {
         persistNameCache();
         delete metrics._resolvedName;
