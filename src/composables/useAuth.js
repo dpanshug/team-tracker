@@ -1,4 +1,4 @@
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT || '/api'
 
@@ -26,8 +26,11 @@ export function useAuth() {
     }
   }
 
+  const isAdmin = computed(() => user.value?.isAdmin === true)
+
   return {
     user,
-    loading
+    loading,
+    isAdmin
   }
 }

@@ -56,18 +56,18 @@ if (DEMO_MODE) {
 const JIRA_HOST = process.env.JIRA_HOST || 'https://redhat.atlassian.net';
 const PORT = process.env.API_PORT || 3001;
 
-// ─── Allowlist seed ───
+// ─── Admin list seed ───
 
-function seedAllowlist() {
+function seedAdminList() {
   const existing = readFromStorage('allowlist.json');
   if (existing && existing.emails && existing.emails.length > 0) {
-    console.log(`Allowlist: ${existing.emails.length} user(s) loaded`);
+    console.log(`Admin list: ${existing.emails.length} admin(s) loaded`);
     return;
   }
 
   const adminEmails = process.env.ADMIN_EMAILS;
   if (!adminEmails) {
-    console.log('Allowlist: empty — first authenticated user will be auto-added as admin');
+    console.log('Admin list: empty — first authenticated user will be auto-added as admin');
     return;
   }
 
@@ -77,7 +77,12 @@ function seedAllowlist() {
     .filter(Boolean);
 
   writeToStorage('allowlist.json', { emails });
-  console.log(`Allowlist: seeded with ${emails.length} email(s) from ADMIN_EMAILS`);
+  console.log(`Admin list: seeded with ${emails.length} admin(s) from ADMIN_EMAILS`);
+}
+
+function isAdmin(email) {
+  const adminList = readFromStorage('allowlist.json');
+  return adminList && adminList.emails && adminList.emails.includes(email);
 }
 
 // ─── Health check (before auth) ───
@@ -102,16 +107,22 @@ async function authMiddleware(req, res, next) {
     req.userEmail = (process.env.ADMIN_EMAILS || 'local-dev@redhat.com').split(',')[0].trim().toLowerCase();
   }
 
-  // Check allowlist — auto-add first authenticated user if empty
-  const allowlist = readFromStorage('allowlist.json');
-  if (!allowlist || !allowlist.emails || allowlist.emails.length === 0) {
+  // Auto-add first authenticated user as admin if admin list is empty
+  const adminList = readFromStorage('allowlist.json');
+  if (!adminList || !adminList.emails || adminList.emails.length === 0) {
     const seeded = { emails: [req.userEmail] };
     writeToStorage('allowlist.json', seeded);
-    console.log(`Allowlist: auto-added first user ${req.userEmail}`);
-  } else if (!allowlist.emails.includes(req.userEmail)) {
-    return res.status(403).json({ error: 'Access denied. You are not on the allowlist.' });
+    console.log(`Admin list: auto-added first user ${req.userEmail}`);
   }
 
+  req.isAdmin = isAdmin(req.userEmail);
+  next();
+}
+
+function requireAdmin(req, res, next) {
+  if (!req.isAdmin) {
+    return res.status(403).json({ error: 'Admin access required.' });
+  }
   next();
 }
 
@@ -120,11 +131,11 @@ app.get('/api/whoami', function(req, res) {
   const email = req.headers['x-forwarded-email'];
   const displayName = req.headers['x-forwarded-preferred-username'] || req.headers['x-forwarded-user'] || email;
   if (email) {
-    res.json({ email, displayName });
+    res.json({ email, displayName, isAdmin: isAdmin(email.toLowerCase()) });
   } else {
     // Local dev fallback
     const devEmail = (process.env.ADMIN_EMAILS || 'local-dev@redhat.com').split(',')[0].trim();
-    res.json({ email: devEmail, displayName: devEmail.split('@')[0] });
+    res.json({ email: devEmail, displayName: devEmail.split('@')[0], isAdmin: isAdmin(devEmail.toLowerCase()) });
   }
 });
 
@@ -191,7 +202,7 @@ const orchestrationDeps = {
 
 // ─── Routes: Fetcher ───
 
-app.post('/api/discover-boards', async function(req, res) {
+app.post('/api/discover-boards', requireAdmin, async function(req, res) {
   try {
     console.log('\nDiscovering boards for project RHOAIENG');
     const result = await discoverBoards(orchestrationDeps);
@@ -202,7 +213,7 @@ app.post('/api/discover-boards', async function(req, res) {
   }
 });
 
-app.post('/api/refresh', function(req, res) {
+app.post('/api/refresh', requireAdmin, function(req, res) {
   const hardRefresh = req.body.hardRefresh || false;
 
   const teamsData = readFromStorage('teams.json');
@@ -369,7 +380,7 @@ app.get('/api/teams', function(req, res) {
   }
 });
 
-app.post('/api/teams', function(req, res) {
+app.post('/api/teams', requireAdmin, function(req, res) {
   try {
     const { teams } = req.body;
     if (!teams || !Array.isArray(teams)) {
@@ -788,7 +799,7 @@ app.get('/api/team/:teamKey/metrics', function(req, res) {
   }
 });
 
-app.post('/api/roster/refresh', function(req, res) {
+app.post('/api/roster/refresh', requireAdmin, function(req, res) {
   try {
     const roster = deriveRoster();
 
@@ -846,7 +857,7 @@ app.post('/api/roster/refresh', function(req, res) {
   }
 });
 
-app.post('/api/team/:teamKey/refresh', function(req, res) {
+app.post('/api/team/:teamKey/refresh', requireAdmin, function(req, res) {
   try {
     const teamKey = decodeURIComponent(req.params.teamKey);
     const roster = deriveRoster();
@@ -918,7 +929,7 @@ app.post('/api/team/:teamKey/refresh', function(req, res) {
   }
 });
 
-app.delete('/api/jira-name-cache', function(req, res) {
+app.delete('/api/jira-name-cache', requireAdmin, function(req, res) {
   jiraNameCache = {};
   writeToStorage('jira-name-map.json', {});
   res.json({ success: true });
@@ -956,7 +967,7 @@ app.get('/api/github/contributions/:username', function(req, res) {
   }
 });
 
-app.post('/api/github/contributions/:username/refresh', async function(req, res) {
+app.post('/api/github/contributions/:username/refresh', requireAdmin, async function(req, res) {
   try {
     const username = decodeURIComponent(req.params.username);
     const results = await fetchContributions([username]);
@@ -974,7 +985,7 @@ app.post('/api/github/contributions/:username/refresh', async function(req, res)
   }
 });
 
-app.post('/api/github/refresh', function(req, res) {
+app.post('/api/github/refresh', requireAdmin, function(req, res) {
   try {
     const roster = deriveRoster();
 
@@ -1052,7 +1063,7 @@ app.get('/api/gitlab/contributions/:username', function(req, res) {
   }
 });
 
-app.post('/api/gitlab/contributions/:username/refresh', async function(req, res) {
+app.post('/api/gitlab/contributions/:username/refresh', requireAdmin, async function(req, res) {
   try {
     const username = decodeURIComponent(req.params.username);
     const results = await fetchGitlabContributions([username]);
@@ -1070,7 +1081,7 @@ app.post('/api/gitlab/contributions/:username/refresh', async function(req, res)
   }
 });
 
-app.post('/api/gitlab/refresh', function(req, res) {
+app.post('/api/gitlab/refresh', requireAdmin, function(req, res) {
   try {
     const roster = deriveRoster();
 
@@ -1114,7 +1125,7 @@ app.post('/api/gitlab/refresh', function(req, res) {
   }
 });
 
-app.post('/api/trends/gitlab/refresh', function(req, res) {
+app.post('/api/trends/gitlab/refresh', requireAdmin, function(req, res) {
   try {
     const roster = deriveRoster();
     const usernames = [];
@@ -1292,7 +1303,7 @@ app.get('/api/trends', function(req, res) {
   }
 });
 
-app.post('/api/trends/jira/refresh', async function(req, res) {
+app.post('/api/trends/jira/refresh', requireAdmin, async function(req, res) {
   try {
     const roster = deriveRoster();
     const seen = new Set();
@@ -1346,7 +1357,7 @@ app.post('/api/trends/jira/refresh', async function(req, res) {
   }
 });
 
-app.post('/api/trends/github/refresh', function(req, res) {
+app.post('/api/trends/github/refresh', requireAdmin, function(req, res) {
   try {
     const roster = deriveRoster();
     const usernames = [];
@@ -1423,7 +1434,7 @@ app.put('/api/sprints/:sprintId/annotations', function(req, res) {
   }
 });
 
-app.delete('/api/sprints/:sprintId/annotations/:assignee/:annotationId', function(req, res) {
+app.delete('/api/sprints/:sprintId/annotations/:assignee/:annotationId', requireAdmin, function(req, res) {
   try {
     const { sprintId, assignee, annotationId } = req.params;
     const data = readFromStorage(`annotations/${sprintId}.json`);
@@ -1452,7 +1463,7 @@ app.delete('/api/sprints/:sprintId/annotations/:assignee/:annotationId', functio
 
 // ─── Routes: Allowlist ───
 
-app.get('/api/allowlist', function(req, res) {
+app.get('/api/allowlist', requireAdmin, function(req, res) {
   try {
     const data = readFromStorage('allowlist.json') || { emails: [] };
     res.json({ emails: data.emails });
@@ -1462,7 +1473,7 @@ app.get('/api/allowlist', function(req, res) {
   }
 });
 
-app.post('/api/allowlist', function(req, res) {
+app.post('/api/allowlist', requireAdmin, function(req, res) {
   try {
     const { email } = req.body;
     if (!email || typeof email !== 'string') {
@@ -1488,7 +1499,7 @@ app.post('/api/allowlist', function(req, res) {
   }
 });
 
-app.delete('/api/allowlist/:email', function(req, res) {
+app.delete('/api/allowlist/:email', requireAdmin, function(req, res) {
   try {
     const email = decodeURIComponent(req.params.email).toLowerCase();
     const data = readFromStorage('allowlist.json') || { emails: [] };
@@ -1512,7 +1523,7 @@ app.delete('/api/allowlist/:email', function(req, res) {
 
 // ─── Routes: Roster Sync Admin ───
 
-app.get('/api/admin/roster-sync/config', function(req, res) {
+app.get('/api/admin/roster-sync/config', requireAdmin, function(req, res) {
   try {
     const config = rosterSyncConfig.loadConfig(storageModule);
     if (!config) {
@@ -1525,7 +1536,7 @@ app.get('/api/admin/roster-sync/config', function(req, res) {
   }
 });
 
-app.post('/api/admin/roster-sync/config', function(req, res) {
+app.post('/api/admin/roster-sync/config', requireAdmin, function(req, res) {
   try {
     const { orgRoots, googleSheetId, sheetNames } = req.body;
 
@@ -1564,7 +1575,7 @@ app.post('/api/admin/roster-sync/config', function(req, res) {
   }
 });
 
-app.post('/api/admin/roster-sync/trigger', function(req, res) {
+app.post('/api/admin/roster-sync/trigger', requireAdmin, function(req, res) {
   try {
     if (rosterSync.isSyncInProgress()) {
       return res.json({ status: 'already_running' });
@@ -1588,7 +1599,7 @@ app.post('/api/admin/roster-sync/trigger', function(req, res) {
   }
 });
 
-app.get('/api/admin/roster-sync/status', function(req, res) {
+app.get('/api/admin/roster-sync/status', requireAdmin, function(req, res) {
   try {
     const config = rosterSyncConfig.loadConfig(storageModule);
     res.json({
@@ -1609,7 +1620,7 @@ app.options('/api/{*path}', function(req, res) { res.status(200).end(); });
 
 // ─── Start ───
 
-seedAllowlist();
+seedAdminList();
 
 // Start daily roster sync if configured
 if (!DEMO_MODE && rosterSyncConfig.isConfigured(storageModule)) {

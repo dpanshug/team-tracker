@@ -7,9 +7,9 @@
             <h1 class="text-xl font-bold cursor-pointer" @click="navigateToDashboard">AI Engineering Team Tracker</h1>
           </div>
           <div class="flex items-center gap-4">
-            <!-- Refresh All -->
+            <!-- Refresh All (admin only) -->
             <button
-              v-if="authUser"
+              v-if="authUser && authIsAdmin"
               @click="handleRefreshAll($event)"
               :disabled="isRefreshing"
               title="Refresh all metrics (Shift+click for hard refresh)"
@@ -155,11 +155,12 @@ export default {
     SetupBanner
   },
   setup() {
-    const { user: authUser } = useAuth()
+    const { user: authUser, isAdmin: authIsAdmin } = useAuth()
     const { loadRoster, teams, selectedOrgKey, selectOrg, loading: rosterLoading } = useRoster()
     const { loadGithubStats, refreshStats } = useGithubStats()
     return {
       authUser,
+      authIsAdmin,
       loadRoster,
       loadGithubStats,
       refreshStats,
@@ -177,14 +178,19 @@ export default {
       isLoading: false,
       isRefreshing: false,
       toasts: [],
-      navTabs: [
+      allNavTabs: [
         { view: 'dashboard', label: 'Teams' },
         { view: 'people', label: 'People' },
         { view: 'trends', label: 'Trends' },
         { view: 'reports', label: 'Reports' },
-        { view: 'user-management', label: 'Users' },
-        { view: 'settings', label: 'Settings' }
+        { view: 'user-management', label: 'Admins', adminOnly: true },
+        { view: 'settings', label: 'Settings', adminOnly: true }
       ]
+    }
+  },
+  computed: {
+    navTabs() {
+      return this.allNavTabs.filter(tab => !tab.adminOnly || this.authIsAdmin)
     }
   },
   watch: {

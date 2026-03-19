@@ -19,6 +19,7 @@
       </div>
       <div class="flex items-center gap-3">
         <button
+          v-if="isAdmin"
           @click="handleRefresh"
           :disabled="true"
           title="Refreshes temporarily disabled — Jira is down"
@@ -125,6 +126,7 @@ import { useViewPreference } from '../composables/useViewPreference'
 import { useRoster } from '../composables/useRoster'
 import { useGithubStats } from '../composables/useGithubStats'
 import { useGitlabStats } from '../composables/useGitlabStats'
+import { useAuth } from '../composables/useAuth'
 import { refreshTeamMetrics, getTeamMetrics } from '../services/api'
 
 const props = defineProps({
@@ -136,6 +138,7 @@ const { viewPreference: viewPref } = useViewPreference()
 const { multiTeamMembers, getTeamsForPerson } = useRoster()
 const { getContributions } = useGithubStats()
 const { getContributions: getGitlabContributions, loadGitlabStats } = useGitlabStats()
+const { isAdmin } = useAuth()
 const isRefreshing = ref(false)
 const teamMetrics = ref(null)
 const showResolvedIssues = ref(false)
