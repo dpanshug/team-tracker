@@ -1,9 +1,9 @@
 /**
- * Fetch GitLab contribution stats via the authenticated REST API (/api/v4/users/:id/events).
+ * Fetch GitLab contribution stats via the public calendar endpoint
+ * (/users/:username/calendar.json).
  *
- * Single-pass: fetches events once per user and returns both total counts
- * and monthly breakdown. Supports incremental fetching (only new events
- * since last fetch) and caches username→ID resolution.
+ * Returns daily contribution counts for roughly the last year.
+ * One request per user — no pagination, no user ID resolution needed.
  *
  * Uses node-fetch (v2) for HTTP requests.
  */
@@ -11,25 +11,10 @@
 const fetch = require('node-fetch');
 
 const GITLAB_BASE_URL = process.env.GITLAB_BASE_URL || 'https://gitlab.com';
-const GITLAB_TOKEN = process.env.GITLAB_TOKEN || null;
-// Authenticated: ~300 req/min (~5 req/sec). Use 4 req/sec with safety margin.
-// Unauthenticated: ~10 req/min.
-const MAX_REQUESTS_PER_SEC = GITLAB_TOKEN ? 4 : 0.14;
-const DEFAULT_CONCURRENCY = GITLAB_TOKEN ? 3 : 1;
-
-if (!GITLAB_TOKEN) {
-  console.warn('[gitlab] WARNING: GITLAB_TOKEN not set. Rate limit is ~10 req/min unauthenticated.');
-  console.warn('[gitlab] Set GITLAB_TOKEN in .env for authenticated access to private project contributions.');
-}
+const DEFAULT_CONCURRENCY = 5;
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-function buildHeaders() {
-  const headers = { Accept: 'application/json' };
-  if (GITLAB_TOKEN) headers['PRIVATE-TOKEN'] = GITLAB_TOKEN;
-  return headers;
 }
 
 /**
@@ -55,110 +40,48 @@ function createRateLimiter(maxPerSecond) {
 }
 
 /**
- * Resolve a GitLab username to a numeric user ID via the REST API.
- * Uses the provided cache to avoid repeated lookups.
- * @returns {number|null} user ID or null if not found
+ * Bucket daily contributions { "YYYY-MM-DD": count } into monthly { "YYYY-MM": count }.
  */
-async function resolveUserId(username, userIdCache, rateLimiter) {
-  if (userIdCache[username]) return userIdCache[username];
-
-  await rateLimiter();
-  const url = `${GITLAB_BASE_URL}/api/v4/users?username=${encodeURIComponent(username)}`;
-  const res = await fetch(url, { headers: buildHeaders(), timeout: 10000 });
-  if (!res.ok) return null;
-  const users = await res.json();
-  if (users.length > 0) {
-    userIdCache[username] = users[0].id;
-    return users[0].id;
-  }
-  return null;
-}
-
-/**
- * Fetch events for a user, optionally only since a given date.
- * @param {number} userId
- * @param {string|null} sinceDate - ISO date string; if set, only fetch events after this date
- * @param {Function} rateLimiter
- * @returns {Array} flat list of event objects
- */
-async function fetchEvents(userId, sinceDate, rateLimiter) {
-  const afterDate = sinceDate
-    ? sinceDate.slice(0, 10)
-    : (() => { const d = new Date(); d.setFullYear(d.getFullYear() - 1); return d.toISOString().slice(0, 10); })();
-
-  const events = [];
-  let page = 1;
-  while (true) {
-    await rateLimiter();
-    const url = `${GITLAB_BASE_URL}/api/v4/users/${userId}/events?per_page=100&page=${page}&after=${afterDate}`;
-    const res = await fetch(url, { headers: buildHeaders(), timeout: 15000 });
-    if (!res.ok) break;
-    const batch = await res.json();
-    if (!Array.isArray(batch) || batch.length === 0) break;
-    events.push(...batch);
-    if (batch.length < 100) break;
-    page++;
-  }
-  return events;
-}
-
-/**
- * Bucket events by month ("YYYY-MM").
- */
-function bucketByMonth(events) {
+function bucketByMonth(daily) {
   const months = {};
-  for (const event of events) {
-    const monthKey = event.created_at.slice(0, 7);
-    months[monthKey] = (months[monthKey] || 0) + 1;
+  for (const [date, count] of Object.entries(daily)) {
+    const monthKey = date.slice(0, 7);
+    months[monthKey] = (months[monthKey] || 0) + count;
   }
   return months;
 }
 
 /**
- * Merge incremental monthly data into existing monthly data.
- * The boundary month (containing sinceDate) and all newer months use
- * the fresh count directly (replace), since we can't distinguish
- * which events within the boundary month are truly new.
- * Older months keep their existing counts.
- *
- * @param {object} existing - { "YYYY-MM": count }
- * @param {object} fresh - { "YYYY-MM": count }
- * @param {string} sinceDate - ISO date string marking the fetch boundary
+ * Fetch the contribution calendar for a single GitLab user.
+ * @param {string} username
+ * @param {Function} rateLimiter
+ * @returns {Object|null} { totalContributions, months, fetchedAt } or null
  */
-function mergeMonths(existing, fresh, sinceDate) {
-  const merged = { ...existing };
-  const boundaryMonth = sinceDate ? sinceDate.slice(0, 7) : null;
+async function fetchUserCalendar(username, rateLimiter) {
+  await rateLimiter();
+  const url = `${GITLAB_BASE_URL}/users/${encodeURIComponent(username)}/calendar.json`;
+  const res = await fetch(url, { timeout: 15000 });
+  if (!res.ok) return null;
+  const daily = await res.json();
+  if (!daily || typeof daily !== 'object') return null;
 
-  for (const [month, count] of Object.entries(fresh)) {
-    if (boundaryMonth && month >= boundaryMonth) {
-      // Boundary month or newer: replace with fresh count
-      merged[month] = count;
-    } else {
-      // Older than boundary: should not happen with correct sinceDate,
-      // but add defensively in case of overlap
-      merged[month] = (merged[month] || 0) + count;
-    }
-  }
-  return merged;
+  const months = bucketByMonth(daily);
+  const totalContributions = Object.values(months).reduce((a, b) => a + b, 0);
+  return { totalContributions, months, fetchedAt: new Date().toISOString() };
 }
 
 /**
  * Fetch GitLab data (contributions + history) for a list of usernames.
- * Single-pass: fetches events once and derives both total count and monthly breakdown.
  *
  * @param {string[]} usernames - GitLab usernames to query
  * @param {object} [options]
- * @param {object} [options.existingData] - Map of username -> { totalContributions, months, fetchedAt }
- *   for incremental fetching. If a user has existing data, only fetches events since fetchedAt.
- * @param {object} [options.userIdCache] - Mutable map of username -> numeric GitLab user ID
- * @param {number} [options.concurrency] - Number of concurrent workers (default 3 authenticated, 1 unauth)
+ * @param {number} [options.concurrency] - Number of concurrent workers (default 5)
  * @returns {Object} Map of username -> { totalContributions, months, fetchedAt } or null
  */
 async function fetchGitlabData(usernames, options = {}) {
-  const existingData = options.existingData || {};
-  const userIdCache = options.userIdCache || {};
   const concurrency = options.concurrency || DEFAULT_CONCURRENCY;
-  const rateLimiter = createRateLimiter(MAX_REQUESTS_PER_SEC);
+  // 10 req/sec — generous but respectful for a simple JSON endpoint
+  const rateLimiter = createRateLimiter(10);
 
   console.log(`[gitlab] Fetching data for ${usernames.length} users (concurrency: ${concurrency})`);
 
@@ -172,33 +95,14 @@ async function fetchGitlabData(usernames, options = {}) {
       const username = usernames[i];
 
       try {
-        const userId = await resolveUserId(username, userIdCache, rateLimiter);
-        if (!userId) {
-          console.log(`[gitlab] User not found: ${username}`);
-          results[username] = null;
-          completed++;
-          continue;
-        }
-
-        const existing = existingData[username];
-        const sinceDate = existing?.fetchedAt || null;
-        const events = await fetchEvents(userId, sinceDate, rateLimiter);
-        const freshMonths = bucketByMonth(events);
-        const now = new Date().toISOString();
-
-        if (sinceDate && existing) {
-          // Incremental: merge with existing data
-          const mergedMonths = mergeMonths(existing.months || {}, freshMonths, sinceDate);
-          const totalContributions = Object.values(mergedMonths).reduce((a, b) => a + b, 0);
-          results[username] = { totalContributions, months: mergedMonths, fetchedAt: now };
-        } else {
-          // Full fetch
-          const totalContributions = events.length;
-          results[username] = { totalContributions, months: freshMonths, fetchedAt: now };
-        }
-
+        const data = await fetchUserCalendar(username, rateLimiter);
+        results[username] = data;
         completed++;
-        console.log(`[gitlab] ${username}: ${results[username].totalContributions} contributions (${completed}/${usernames.length})`);
+        if (data) {
+          console.log(`[gitlab] ${username}: ${data.totalContributions} contributions (${completed}/${usernames.length})`);
+        } else {
+          console.log(`[gitlab] ${username}: no data (${completed}/${usernames.length})`);
+        }
       } catch (err) {
         console.error(`[gitlab] Error fetching ${username}:`, err.message);
         results[username] = null;
