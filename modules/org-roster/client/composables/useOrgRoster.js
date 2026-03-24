@@ -122,6 +122,10 @@ export function useOrgRoster() {
     return data
   }
 
+  async function loadRfeConfig() {
+    return apiRequest('/modules/org-roster/rfe-config')
+  }
+
   async function loadSyncStatus() {
     return apiRequest('/modules/org-roster/sync/status')
   }
@@ -144,6 +148,10 @@ export function useOrgRoster() {
 
   async function loadConfiguredOrgs() {
     return apiRequest('/modules/org-roster/configured-orgs')
+  }
+
+  async function loadJiraComponents() {
+    return apiRequest('/modules/org-roster/jira-components')
   }
 
   async function loadConfig() {
@@ -200,12 +208,14 @@ export function useOrgRoster() {
     loadOrgSummary,
     loadComponents,
     loadRfeBacklog,
+    loadRfeConfig,
     loadSyncStatus,
     triggerSync,
     triggerSheetsSync,
     triggerRfeSync,
     loadSheetOrgs,
     loadConfiguredOrgs,
+    loadJiraComponents,
     loadConfig,
     saveConfig,
   }

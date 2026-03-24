@@ -5,8 +5,6 @@
 
 const fetch = require('node-fetch');
 
-const STORY_POINTS_FIELD = process.env.JIRA_STORY_POINTS_FIELD || 'customfield_10028';
-
 function getJiraAuth() {
   const token = process.env.JIRA_TOKEN;
   const email = process.env.JIRA_EMAIL;
@@ -47,29 +45,58 @@ async function jiraRequest(path) {
 }
 
 /**
- * Fetch open RFE count for a single Jira component.
- * @param {string} component - Jira component name
- * @param {object} [options] - Optional overrides for project and issue type
- * @param {string} [options.jiraProject] - Jira project key (default: RHAIRFE)
- * @param {string} [options.rfeIssueType] - Issue type name (default: Feature Request)
+ * Fetch all open RFE issues for a single Jira component.
+ * Returns { count, issues: [{ key, summary, status, priority, created, components }] }
  */
 async function fetchRfeForComponent(component, options = {}) {
   const project = options.jiraProject || 'RHAIRFE';
   const issueType = options.rfeIssueType || 'Feature Request';
-  // Escape double quotes in component name to prevent JQL injection
   const escaped = component.replace(/"/g, '\\"');
-  const jql = encodeURIComponent(
-    `project = ${project} AND component = "${escaped}" AND issuetype = "${issueType}" AND statusCategory != "Done"`
-  );
-  const fields = `summary,${STORY_POINTS_FIELD}`;
-  const params = `jql=${jql}&fields=${fields}&maxResults=1`;
+  const jql = `project = ${project} AND component = "${escaped}" AND issuetype = "${issueType}" AND statusCategory != "Done"`;
 
   try {
-    const data = await jiraRequest(`/rest/api/3/search/jql?${params}`);
-    return { count: data.total || 0 };
+    const issues = [];
+    let nextPageToken = null;
+    let page = 0;
+    while (true) {
+      const params = new URLSearchParams({
+        jql,
+        fields: 'summary,status,priority,created,components',
+        maxResults: '100'
+      });
+      if (nextPageToken) params.set('nextPageToken', nextPageToken);
+      const data = await jiraRequest(`/rest/api/3/search/jql?${params}`);
+      const pageIssues = data.issues || [];
+      page++;
+
+      if (page === 1 && pageIssues.length === 0) {
+        console.log(`[org-roster rfe] "${component}": 0 issues`);
+      } else if (page === 1) {
+        console.log(`[org-roster rfe] "${component}": fetching page ${page} (${pageIssues.length} issues)${data.isLast === false ? ', more pages...' : ''}`);
+      } else {
+        console.log(`[org-roster rfe] "${component}": page ${page} (+${pageIssues.length} issues)`);
+      }
+
+      for (const issue of pageIssues) {
+        issues.push({
+          key: issue.key,
+          summary: issue.fields?.summary || '',
+          status: issue.fields?.status?.name || '',
+          statusCategory: issue.fields?.status?.statusCategory?.name || '',
+          priority: issue.fields?.priority?.name || '',
+          created: issue.fields?.created || '',
+          components: (issue.fields?.components || []).map(c => c.name)
+        });
+      }
+
+      if (data.isLast !== false || !data.nextPageToken) break;
+      nextPageToken = data.nextPageToken;
+    }
+    console.log(`[org-roster rfe] "${component}": done — ${issues.length} total issues`);
+    return { count: issues.length, issues };
   } catch (err) {
-    console.warn(`[org-roster rfe] Failed to fetch RFEs for component "${component}": ${err.message}`);
-    return { count: 0, error: err.message };
+    console.warn(`[org-roster rfe] "${component}": FAILED — ${err.message}`);
+    return { count: 0, issues: [], error: err.message };
   }
 }
 
@@ -80,16 +107,27 @@ async function fetchRfeForComponent(component, options = {}) {
 async function fetchAllRfeBacklog(components, teams, options = {}) {
   const BATCH_SIZE = 5;
   const BATCH_DELAY = 1000;
+  const componentMapping = options.componentMapping || {};
 
   const byComponent = {};
   const componentList = [...new Set(components)];
+  const mappedCount = Object.keys(componentMapping).length;
+
+  console.log(`[org-roster rfe] Starting RFE sync for ${componentList.length} components (${mappedCount} mapped to Jira names)`);
 
   for (let i = 0; i < componentList.length; i += BATCH_SIZE) {
     const batch = componentList.slice(i, i + BATCH_SIZE);
+    const batchNum = Math.floor(i / BATCH_SIZE) + 1;
+    const totalBatches = Math.ceil(componentList.length / BATCH_SIZE);
+    console.log(`[org-roster rfe] Batch ${batchNum}/${totalBatches}: ${batch.join(', ')}`);
 
     const results = await Promise.all(
       batch.map(async (comp) => {
-        const result = await fetchRfeForComponent(comp, options);
+        const jiraComp = componentMapping[comp] || comp;
+        if (jiraComp !== comp) {
+          console.log(`[org-roster rfe] Mapping "${comp}" → "${jiraComp}"`);
+        }
+        const result = await fetchRfeForComponent(jiraComp, options);
         return { component: comp, ...result };
       })
     );
@@ -97,6 +135,7 @@ async function fetchAllRfeBacklog(components, teams, options = {}) {
     for (const result of results) {
       byComponent[result.component] = {
         count: result.count,
+        issues: result.issues,
         error: result.error || null
       };
     }
@@ -108,17 +147,32 @@ async function fetchAllRfeBacklog(components, teams, options = {}) {
 
   // Aggregate by team
   const byTeam = {};
+  let totalIssues = 0;
+  let errorCount = 0;
+  for (const [, val] of Object.entries(byComponent)) {
+    totalIssues += val.count;
+    if (val.error) errorCount++;
+  }
+  console.log(`[org-roster rfe] Component fetch complete: ${totalIssues} total issues across ${componentList.length} components (${errorCount} errors)`);
+
   if (teams) {
     for (const team of teams) {
       const teamKey = `${team.org}::${team.name}`;
-      let totalCount = 0;
+      const teamIssues = [];
+      const seenKeys = new Set();
       for (const comp of (team.components || [])) {
         if (byComponent[comp]) {
-          totalCount += byComponent[comp].count;
+          for (const issue of byComponent[comp].issues) {
+            if (!seenKeys.has(issue.key)) {
+              seenKeys.add(issue.key);
+              teamIssues.push(issue);
+            }
+          }
         }
       }
-      byTeam[teamKey] = { count: totalCount };
+      byTeam[teamKey] = { count: teamIssues.length, issues: teamIssues };
     }
+    console.log(`[org-roster rfe] Aggregated RFEs for ${Object.keys(byTeam).length} teams`);
   }
 
   return { byComponent, byTeam };

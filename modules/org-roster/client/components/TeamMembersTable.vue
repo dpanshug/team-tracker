@@ -1,5 +1,18 @@
 <template>
   <div class="overflow-x-auto">
+    <!-- Search -->
+    <div class="relative mb-4">
+      <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      <input
+        v-model="searchQuery"
+        type="text"
+        placeholder="Search by name, manager, role, component, location..."
+        class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+      />
+    </div>
+
     <!-- Filter by role -->
     <div v-if="uniqueRoles.length > 1" class="mb-4 flex flex-wrap gap-2">
       <button
@@ -69,7 +82,7 @@
     </table>
 
     <div v-if="sortedMembers.length === 0" class="text-center py-8 text-gray-500 text-sm">
-      No members found.
+      {{ searchQuery ? `No members match "${searchQuery}"` : 'No members found.' }}
     </div>
   </div>
 </template>
@@ -111,6 +124,7 @@ function getComponent(member) {
 const sortKey = ref('name')
 const sortAsc = ref(true)
 const roleFilter = ref(null)
+const searchQuery = ref('')
 
 function toggleSort(key) {
   if (sortKey.value === key) {
@@ -132,6 +146,16 @@ const uniqueRoles = computed(() => {
 
 const sortedMembers = computed(() => {
   let result = props.members
+  if (searchQuery.value) {
+    const q = searchQuery.value.toLowerCase()
+    result = result.filter(m =>
+      (m.name || '').toLowerCase().includes(q) ||
+      (m.managerUid || m.manager || '').toLowerCase().includes(q) ||
+      getSpecialty(m).toLowerCase().includes(q) ||
+      getComponent(m).toLowerCase().includes(q) ||
+      (m.geo || m.region || '').toLowerCase().includes(q)
+    )
+  }
   if (roleFilter.value) {
     result = result.filter(m => getSpecialty(m) === roleFilter.value)
   }

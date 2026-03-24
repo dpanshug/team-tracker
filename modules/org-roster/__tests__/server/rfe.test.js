@@ -1,9 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 
 describe('fetchRfeForComponent', () => {
-  let fetchRfeForComponent
-  let originalFetch
-
   beforeEach(async () => {
     process.env.JIRA_EMAIL = 'test@example.com'
     process.env.JIRA_TOKEN = 'test-token'

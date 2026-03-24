@@ -84,7 +84,7 @@
 </template>
 
 <script setup>
-import { onMounted, inject, watch } from 'vue'
+import { onMounted, inject } from 'vue'
 import OrgSelector from '../components/OrgSelector.vue'
 import TeamCard from '../components/TeamCard.vue'
 import { useOrgRoster } from '../composables/useOrgRoster'

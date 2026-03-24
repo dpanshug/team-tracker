@@ -66,10 +66,31 @@
           <table class="min-w-full divide-y divide-gray-200 text-sm">
             <thead class="bg-gray-50">
               <tr>
-                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Team</th>
-                <th v-if="isAllView" class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Org</th>
-                <th class="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase">Members</th>
-                <th class="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase">Open RFEs</th>
+                <th
+                  class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase cursor-pointer hover:text-gray-700 select-none"
+                  @click="toggleSort('name')"
+                >
+                  Team <span v-if="teamSort === 'name'">{{ teamSortDir === 'asc' ? '▲' : '▼' }}</span>
+                </th>
+                <th
+                  v-if="isAllView"
+                  class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase cursor-pointer hover:text-gray-700 select-none"
+                  @click="toggleSort('org')"
+                >
+                  Org <span v-if="teamSort === 'org'">{{ teamSortDir === 'asc' ? '▲' : '▼' }}</span>
+                </th>
+                <th
+                  class="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase cursor-pointer hover:text-gray-700 select-none"
+                  @click="toggleSort('members')"
+                >
+                  Members <span v-if="teamSort === 'members'">{{ teamSortDir === 'asc' ? '▲' : '▼' }}</span>
+                </th>
+                <th
+                  class="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase cursor-pointer hover:text-gray-700 select-none"
+                  @click="toggleSort('rfe')"
+                >
+                  Open RFEs <span v-if="teamSort === 'rfe'">{{ teamSortDir === 'asc' ? '▲' : '▼' }}</span>
+                </th>
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
@@ -152,6 +173,8 @@ const summary = ref(null)
 const selectedOrg = ref(null)
 const loading = ref(false)
 const error = ref(null)
+const teamSort = ref('members')
+const teamSortDir = ref('desc')
 
 const roleHeadcount = computed(() => {
   if (!summary.value) return {}
@@ -165,7 +188,16 @@ const roleHeadcount = computed(() => {
 
 const sortedTeams = computed(() => {
   if (!summary.value?.teams) return []
-  return [...summary.value.teams].sort((a, b) => (b.memberCount || 0) - (a.memberCount || 0))
+  const dir = teamSortDir.value === 'asc' ? 1 : -1
+  return [...summary.value.teams].sort((a, b) => {
+    switch (teamSort.value) {
+      case 'name': return dir * a.name.localeCompare(b.name)
+      case 'org': return dir * (a.org || '').localeCompare(b.org || '')
+      case 'members': return dir * ((a.memberCount || 0) - (b.memberCount || 0))
+      case 'rfe': return dir * ((a.rfeCount || 0) - (b.rfeCount || 0))
+      default: return 0
+    }
+  })
 })
 
 const topRfeComponents = computed(() => {
@@ -182,6 +214,15 @@ const maxRfeCount = computed(() => {
 })
 
 const isAllView = computed(() => !selectedOrg.value)
+
+function toggleSort(column) {
+  if (teamSort.value === column) {
+    teamSortDir.value = teamSortDir.value === 'asc' ? 'desc' : 'asc'
+  } else {
+    teamSort.value = column
+    teamSortDir.value = (column === 'name' || column === 'org') ? 'asc' : 'desc'
+  }
+}
 
 function goToTeamDirectory() {
   nav.navigateTo('home', selectedOrg.value ? { org: selectedOrg.value } : {})

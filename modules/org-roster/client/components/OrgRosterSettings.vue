@@ -176,6 +176,80 @@
       <p v-if="detectError" class="mt-2 text-xs text-red-600">{{ detectError }}</p>
     </div>
 
+    <!-- Component Name Mapping -->
+    <div class="bg-white border border-gray-200 rounded-lg p-4">
+      <div class="flex items-center justify-between mb-1">
+        <h4 class="text-sm font-medium text-gray-700">Component Name Mapping</h4>
+        <button
+          @click="handleDetectComponents"
+          :disabled="detectingComponents"
+          class="text-xs text-primary-600 hover:text-primary-700 disabled:opacity-50"
+        >
+          {{ detectingComponents ? 'Detecting...' : 'Detect & Match' }}
+        </button>
+      </div>
+      <p class="text-xs text-gray-400 mb-3">Maps spreadsheet component names to Jira project component names for RFE backlog queries.</p>
+
+      <div v-if="componentMappingRows.length > 0" class="space-y-2">
+        <!-- Auto-matched components -->
+        <div
+          v-for="row in autoMatchedComponents"
+          :key="'comp-matched-' + row.sheetComponent"
+          class="flex gap-2 items-center px-3 py-2 bg-green-50 border border-green-200 rounded-lg"
+        >
+          <span class="flex-1 text-sm text-green-800 truncate">{{ row.sheetComponent }}</span>
+          <span class="text-green-400 text-sm">→</span>
+          <span class="flex-1 text-sm text-green-800 truncate">{{ row.selectedComponent }}</span>
+          <span class="inline-flex items-center px-1.5 py-0.5 rounded text-xs bg-green-100 text-green-700">matched</span>
+        </div>
+
+        <!-- Suggested / unmatched components -->
+        <div
+          v-for="row in unmatchedComponents"
+          :key="'comp-unmatched-' + row.sheetComponent"
+          class="rounded-lg"
+          :class="row.isSuggestion && row.selectedComponent ? 'bg-amber-50 border border-amber-200 p-3' : ''"
+        >
+          <div class="flex gap-2 items-center">
+            <span class="flex-1 px-3 py-1.5 text-sm bg-gray-50 border border-gray-200 rounded-lg text-gray-700 truncate">{{ row.sheetComponent }}</span>
+            <span class="text-gray-400 text-sm">→</span>
+            <select
+              v-model="row.selectedComponent"
+              class="flex-1 px-3 py-1.5 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+              :class="row.isSuggestion && row.selectedComponent ? 'border-amber-300 bg-white' : 'border-gray-300'"
+              @change="row.isSuggestion && (row.isSuggestion = false)"
+            >
+              <option value="">— no mapping (use as-is) —</option>
+              <option v-for="comp in jiraComponents" :key="comp" :value="comp">{{ comp }}</option>
+            </select>
+          </div>
+          <div v-if="row.isSuggestion && row.selectedComponent" class="flex items-center justify-between mt-2">
+            <span class="text-xs text-amber-700">Suggested match — does this look right?</span>
+            <div class="flex gap-2">
+              <button
+                @click="row.isSuggestion = false"
+                class="px-2.5 py-1 text-xs font-medium text-white bg-green-600 rounded hover:bg-green-700 transition-colors"
+              >
+                Accept
+              </button>
+              <button
+                @click="row.selectedComponent = ''; row.isSuggestion = false"
+                class="px-2.5 py-1 text-xs font-medium text-gray-600 bg-white border border-gray-300 rounded hover:bg-gray-50 transition-colors"
+              >
+                Dismiss
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-else-if="!detectingComponents" class="text-xs text-gray-400 py-2">
+        Click "Detect & Match" to discover spreadsheet components and match them against Jira.
+      </div>
+
+      <p v-if="componentDetectError" class="mt-2 text-xs text-red-600">{{ componentDetectError }}</p>
+    </div>
+
     <!-- Save All -->
     <div class="flex items-center gap-3">
       <button
@@ -195,7 +269,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useOrgRoster } from '../composables/useOrgRoster'
 
-const { loadSyncStatus, triggerSync, triggerSheetsSync, triggerRfeSync, loadSheetOrgs, loadConfiguredOrgs, loadConfig, saveConfig } = useOrgRoster()
+const { loadSyncStatus, triggerSync, triggerSheetsSync, triggerRfeSync, loadSheetOrgs, loadConfiguredOrgs, loadJiraComponents, loadComponents, loadConfig, saveConfig } = useOrgRoster()
 
 const syncStatus = ref(null)
 const syncing = ref(false)
@@ -207,7 +281,8 @@ const config = ref({
   componentsTab: 'Summary: components per team',
   jiraProject: 'RHAIRFE',
   rfeIssueType: 'Feature Request',
-  orgNameMapping: {}
+  orgNameMapping: {},
+  componentMapping: {}
 })
 const configMessage = ref('')
 const configError = ref(false)
@@ -220,6 +295,15 @@ const detectError = ref('')
 
 const autoMatchedOrgs = computed(() => orgMappingRows.value.filter(r => r.isExactMatch))
 const unmatchedOrgs = computed(() => orgMappingRows.value.filter(r => !r.isExactMatch))
+
+// Component mapping state
+const componentMappingRows = ref([])   // [{ sheetComponent, selectedComponent, isSuggestion, isExactMatch }]
+const jiraComponents = ref([])
+const detectingComponents = ref(false)
+const componentDetectError = ref('')
+
+const autoMatchedComponents = computed(() => componentMappingRows.value.filter(r => r.isExactMatch))
+const unmatchedComponents = computed(() => componentMappingRows.value.filter(r => !r.isExactMatch))
 
 async function refreshStatus() {
   try {
@@ -305,6 +389,63 @@ async function handleDetectOrgs() {
   }
 }
 
+function findBestComponentMatch(sheetComp, jiraComps) {
+  const lower = sheetComp.toLowerCase()
+  // Substring match
+  for (const jc of jiraComps) {
+    const jcLower = jc.toLowerCase()
+    if (lower.includes(jcLower) || jcLower.includes(lower)) {
+      return jc
+    }
+  }
+  // Word overlap
+  const sheetWords = new Set(lower.split(/[\s\-_/]+/))
+  let bestComp = null
+  let bestOverlap = 0
+  for (const jc of jiraComps) {
+    const jcWords = jc.toLowerCase().split(/[\s\-_/]+/)
+    const overlap = jcWords.filter(w => sheetWords.has(w)).length
+    if (overlap > bestOverlap && overlap >= Math.ceil(jcWords.length / 2)) {
+      bestOverlap = overlap
+      bestComp = jc
+    }
+  }
+  return bestComp
+}
+
+async function handleDetectComponents() {
+  detectingComponents.value = true
+  componentDetectError.value = ''
+  try {
+    const [compData, jiraData] = await Promise.all([
+      loadComponents(),
+      loadJiraComponents()
+    ])
+    const sheetComponents = Object.keys(compData?.components || {}).sort()
+    jiraComponents.value = jiraData?.jiraComponents || []
+    const jiraSet = new Set(jiraComponents.value)
+    const savedMapping = config.value.componentMapping || {}
+
+    componentMappingRows.value = sheetComponents.map(sheetComp => {
+      // Exact match to a Jira component
+      if (jiraSet.has(sheetComp)) {
+        return { sheetComponent: sheetComp, selectedComponent: sheetComp, isSuggestion: false, isExactMatch: true }
+      }
+      // Already saved mapping
+      if (savedMapping[sheetComp] && jiraSet.has(savedMapping[sheetComp])) {
+        return { sheetComponent: sheetComp, selectedComponent: savedMapping[sheetComp], isSuggestion: false, isExactMatch: false }
+      }
+      // Try fuzzy match
+      const suggestion = findBestComponentMatch(sheetComp, jiraComponents.value)
+      return { sheetComponent: sheetComp, selectedComponent: suggestion || '', isSuggestion: !!suggestion, isExactMatch: false }
+    })
+  } catch (err) {
+    componentDetectError.value = err.message
+  } finally {
+    detectingComponents.value = false
+  }
+}
+
 async function handleSaveConfig() {
   configMessage.value = ''
   configError.value = false
@@ -316,10 +457,20 @@ async function handleSaveConfig() {
         mapping[row.sheetOrg] = row.selectedOrg
       }
     }
-    await saveConfig({ ...config.value, orgNameMapping: mapping })
+    // Build component mapping from rows (only non-exact-match rows that have a selection)
+    const compMapping = {}
+    for (const row of componentMappingRows.value) {
+      if (!row.isExactMatch && row.selectedComponent) {
+        compMapping[row.sheetComponent] = row.selectedComponent
+      }
+    }
+    await saveConfig({ ...config.value, orgNameMapping: mapping, componentMapping: compMapping })
     // Clear suggestion flags after saving
     for (const row of orgMappingRows.value) {
       if (row.selectedOrg) row.isSuggestion = false
+    }
+    for (const row of componentMappingRows.value) {
+      if (row.selectedComponent) row.isSuggestion = false
     }
     configMessage.value = 'Configuration saved.'
   } catch (err) {
@@ -341,7 +492,7 @@ async function loadConfigData() {
 
 onMounted(async () => {
   await Promise.all([refreshStatus(), loadConfigData()])
-  // Auto-detect orgs so the full mapping (including exact matches) is visible
-  await handleDetectOrgs()
+  // Auto-detect orgs and components so the full mappings are visible
+  await Promise.all([handleDetectOrgs(), handleDetectComponents()])
 })
 </script>

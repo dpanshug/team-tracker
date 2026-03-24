@@ -2,7 +2,7 @@ const { runSync, parseTeamBoardsTab } = require('./sync');
 const { calculateHeadcountByRole } = require('./sync');
 const { fetchAllRfeBacklog } = require('./rfe');
 const { isSyncInProgress, setSyncInProgress, scheduleDaily } = require('./scheduler');
-const { getAllPeople, getOrgKeys } = require('../../../shared/server/roster');
+const { getAllPeople } = require('../../../shared/server/roster');
 const { fetchRawSheet } = require('../../../shared/server/google-sheets');
 const { getOrgDisplayNames } = require('../../team-tracker/server/roster-sync/config');
 
@@ -23,7 +23,8 @@ module.exports = function registerRoutes(router, context) {
       componentsTab: 'Summary: components per team',
       jiraProject: 'RHAIRFE',
       rfeIssueType: 'Feature Request',
-      orgNameMapping: {}
+      orgNameMapping: {},
+      componentMapping: {}
     };
   }
 
@@ -457,7 +458,8 @@ module.exports = function registerRoutes(router, context) {
         if (allComponents.length > 0) {
           const rfeResult = await fetchAllRfeBacklog(allComponents, teams, {
             jiraProject: config.jiraProject,
-            rfeIssueType: config.rfeIssueType
+            rfeIssueType: config.rfeIssueType,
+            componentMapping: config.componentMapping
           });
           writeToStorage('org-roster/rfe-backlog.json', {
             fetchedAt: new Date().toISOString(),
@@ -589,17 +591,68 @@ module.exports = function registerRoutes(router, context) {
     }
   });
 
+  // ─── GET /rfe-config ───
+  // Returns Jira config needed to build RFE search URLs (public, no admin required)
+
+  router.get('/rfe-config', function(req, res) {
+    try {
+      const config = getModuleConfig();
+      res.json({
+        jiraHost: process.env.JIRA_HOST || 'https://redhat.atlassian.net',
+        jiraProject: config.jiraProject || 'RHAIRFE',
+        rfeIssueType: config.rfeIssueType || 'Feature Request',
+        componentMapping: config.componentMapping || {}
+      });
+    } catch (error) {
+      console.error('[org-roster] GET /rfe-config error:', error);
+      res.status(500).json({ error: 'Failed to load RFE config' });
+    }
+  });
+
+  // ─── GET /jira-components ───
+  // Fetches component names from the configured Jira project
+
+  router.get('/jira-components', requireAdmin, async function(req, res) {
+    try {
+      const fetch = require('node-fetch');
+      const token = process.env.JIRA_TOKEN;
+      const email = process.env.JIRA_EMAIL;
+      if (!token || !email) {
+        return res.status(400).json({ error: 'JIRA_TOKEN and JIRA_EMAIL not configured' });
+      }
+      const auth = Buffer.from(`${email}:${token}`).toString('base64');
+      const host = process.env.JIRA_HOST || 'https://redhat.atlassian.net';
+      const config = getModuleConfig();
+      const project = config.jiraProject || 'RHAIRFE';
+
+      const response = await fetch(`${host}/rest/api/2/project/${project}/components`, {
+        headers: { 'Authorization': `Basic ${auth}`, 'Accept': 'application/json' }
+      });
+      if (!response.ok) {
+        const text = await response.text();
+        return res.status(response.status).json({ error: `Jira API error: ${text.slice(0, 200)}` });
+      }
+      const data = await response.json();
+      const jiraComponents = data.map(c => c.name).sort();
+      res.json({ jiraComponents });
+    } catch (error) {
+      console.error('[org-roster] GET /jira-components error:', error);
+      res.status(500).json({ error: 'Failed to fetch Jira components' });
+    }
+  });
+
   // ─── POST /config ───
 
   router.post('/config', requireAdmin, function(req, res) {
     try {
-      const { teamBoardsTab, componentsTab, jiraProject, rfeIssueType, orgNameMapping } = req.body;
+      const { teamBoardsTab, componentsTab, jiraProject, rfeIssueType, orgNameMapping, componentMapping } = req.body;
       const config = getModuleConfig();
       if (teamBoardsTab) config.teamBoardsTab = teamBoardsTab;
       if (componentsTab) config.componentsTab = componentsTab;
       if (jiraProject) config.jiraProject = jiraProject;
       if (rfeIssueType) config.rfeIssueType = rfeIssueType;
       if (orgNameMapping !== undefined) config.orgNameMapping = orgNameMapping;
+      if (componentMapping !== undefined) config.componentMapping = componentMapping;
       writeToStorage('org-roster/config.json', config);
       res.json({ status: 'saved', config });
     } catch (error) {
