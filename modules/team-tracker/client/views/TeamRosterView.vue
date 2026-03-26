@@ -165,7 +165,7 @@ import { useAuth } from '@shared/client/composables/useAuth'
 import { refreshMetrics, getTeamMetrics, getTeamSnapshots, getPersonSnapshots } from '@shared/client/services/api'
 
 const nav = inject('moduleNav')
-const { teams: allTeams, selectOrg } = useRoster()
+const { teams: allTeams } = useRoster()
 
 const team = computed(() => {
   const teamKey = nav.params.value?.teamKey
