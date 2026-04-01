@@ -41,14 +41,6 @@ function getDefaultTargetVersionJql() {
   return TARGET_VERSION_JQL_NAME_FALLBACK
 }
 
-/** Set by fetchIssuesFromJira before buildAnalysis (customfield_* for Target Version). */
-let resolvedAnalysisTargetVersionFieldKey = null
-/** Display name + schema from GET /rest/api/3/field (for UI / diagnostics). */
-let resolvedTargetVersionFieldName = ''
-let resolvedTargetVersionSchemaCustom = ''
-/** Cache for /field discovery when env does not specify customfield_* */
-let cachedTargetVersionFieldMeta = null
-
 const SCHEMA_MULTI_VERSION = 'com.atlassian.jira.plugin.system.customfieldtypes:multiversion'
 const SCHEMA_SINGLE_VERSION = 'com.atlassian.jira.plugin.system.customfieldtypes:version'
 
@@ -57,20 +49,17 @@ const SCHEMA_SINGLE_VERSION = 'com.atlassian.jira.plugin.system.customfieldtypes
  * Prefers multi-version picker with exact name "Target Version".
  */
 async function resolveTargetVersionFieldMeta(jiraRequest) {
-  if (cachedTargetVersionFieldMeta) return cachedTargetVersionFieldMeta
-
   if (/^customfield_\d+$/i.test(TARGET_VERSION_FIELD_ENV)) {
     const id = TARGET_VERSION_FIELD_ENV
     const allFields = await jiraRequest('/rest/api/3/field')
     const f = Array.isArray(allFields) && allFields.find(x => String(x.id || '').toLowerCase() === id.toLowerCase())
-    cachedTargetVersionFieldMeta = f
+    return f
       ? {
           id: f.id,
           name: String(f.name || id).trim(),
           schemaCustom: String(f.schema?.custom || '')
         }
       : { id, name: id, schemaCustom: '' }
-    return cachedTargetVersionFieldMeta
   }
 
   const allFields = await jiraRequest('/rest/api/3/field')
@@ -99,12 +88,11 @@ async function resolveTargetVersionFieldMeta(jiraRequest) {
     )
   }
 
-  cachedTargetVersionFieldMeta = {
+  return {
     id: chosen.id,
     name: String(chosen.name || chosen.id).trim(),
     schemaCustom: String(chosen.schema?.custom || '')
   }
-  return cachedTargetVersionFieldMeta
 }
 
 function normalizeText(value) {
@@ -198,9 +186,9 @@ function extractVersionNamesFromField(fields, fieldId) {
   return n ? [n] : []
 }
 
-function extractTargetVersions(issue) {
-  if (!resolvedAnalysisTargetVersionFieldKey) return []
-  return extractVersionNamesFromField(issue.fields || {}, resolvedAnalysisTargetVersionFieldKey)
+function extractTargetVersions(issue, targetVersionFieldKey) {
+  if (!targetVersionFieldKey) return []
+  return extractVersionNamesFromField(issue.fields || {}, targetVersionFieldKey)
 }
 
 function percentile(values, p) {
@@ -277,7 +265,10 @@ async function fetchOpenReleases(storage) {
   if (PRODUCT_PAGES_RELEASES_URL) {
     const headers = { Accept: 'application/json' }
     if (PRODUCT_PAGES_TOKEN) headers.Authorization = `Bearer ${PRODUCT_PAGES_TOKEN}`
-    const response = await fetch(PRODUCT_PAGES_RELEASES_URL, { headers })
+    const response = await fetch(PRODUCT_PAGES_RELEASES_URL, {
+      headers,
+      signal: AbortSignal.timeout(30000)
+    })
     if (!response.ok) {
       throw new Error(`Product Pages API error (${response.status})`)
     }
@@ -306,6 +297,11 @@ async function fetchOpenReleases(storage) {
   return []
 }
 
+/**
+ * Future / in-flight releases only (due date on or after today).
+ * Past-due GA rows are intentionally excluded from the analysis set — overdue “risk” in buildAnalysis
+ * applies to releases that are still in the catalog with remaining open work, not to historical GAs.
+ */
 function filterUnreleased(releases) {
   const now = new Date()
   const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()))
@@ -318,9 +314,7 @@ function filterUnreleased(releases) {
 
 async function fetchIssuesFromJira() {
   const meta = await resolveTargetVersionFieldMeta(jiraRequest)
-  resolvedAnalysisTargetVersionFieldKey = meta.id
-  resolvedTargetVersionFieldName = meta.name
-  resolvedTargetVersionSchemaCustom = meta.schemaCustom
+  const fieldKey = meta.id
 
   const clause = TARGET_VERSION_JQL_FRAGMENT || getDefaultTargetVersionJql()
 
@@ -337,24 +331,31 @@ async function fetchIssuesFromJira() {
     STORY_POINTS_FIELD,
     FEATURE_WEIGHT_FIELD
   ]
-  if (!fieldList.includes(resolvedAnalysisTargetVersionFieldKey)) {
-    fieldList.push(resolvedAnalysisTargetVersionFieldKey)
+  if (!fieldList.includes(fieldKey)) {
+    fieldList.push(fieldKey)
   }
   const fields = [...new Set(fieldList)].join(',')
   const issues = await fetchAllJqlResults(jiraRequest, jql, fields, { maxResults: 100 }) || []
 
-  if (issues.length > 0 && resolvedAnalysisTargetVersionFieldKey) {
-    const raw0 = issues[0].fields?.[resolvedAnalysisTargetVersionFieldKey]
+  if (issues.length > 0 && fieldKey) {
+    const raw0 = issues[0].fields?.[fieldKey]
     if (raw0 === undefined || raw0 === null) {
       const cfKeys = Object.keys(issues[0].fields || {}).filter(k => /^customfield_/i.test(k))
       console.warn(
-        `[release-analysis] Target Version field "${resolvedAnalysisTargetVersionFieldKey}" not present on Jira search response. ` +
+        `[release-analysis] Target Version field "${fieldKey}" not present on Jira search response. ` +
           `Custom field keys returned: ${cfKeys.slice(0, 12).join(', ') || '(none)'}`
       )
     }
   }
 
-  return issues
+  return {
+    issues,
+    fieldMeta: {
+      id: fieldKey,
+      name: meta.name,
+      schemaCustom: meta.schemaCustom
+    }
+  }
 }
 
 function jiraConnectivityHint(err) {
@@ -450,7 +451,10 @@ function findReleaseForTargetVersion(releaseByText, releaseByKey, versionName) {
   return releaseByKey.get(normalizeKey(versionName))
 }
 
-function buildAnalysis(releases, issues) {
+function buildAnalysis(releases, issues, fieldMeta) {
+  const resolvedAnalysisTargetVersionFieldKey = fieldMeta?.id || null
+  const resolvedTargetVersionFieldName = fieldMeta?.name || ''
+  const resolvedTargetVersionSchemaCustom = fieldMeta?.schemaCustom || ''
   const releaseByText = new Map()
   const releaseByKey = new Map()
   for (const r of releases) {
@@ -502,7 +506,7 @@ function buildAnalysis(releases, issues) {
     const bucket = statusCategoryBucket(statusObj)
     const weight = getWeight(issue)
     const unitWeight = weight == null ? 1 : weight
-    const targetVersions = extractTargetVersions(issue)
+    const targetVersions = extractTargetVersions(issue, resolvedAnalysisTargetVersionFieldKey)
 
     if (ii === 0 && resolvedAnalysisTargetVersionFieldKey) {
       const raw = issue.fields?.[resolvedAnalysisTargetVersionFieldKey]
@@ -704,14 +708,16 @@ module.exports = function registerRoutes(router, context) {
       }
 
       let issues = []
+      let fieldMeta = { id: null, name: '', schemaCustom: '' }
       let jiraWarning = null
       let jiraReleases = []
       try {
-        const [jiraIssues, unreleasedJiraFixVersionData] = await Promise.all([
+        const [jiraResult, unreleasedJiraFixVersionData] = await Promise.all([
           fetchIssuesFromJira(),
           fetchUnreleasedJiraFixVersions()
         ])
-        issues = jiraIssues
+        issues = jiraResult.issues
+        fieldMeta = jiraResult.fieldMeta
         jiraReleases = unreleasedJiraFixVersionData.releases
         if (unreleasedJiraFixVersionData.warnings.length) {
           jiraWarning = unreleasedJiraFixVersionData.warnings.join(' | ')
@@ -725,7 +731,7 @@ module.exports = function registerRoutes(router, context) {
         : openReleases
       const analysisOpenReleases = filterUnreleased(analysisReleases)
 
-      const result = buildAnalysis(analysisOpenReleases, issues)
+      const result = buildAnalysis(analysisOpenReleases, issues, fieldMeta)
       if (jiraWarning) result.warning = jiraWarning
 
       const d = result.targetVersionDiagnostics

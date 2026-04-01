@@ -250,6 +250,33 @@ export default {
       return list.filter(m => enabledBuiltInSlugs.value.includes(m.slug))
     })
 
+    async function loadBuiltInManifestsFromApi() {
+      const bundled = loadModuleManifests()
+      try {
+        const data = await apiRequest('/built-in-modules/manifests')
+        if (!data.modules || !Array.isArray(data.modules)) {
+          allBuiltInManifests.value = bundled
+          return
+        }
+        const bySlug = new Map(bundled.map(m => [m.slug, { ...m }]))
+        for (const m of data.modules) {
+          const prev = bySlug.get(m.slug) || {}
+          bySlug.set(m.slug, {
+            ...prev,
+            ...m,
+            slug: m.slug,
+            client: m.client || prev.client
+          })
+        }
+        allBuiltInManifests.value = [...bySlug.values()].sort(
+          (a, b) => (a.order ?? 100) - (b.order ?? 100)
+        )
+      } catch (err) {
+        console.warn('Failed to load built-in manifests from API, using bundled manifests:', err.message)
+        allBuiltInManifests.value = bundled
+      }
+    }
+
     // Module client cache
     const moduleClients = ref({})
 
@@ -303,6 +330,7 @@ export default {
       gitStaticModules,
       allBuiltInManifests,
       builtInManifests,
+      loadBuiltInManifestsFromApi,
       rosterTeams: teams,
       selectedOrgKey,
       selectOrg,
@@ -376,33 +404,6 @@ export default {
       if ((e.metaKey || e.ctrlKey) && e.key === 'b') {
         e.preventDefault()
         this.sidebarCollapsed = !this.sidebarCollapsed
-      }
-    },
-
-    async loadBuiltInManifestsFromApi() {
-      const bundled = loadModuleManifests()
-      try {
-        const data = await apiRequest('/built-in-modules/manifests')
-        if (!data.modules || !Array.isArray(data.modules)) {
-          this.allBuiltInManifests = bundled
-          return
-        }
-        const bySlug = new Map(bundled.map(m => [m.slug, { ...m }]))
-        for (const m of data.modules) {
-          const prev = bySlug.get(m.slug) || {}
-          bySlug.set(m.slug, {
-            ...prev,
-            ...m,
-            slug: m.slug,
-            client: m.client || prev.client
-          })
-        }
-        this.allBuiltInManifests = [...bySlug.values()].sort(
-          (a, b) => (a.order ?? 100) - (b.order ?? 100)
-        )
-      } catch (err) {
-        console.warn('Failed to load built-in manifests from API, using bundled manifests:', err.message)
-        this.allBuiltInManifests = bundled
       }
     },
 

@@ -46,9 +46,7 @@ async function jiraRequest(path, { method = 'GET', body } = {}) {
       let msg = `Jira API error (${response.status}): ${text}`;
       if (response.status === 401) {
         msg +=
-          '\nAuthentication failed. For Jira Cloud use an API token (not your account password): ' +
-          'https://id.atlassian.com/manage-profile/security/api-tokens — set JIRA_EMAIL to your Atlassian login email ' +
-          'and JIRA_TOKEN to that token in .env, then restart the API server.';
+          ' Auth: use a Jira Cloud API token + JIRA_EMAIL in .env (see https://id.atlassian.com/manage-profile/security/api-tokens), then restart the API.';
       }
       throw new Error(msg);
     }

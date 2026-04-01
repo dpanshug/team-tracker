@@ -1,6 +1,7 @@
 {
   "name": "Release Analysis",
   "slug": "release-analysis",
+  "defaultEnabled": true,
   "description": "Release Analysis for RHAI Releases",
   "icon": "chart-candlestick",
   "order": 10,

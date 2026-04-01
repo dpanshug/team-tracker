@@ -266,9 +266,10 @@
 
 <script setup>
 import { computed, onMounted, ref } from 'vue'
+import { apiRequest, SESSION_CACHE_PREFIX } from '@shared/client/services/api'
 
-/** Persists until tab closes or user clears site data; cleared only by successful Refresh fetch replacing it. */
-const ANALYSIS_CACHE_KEY = 'team-tracker:release-analysis:analysis-v3'
+/** Session-only; aligned with `tt_cache:` naming (localStorage uses tt_cache: for apiRequest caches). */
+const ANALYSIS_CACHE_KEY = `${SESSION_CACHE_PREFIX}release-analysis:analysis-v4`
 
 const loading = ref(false)
 const error = ref('')
@@ -387,19 +388,7 @@ async function loadAnalysis() {
   loading.value = true
   error.value = ''
   try {
-    const res = await fetch('/api/modules/release-analysis/analysis')
-    const contentType = res.headers.get('content-type') || ''
-    let data = null
-    if (contentType.includes('application/json')) {
-      data = await res.json()
-    } else {
-      const body = await res.text()
-      if (!res.ok) {
-        throw new Error(`Backend returned ${res.status}: ${body.slice(0, 200)}`)
-      }
-      throw new Error('Backend returned a non-JSON response')
-    }
-    if (!res.ok) throw new Error(data?.error || 'Failed to load release analysis')
+    const data = await apiRequest('/modules/release-analysis/analysis')
     analysis.value = data
     writeAnalysisCache(data)
   } catch (err) {

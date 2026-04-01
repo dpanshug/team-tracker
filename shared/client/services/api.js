@@ -8,6 +8,8 @@
  */
 
 const CACHE_PREFIX = 'tt_cache:'
+/** Prefix for sessionStorage-only caches (same family as tt_cache: localStorage keys). */
+export const SESSION_CACHE_PREFIX = 'tt_cache:session:'
 
 /**
  * Base URL for REST calls. Relative paths default to `/api` (Vite proxy in dev).

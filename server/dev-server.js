@@ -12,7 +12,6 @@
  */
 
 const express = require('express');
-const path = require('path');
 const errorBuffer = require('./error-buffer');
 const requestTracker = require('./request-tracker');
 
@@ -28,7 +27,22 @@ const { createAuthMiddleware, proxySecretGuard } = require('../shared/server/aut
 const modulesConfig = require('./modules/config');
 const gitSync = require('./modules/git-sync');
 const { createModuleStaticMiddleware, invalidateCache: invalidateStaticCache } = require('./modules/static-serve');
-const { discoverModules } = require('./module-loader');
+const {
+  getDiscoveredModules,
+  createModuleRouters,
+  mountModuleRouters,
+  collectModuleDiagnostics,
+  loadModuleState,
+  saveModuleState,
+  getEffectiveState,
+  reconcileStartupState,
+  resolveEnableOrder,
+  checkDisableAllowed,
+  computeRequiredBy,
+  wasMountedAtStartup
+} = require('./module-loader');
+
+const builtInModules = getDiscoveredModules();
 
 if (DEMO_MODE) {
   console.log('Running in DEMO MODE - using fixture data, Jira/GitHub APIs disabled');
@@ -154,13 +168,13 @@ app.get('/api/whoami', function(req, res) {
 });
 
 /**
- * Built-in module manifests (no auth): used by the shell to list modules from disk.
- * Registered before authMiddleware so the sidebar works on first paint and without session issues.
+ * Built-in module manifests — intentionally public (no auth, no proxy secret).
+ * Payload is low-sensitivity (names, icons, slugs, client entry paths); same class of info as bundled import.meta.glob.
+ * Registered before authMiddleware so the shell can list modules on first paint without a session.
  */
 app.get('/api/built-in-modules/manifests', function(req, res) {
   try {
-    const discovered = discoverModules();
-    const modules = discovered.map(function(mod) {
+    const modules = builtInModules.map(function(mod) {
       return {
         slug: mod.slug,
         name: mod.name,
@@ -369,13 +383,8 @@ app.get('/api/modules', function(req, res) {
 
 // ─── Built-in Module Discovery ───
 // Mount before GET /api/modules/:slug so nested module paths are handled by the module router.
+// builtInModules is populated once via getDiscoveredModules() (see top of file).
 
-const {
-  createModuleRouters, mountModuleRouters, collectModuleDiagnostics,
-  loadModuleState, saveModuleState, getEffectiveState, reconcileStartupState,
-  resolveEnableOrder, checkDisableAllowed, computeRequiredBy, wasMountedAtStartup
-} = require('./module-loader');
-const builtInModules = discoverModules();
 const diagnosticsRegistry = {};
 const moduleContext = { storage: storageModule, requireAuth: authMiddleware, requireAdmin, registerDiagnostics: null };
 
@@ -414,17 +423,6 @@ if (ttRouter && enabledSlugs.has('team-tracker')) {
       req.url = modulePath + req.url;
       ttRouter(req, res, next);
     });
-  }
-}
-
-if (!moduleRouters['release-analysis']) {
-  try {
-    const raRouter = express.Router();
-    require(path.join(__dirname, '../modules/release-analysis/server/index.js'))(raRouter, moduleContext);
-    moduleRouters['release-analysis'] = raRouter;
-    console.log('[dev-server] Loaded release-analysis fallback router');
-  } catch (err) {
-    console.error('[dev-server] release-analysis fallback load failed:', err.message);
   }
 }
 
@@ -891,7 +889,7 @@ app.get('/api/must-gather', requireAdmin, async function(req, res) {
 // Admin: get all built-in modules with state
 app.get('/api/admin/modules/state', requireAdmin, function(req, res) {
   try {
-    const discovered = discoverModules();
+    const discovered = builtInModules;
     const currentState = loadModuleState(storageModule);
     const effective = getEffectiveState(discovered, currentState);
     const requiredBy = computeRequiredBy(discovered);
@@ -962,7 +960,7 @@ app.post('/api/admin/modules/:slug/enable', requireAdmin, function(req, res) {
     }
 
     const slug = req.params.slug;
-    const discovered = discoverModules();
+    const discovered = builtInModules;
     const mod = discovered.find(function(m) { return m.slug === slug; });
     if (!mod) {
       return res.status(404).json({ error: `Module "${slug}" not found` });
@@ -1042,7 +1040,7 @@ app.post('/api/admin/modules/:slug/disable', requireAdmin, function(req, res) {
     }
 
     const slug = req.params.slug;
-    const discovered = discoverModules();
+    const discovered = builtInModules;
     const mod = discovered.find(function(m) { return m.slug === slug; });
     if (!mod) {
       return res.status(404).json({ error: `Module "${slug}" not found` });
@@ -1097,7 +1095,7 @@ app.post('/api/admin/modules/:slug/disable', requireAdmin, function(req, res) {
 // Public (auth required): get enabled built-in module slugs
 app.get('/api/built-in-modules/state', function(req, res) {
   try {
-    const discovered = discoverModules();
+    const discovered = builtInModules;
     let currentState = loadModuleState(storageModule);
     if (!currentState || typeof currentState !== 'object' || Array.isArray(currentState)) {
       currentState = {};
