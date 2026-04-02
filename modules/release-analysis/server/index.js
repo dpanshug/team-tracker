@@ -1,33 +1,7 @@
 const { jiraRequest, JIRA_HOST, fetchAllJqlResults } = require('../../../shared/server/jira')
+const { getConfig, saveConfig, deleteConfig } = require('./config')
 
-const PROJECT_KEYS = (process.env.RELEASE_ANALYSIS_PROJECT_KEYS || 'AIPCC,INFERENG,RHAIENG,RHOAIENG')
-  .split(',')
-  .map(s => s.trim())
-  .filter(Boolean)
-const STORY_POINTS_FIELD = process.env.JIRA_STORY_POINTS_FIELD || 'customfield_10028'
-const FEATURE_WEIGHT_FIELD = process.env.RELEASE_ANALYSIS_WEIGHT_FIELD || STORY_POINTS_FIELD
-const BASELINE_DAYS = Number(process.env.RELEASE_ANALYSIS_BASELINE_DAYS || 180)
-const BASELINE_MODE = (process.env.RELEASE_ANALYSIS_BASELINE_MODE || 'p90').toLowerCase()
-/**
- * Open issues ÷ days remaining: ≤ green → green; above green and ≤ yellow → yellow; above yellow → red (if not overdue).
- * Wider yellow band (default 10 vs old 4) so “pace concern” shows before jumping to red on large backlogs.
- */
-const RISK_ISSUES_PER_DAY_GREEN = Number(process.env.RELEASE_ANALYSIS_RISK_ISSUES_PER_DAY_GREEN || 1)
-const RISK_ISSUES_PER_DAY_YELLOW = Number(process.env.RELEASE_ANALYSIS_RISK_ISSUES_PER_DAY_YELLOW || 10)
-const PRODUCT_PAGES_RELEASES_URL = process.env.PRODUCT_PAGES_RELEASES_URL || ''
-const PRODUCT_PAGES_TOKEN = process.env.PRODUCT_PAGES_TOKEN || ''
-/** If "1"/"true", JQL does not filter by project — use when issues live outside RELEASE_ANALYSIS_PROJECT_KEYS (slower, broader). */
-const JIRA_ALL_PROJECTS = ['1', 'true', 'yes'].includes(String(process.env.RELEASE_ANALYSIS_JIRA_ALL_PROJECTS || '').toLowerCase())
-/**
- * Target Version custom field id (Jira REST). Override with RELEASE_ANALYSIS_TARGET_VERSION_FIELD.
- * Default matches org Target Version picker; discovery via /field is skipped when this is set.
- * Release Analysis never uses Jira Fix version for matching or bucketing.
- */
-const TARGET_VERSION_FIELD_ENV = String(
-  process.env.RELEASE_ANALYSIS_TARGET_VERSION_FIELD || 'customfield_10855'
-).trim()
-/** Optional JQL clause override (default derives cf[N] from RELEASE_ANALYSIS_TARGET_VERSION_FIELD when customfield_*). */
-const TARGET_VERSION_JQL_FRAGMENT = String(process.env.RELEASE_ANALYSIS_TARGET_VERSION_JQL_FRAGMENT || '').trim()
+const DEMO_MODE = process.env.DEMO_MODE === 'true'
 
 /** When field id is not customfield_* (discovery path), JQL uses the multi-picker name. */
 const TARGET_VERSION_JQL_NAME_FALLBACK = '"Target Version[Version Picker (multiple versions)]" is not EMPTY'
@@ -35,8 +9,8 @@ const TARGET_VERSION_JQL_NAME_FALLBACK = '"Target Version[Version Picker (multip
 /**
  * Default JQL for Target Version: REST uses customfield_10855; JQL uses cf[10855] (same field).
  */
-function getDefaultTargetVersionJql() {
-  const m = /^customfield_(\d+)$/i.exec(TARGET_VERSION_FIELD_ENV)
+function getDefaultTargetVersionJql(config) {
+  const m = /^customfield_(\d+)$/i.exec(config.targetVersionField)
   if (m) return `cf[${m[1]}] is not EMPTY`
   return TARGET_VERSION_JQL_NAME_FALLBACK
 }
@@ -48,9 +22,9 @@ const SCHEMA_SINGLE_VERSION = 'com.atlassian.jira.plugin.system.customfieldtypes
  * Resolves the Jira Cloud "Target Version" version-picker field (not Fix version).
  * Prefers multi-version picker with exact name "Target Version".
  */
-async function resolveTargetVersionFieldMeta(jiraRequest) {
-  if (/^customfield_\d+$/i.test(TARGET_VERSION_FIELD_ENV)) {
-    const id = TARGET_VERSION_FIELD_ENV
+async function resolveTargetVersionFieldMeta(jiraRequest, config) {
+  if (/^customfield_\d+$/i.test(config.targetVersionField)) {
+    const id = config.targetVersionField
     const allFields = await jiraRequest('/rest/api/3/field')
     const f = Array.isArray(allFields) && allFields.find(x => String(x.id || '').toLowerCase() === id.toLowerCase())
     return f
@@ -141,11 +115,11 @@ function statusBucketFallback(statusName) {
   return 'to_do'
 }
 
-function getWeight(issue) {
+function getWeight(issue, config) {
   const fields = issue.fields || {}
-  const weight = parseNumber(fields[FEATURE_WEIGHT_FIELD])
+  const weight = parseNumber(fields[config.featureWeightField])
   if (weight != null && weight > 0) return weight
-  const sp = parseNumber(fields[STORY_POINTS_FIELD])
+  const sp = parseNumber(fields[config.storyPointsField])
   if (sp != null && sp > 0) return sp
   return null
 }
@@ -201,13 +175,13 @@ function percentile(values, p) {
 /**
  * Schedule risk from time remaining and open issue count (To Do + Doing), not story points.
  */
-function releaseRiskFromIncompleteAndTime(daysRemaining, incompleteIssues) {
+function releaseRiskFromIncompleteAndTime(daysRemaining, incompleteIssues, config) {
   const inc = Math.max(0, Math.floor(Number(incompleteIssues) || 0))
   if (inc === 0) return 'green'
   if (daysRemaining <= 0) return 'red'
   const perDay = inc / Math.max(1, daysRemaining)
-  if (perDay <= RISK_ISSUES_PER_DAY_GREEN) return 'green'
-  if (perDay <= RISK_ISSUES_PER_DAY_YELLOW) return 'yellow'
+  if (perDay <= config.riskIssuesPerDayGreen) return 'green'
+  if (perDay <= config.riskIssuesPerDayYellow) return 'yellow'
   return 'red'
 }
 
@@ -260,12 +234,12 @@ function safeDaysBetween(fromDate, toDate) {
   return Math.max(0, days)
 }
 
-async function fetchOpenReleases(storage) {
-  // Preferred: configurable Product Pages API endpoint.
-  if (PRODUCT_PAGES_RELEASES_URL) {
+async function fetchOpenReleases(storage, config) {
+  const PRODUCT_PAGES_TOKEN = process.env.PRODUCT_PAGES_TOKEN || ''
+  if (config.productPagesReleasesUrl) {
     const headers = { Accept: 'application/json' }
     if (PRODUCT_PAGES_TOKEN) headers.Authorization = `Bearer ${PRODUCT_PAGES_TOKEN}`
-    const response = await fetch(PRODUCT_PAGES_RELEASES_URL, {
+    const response = await fetch(config.productPagesReleasesUrl, {
       headers,
       signal: AbortSignal.timeout(30000)
     })
@@ -312,15 +286,15 @@ function filterUnreleased(releases) {
   })
 }
 
-async function fetchIssuesFromJira() {
-  const meta = await resolveTargetVersionFieldMeta(jiraRequest)
+async function fetchIssuesFromJira(config) {
+  const meta = await resolveTargetVersionFieldMeta(jiraRequest, config)
   const fieldKey = meta.id
 
-  const clause = TARGET_VERSION_JQL_FRAGMENT || getDefaultTargetVersionJql()
+  const clause = config.targetVersionJqlFragment || getDefaultTargetVersionJql(config)
 
-  const jql = JIRA_ALL_PROJECTS
+  const jql = config.jiraAllProjects
     ? `${clause} ORDER BY updated DESC`
-    : `project in (${PROJECT_KEYS.join(',')}) AND ${clause} ORDER BY updated DESC`
+    : `project in (${config.projectKeys.join(',')}) AND ${clause} ORDER BY updated DESC`
 
   const fieldList = [
     'summary',
@@ -328,8 +302,8 @@ async function fetchIssuesFromJira() {
     'resolutiondate',
     'project',
     'issuetype',
-    STORY_POINTS_FIELD,
-    FEATURE_WEIGHT_FIELD
+    config.storyPointsField,
+    config.featureWeightField
   ]
   if (!fieldList.includes(fieldKey)) {
     fieldList.push(fieldKey)
@@ -373,11 +347,11 @@ function jiraConnectivityHint(err) {
   return ''
 }
 
-async function fetchUnreleasedJiraFixVersions() {
+async function fetchUnreleasedJiraFixVersions(config) {
   const releaseMap = new Map()
   const warnings = []
 
-  for (const projectKey of PROJECT_KEYS) {
+  for (const projectKey of config.projectKeys) {
     try {
       let startAt = 0
       const maxResults = 50
@@ -451,7 +425,7 @@ function findReleaseForTargetVersion(releaseByText, releaseByKey, versionName) {
   return releaseByKey.get(normalizeKey(versionName))
 }
 
-function buildAnalysis(releases, issues, fieldMeta) {
+function buildAnalysis(releases, issues, fieldMeta, config) {
   const resolvedAnalysisTargetVersionFieldKey = fieldMeta?.id || null
   const resolvedTargetVersionFieldName = fieldMeta?.name || ''
   const resolvedTargetVersionSchemaCustom = fieldMeta?.schemaCustom || ''
@@ -488,7 +462,7 @@ function buildAnalysis(releases, issues, fieldMeta) {
 
   const now = new Date()
   const cutoff = new Date(now)
-  cutoff.setDate(cutoff.getDate() - BASELINE_DAYS)
+  cutoff.setDate(cutoff.getDate() - config.baselineDays)
 
   const throughputByTeamMonthly = {}
 
@@ -504,7 +478,7 @@ function buildAnalysis(releases, issues, fieldMeta) {
     const statusObj = issue.fields?.status
     const status = statusObj?.name || 'Unknown'
     const bucket = statusCategoryBucket(statusObj)
-    const weight = getWeight(issue)
+    const weight = getWeight(issue, config)
     const unitWeight = weight == null ? 1 : weight
     const targetVersions = extractTargetVersions(issue, resolvedAnalysisTargetVersionFieldKey)
 
@@ -584,7 +558,7 @@ function buildAnalysis(releases, issues, fieldMeta) {
           availableRatePerDay: 0,
           ratio: 0,
           risk: 'green',
-          baseline: { avgPerMonth: 0, p90PerMonth: 0, mode: BASELINE_MODE }
+          baseline: { avgPerMonth: 0, p90PerMonth: 0, mode: config.baselineMode }
         }
       }
 
@@ -618,7 +592,7 @@ function buildAnalysis(releases, issues, fieldMeta) {
       release.riskSummary = ''
       release.riskDriver = null
       release.daysRemaining = daysRemaining
-      release.capacityMode = BASELINE_MODE
+      release.capacityMode = config.baselineMode
       release.issues.sort((a, b) => a.projectKey.localeCompare(b.projectKey) || a.key.localeCompare(b.key))
       releasesOut.push(release)
       continue
@@ -631,12 +605,12 @@ function buildAnalysis(releases, issues, fieldMeta) {
         ? monthlySeries.reduce((a, b) => a + b, 0) / monthlySeries.length
         : 0
       const p90PerMonth = monthlySeries.length ? percentile(monthlySeries, 90) : 0
-      const baselinePerMonth = BASELINE_MODE === 'avg' ? avgPerMonth : p90PerMonth
+      const baselinePerMonth = config.baselineMode === 'avg' ? avgPerMonth : p90PerMonth
       const availableRatePerDay = baselinePerMonth / 30
       const requiredRatePerDay = daysRemaining > 0 ? team.remaining / daysRemaining : (team.remaining > 0 ? Infinity : 0)
       const ratio = availableRatePerDay > 0 ? requiredRatePerDay / availableRatePerDay : (requiredRatePerDay > 0 ? Infinity : 0)
       const teamIncompleteIssues = (team.issues_to_do || 0) + (team.issues_doing || 0)
-      const teamRisk = releaseRiskFromIncompleteAndTime(daysRemaining, teamIncompleteIssues)
+      const teamRisk = releaseRiskFromIncompleteAndTime(daysRemaining, teamIncompleteIssues, config)
 
       team.baseline.avgPerMonth = +avgPerMonth.toFixed(2)
       team.baseline.p90PerMonth = +p90PerMonth.toFixed(2)
@@ -657,13 +631,13 @@ function buildAnalysis(releases, issues, fieldMeta) {
     if (maxTeamIncomplete === 0) riskDriver = null
 
     const aggIncomplete = incompleteIssueCount(release.totals)
-    const aggRisk = releaseRiskFromIncompleteAndTime(daysRemaining, aggIncomplete)
+    const aggRisk = releaseRiskFromIncompleteAndTime(daysRemaining, aggIncomplete, config)
     release.risk = aggRisk
     release.riskScore = riskScoreFromLevel(aggRisk)
     release.riskSummary = buildReleaseRiskSummary(release, aggRisk, riskDriver, daysRemaining)
     release.riskDriver = riskDriver
     release.daysRemaining = daysRemaining
-    release.capacityMode = BASELINE_MODE
+    release.capacityMode = config.baselineMode
     release.issues.sort((a, b) => a.projectKey.localeCompare(b.projectKey) || a.key.localeCompare(b.key))
     releasesOut.push(release)
   }
@@ -671,14 +645,14 @@ function buildAnalysis(releases, issues, fieldMeta) {
   releasesOut.sort((a, b) => new Date(a.dueDate) - new Date(b.dueDate))
   return {
     generatedAt: new Date().toISOString(),
-    baselineDays: BASELINE_DAYS,
-    capacityMode: BASELINE_MODE,
-    projects: PROJECT_KEYS,
-    jiraQueryScope: JIRA_ALL_PROJECTS ? 'all_projects' : 'project_list',
+    baselineDays: config.baselineDays,
+    capacityMode: config.baselineMode,
+    projects: config.projectKeys,
+    jiraQueryScope: config.jiraAllProjects ? 'all_projects' : 'project_list',
     targetVersionField: resolvedAnalysisTargetVersionFieldKey,
     targetVersionFieldName: resolvedTargetVersionFieldName,
     targetVersionSchemaCustom: resolvedTargetVersionSchemaCustom,
-    targetVersionJql: TARGET_VERSION_JQL_FRAGMENT || getDefaultTargetVersionJql(),
+    targetVersionJql: config.targetVersionJqlFragment || getDefaultTargetVersionJql(config),
     targetVersionDiagnostics: {
       jiraIssuesFetched: issues.length,
       issuesWithTargetVersionParsed: issuesWithParsedTargetVersion,
@@ -686,68 +660,164 @@ function buildAnalysis(releases, issues, fieldMeta) {
       sampleTargetVersionNames: sampleTargetVersionNames
     },
     riskThresholds: {
-      issuesPerDayGreenMax: RISK_ISSUES_PER_DAY_GREEN,
-      issuesPerDayYellowMax: RISK_ISSUES_PER_DAY_YELLOW
+      issuesPerDayGreenMax: config.riskIssuesPerDayGreen,
+      issuesPerDayYellowMax: config.riskIssuesPerDayYellow
     },
     releases: releasesOut
   }
 }
 
+async function runFullAnalysis(storage, config) {
+  const releases = await fetchOpenReleases(storage, config)
+  const openReleases = filterUnreleased(releases)
+  if (!openReleases.length) {
+    throw new Error('No unreleased open releases available. Configure Product Pages Releases URL or upload a release cache.')
+  }
+
+  let issues = []
+  let fieldMeta = { id: null, name: '', schemaCustom: '' }
+  let jiraWarning = null
+  let jiraReleases = []
+  try {
+    const [jiraResult, unreleasedJiraFixVersionData] = await Promise.all([
+      fetchIssuesFromJira(config),
+      fetchUnreleasedJiraFixVersions(config)
+    ])
+    issues = jiraResult.issues
+    fieldMeta = jiraResult.fieldMeta
+    jiraReleases = unreleasedJiraFixVersionData.releases
+    if (unreleasedJiraFixVersionData.warnings.length) {
+      jiraWarning = unreleasedJiraFixVersionData.warnings.join(' | ')
+    }
+  } catch (err) {
+    jiraWarning = `Jira data unavailable: ${err.message}`
+  }
+
+  const analysisReleases = jiraReleases.length
+    ? enrichJiraReleasesWithProductPages(jiraReleases, openReleases)
+    : openReleases
+  const analysisOpenReleases = filterUnreleased(analysisReleases)
+
+  const result = buildAnalysis(analysisOpenReleases, issues, fieldMeta, config)
+  if (jiraWarning) result.warning = jiraWarning
+
+  const d = result.targetVersionDiagnostics
+  if (d && issues.length > 0) {
+    if (d.firstIssueMissingTargetVersionField) {
+      const msg =
+        `Jira issue JSON did not include Target Version (${result.targetVersionField}). ` +
+        'Confirm the Target Version Field setting matches the custom field id in an issue JSON view.'
+      result.warning = result.warning ? `${result.warning} | ${msg}` : msg
+    } else if (d.issuesWithTargetVersionParsed === 0) {
+      const msg =
+        'No Target Version values could be parsed from fetched issues; the field id or response shape may not match.'
+      result.warning = result.warning ? `${result.warning} | ${msg}` : msg
+    }
+  }
+
+  return result
+}
+
+const CACHE_MAX_AGE_MS = 60 * 60 * 1000 // 1 hour
+
 module.exports = function registerRoutes(router, context) {
   const { storage, requireAuth, requireAdmin } = context
+  const { readFromStorage, writeToStorage } = storage
+
+  let refreshState = { running: false, lastResult: null }
+
+  // --- Config routes ---
+
+  router.get('/config', requireAdmin, function(req, res) {
+    const saved = readFromStorage('release-analysis/config.json')
+    const hasStoredConfig = saved && typeof saved === 'object' && !saved._deleted
+    const config = getConfig(readFromStorage)
+    // Never expose featureWeightField fallback in stored form — show raw stored value
+    if (hasStoredConfig && saved.featureWeightField === undefined) {
+      config.featureWeightField = ''
+    }
+    res.json({ config, source: hasStoredConfig ? 'stored' : 'env' })
+  })
+
+  router.post('/config', requireAdmin, function(req, res) {
+    try {
+      saveConfig(writeToStorage, req.body)
+      res.json({ status: 'saved' })
+    } catch (err) {
+      res.status(400).json({ error: err.message })
+    }
+  })
+
+  router.delete('/config', requireAdmin, function(req, res) {
+    deleteConfig(writeToStorage)
+    const config = getConfig(readFromStorage)
+    res.json({ config, source: 'env' })
+  })
+
+  // --- Refresh routes ---
+
+  router.get('/refresh/status', requireAdmin, function(req, res) {
+    res.json(refreshState)
+  })
+
+  router.post('/refresh', requireAdmin, async function(req, res) {
+    if (DEMO_MODE) {
+      return res.json({ status: 'skipped', message: 'Refresh disabled in demo mode' })
+    }
+    if (refreshState.running) {
+      return res.json({ status: 'already_running' })
+    }
+    refreshState = { running: true, startedAt: new Date().toISOString(), lastResult: refreshState.lastResult }
+    res.json({ status: 'started' })
+
+    try {
+      const config = getConfig(readFromStorage)
+      const result = await runFullAnalysis(storage, config)
+      writeToStorage('release-analysis/analysis-cache.json', {
+        cachedAt: new Date().toISOString(),
+        data: result
+      })
+      refreshState.lastResult = {
+        status: 'success',
+        message: `Analysis generated with ${result.releases?.length || 0} release(s)`,
+        completedAt: new Date().toISOString()
+      }
+    } catch (err) {
+      console.error('[release-analysis] Refresh failed:', err)
+      refreshState.lastResult = {
+        status: 'error',
+        message: err.message,
+        completedAt: new Date().toISOString()
+      }
+    } finally {
+      refreshState.running = false
+    }
+  })
+
+  // --- Analysis route ---
 
   router.get('/analysis', requireAuth, async function(req, res) {
     try {
-      const releases = await fetchOpenReleases(storage)
-      const openReleases = filterUnreleased(releases)
-      if (!openReleases.length) {
-        return res.status(400).json({
-          error: 'No unreleased open releases available. Configure PRODUCT_PAGES_RELEASES_URL or upload a release cache.',
-          hint: 'POST /api/modules/release-analysis/admin/releases with { releases: [{ productName, releaseNumber, dueDate }] }'
-        })
-      }
+      const config = getConfig(readFromStorage)
+      const forceRefresh = req.query.refresh === 'true'
 
-      let issues = []
-      let fieldMeta = { id: null, name: '', schemaCustom: '' }
-      let jiraWarning = null
-      let jiraReleases = []
-      try {
-        const [jiraResult, unreleasedJiraFixVersionData] = await Promise.all([
-          fetchIssuesFromJira(),
-          fetchUnreleasedJiraFixVersions()
-        ])
-        issues = jiraResult.issues
-        fieldMeta = jiraResult.fieldMeta
-        jiraReleases = unreleasedJiraFixVersionData.releases
-        if (unreleasedJiraFixVersionData.warnings.length) {
-          jiraWarning = unreleasedJiraFixVersionData.warnings.join(' | ')
-        }
-      } catch (err) {
-        jiraWarning = `Jira data unavailable: ${err.message}`
-      }
-
-      const analysisReleases = jiraReleases.length
-        ? enrichJiraReleasesWithProductPages(jiraReleases, openReleases)
-        : openReleases
-      const analysisOpenReleases = filterUnreleased(analysisReleases)
-
-      const result = buildAnalysis(analysisOpenReleases, issues, fieldMeta)
-      if (jiraWarning) result.warning = jiraWarning
-
-      const d = result.targetVersionDiagnostics
-      if (d && issues.length > 0) {
-        if (d.firstIssueMissingTargetVersionField) {
-          const msg =
-            `Jira issue JSON did not include Target Version (${result.targetVersionField}). ` +
-            'Confirm RELEASE_ANALYSIS_TARGET_VERSION_FIELD matches the custom field id in an issue JSON view.'
-          result.warning = result.warning ? `${result.warning} | ${msg}` : msg
-        } else if (d.issuesWithTargetVersionParsed === 0) {
-          const msg =
-            'No Target Version values could be parsed from fetched issues; the field id or response shape may not match.'
-          result.warning = result.warning ? `${result.warning} | ${msg}` : msg
+      // Serve from cache if fresh
+      if (!forceRefresh) {
+        const cached = readFromStorage('release-analysis/analysis-cache.json')
+        if (cached?.data && cached.cachedAt) {
+          const age = Date.now() - new Date(cached.cachedAt).getTime()
+          if (age < CACHE_MAX_AGE_MS) {
+            return res.json(cached.data)
+          }
         }
       }
 
+      const result = await runFullAnalysis(storage, config)
+      // Update cache on live fetch so both refresh paths stay consistent
+      writeToStorage('release-analysis/analysis-cache.json', {
+        cachedAt: new Date().toISOString(),
+        data: result
+      })
       res.json(result)
     } catch (error) {
       console.error('[release-analysis] analysis error:', error)
@@ -771,7 +841,7 @@ module.exports = function registerRoutes(router, context) {
         return res.status(400).json({ error: 'No valid releases after normalization' })
       }
 
-      storage.writeToStorage('release-analysis/product-pages-releases-cache.json', {
+      writeToStorage('release-analysis/product-pages-releases-cache.json', {
         source: 'manual',
         fetchedAt: new Date().toISOString(),
         releases: normalized
