@@ -233,6 +233,7 @@ secrets/            # Service account keys (gitignored)
 - No TypeScript — plain JavaScript throughout
 - Prefer composables (`src/composables/`) for shared state logic
 - Tailwind utility classes for styling; custom `primary` color palette defined in tailwind.config.mjs
+- **Always run `npm run lint` before committing** — CI will reject lint failures. A pre-commit hook (`lint-staged` + `husky`) auto-runs ESLint on staged files, but verify manually if unsure.
 
 ## Testing
 
