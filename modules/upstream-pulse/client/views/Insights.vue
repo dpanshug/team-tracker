@@ -21,10 +21,15 @@
       </div>
     </div>
 
-    <!-- Loading -->
-    <div v-if="loading" class="flex flex-col items-center justify-center py-24">
-      <div class="animate-spin rounded-full h-10 w-10 border-2 border-gray-200 dark:border-gray-700 border-t-primary-600 mb-4"></div>
-      <p class="text-sm text-gray-500 dark:text-gray-400">Loading insights...</p>
+    <!-- Loading skeleton -->
+    <div v-if="loading" class="space-y-8">
+      <ChartSkeleton height="h-72" />
+      <ChartSkeleton height="h-64" />
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700/60 p-6">
+        <div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-6 w-48 mb-3"></div>
+        <div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-4 w-full mb-2"></div>
+        <div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-4 w-3/4"></div>
+      </div>
     </div>
 
     <!-- Error -->
@@ -60,6 +65,7 @@
 <script setup>
 import { ref, watch, onMounted } from 'vue'
 import { apiRequest } from '@shared/client/services/api'
+import { ChartSkeleton } from '../components/SkeletonLoaders.vue'
 import ContributionTrendChart from '../components/ContributionTrendChart.vue'
 import ContributionMixChart from '../components/ContributionMixChart.vue'
 import ImpactBanner from '../components/ImpactBanner.vue'

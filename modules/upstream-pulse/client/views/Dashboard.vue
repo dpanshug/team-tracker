@@ -6,10 +6,24 @@
       <p class="text-sm text-gray-500 dark:text-gray-400 mt-0.5">Overview of your team's open source impact</p>
     </div>
 
-    <!-- Loading (only on initial load — period changes keep showing stale data) -->
-    <div v-if="loading && !dashboard" class="flex flex-col items-center justify-center py-24">
-      <div class="animate-spin rounded-full h-10 w-10 border-2 border-gray-200 dark:border-gray-700 border-t-primary-600 mb-4"></div>
-      <p class="text-sm text-gray-500 dark:text-gray-400">Loading dashboard...</p>
+    <!-- Skeleton loading (initial load only) -->
+    <div v-if="loading && !dashboard">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <StatCardSkeleton v-for="i in 4" :key="'ss'+i" />
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <ContributionCardSkeleton v-for="i in 4" :key="'cs'+i" />
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+        <OrgCardSkeleton v-for="i in 2" :key="'os'+i" />
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
+        <ProjectCardSkeleton v-for="i in 3" :key="'ps'+i" />
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700/60 p-6">
+        <div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-5 w-36 mb-4"></div>
+        <ContributorRowSkeleton v-for="i in 5" :key="'cr'+i" />
+      </div>
     </div>
 
     <!-- Unreachable state -->
@@ -32,9 +46,13 @@
     </div>
 
     <!-- Fallback: no state matched -->
-    <div v-else-if="!dashboard" class="flex flex-col items-center justify-center py-24">
-      <div class="animate-spin rounded-full h-10 w-10 border-2 border-gray-200 dark:border-gray-700 border-t-primary-600 mb-4"></div>
-      <p class="text-sm text-gray-500 dark:text-gray-400">Loading dashboard...</p>
+    <div v-else-if="!dashboard">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <StatCardSkeleton v-for="i in 4" :key="'fss'+i" />
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <ContributionCardSkeleton v-for="i in 4" :key="'fcs'+i" />
+      </div>
     </div>
 
     <!-- Dashboard content -->
@@ -76,6 +94,9 @@
           </div>
         </nav>
       </div>
+
+      <!-- Content with refetch dim -->
+      <div class="transition-opacity duration-300" :class="{ 'opacity-40 pointer-events-none': loading }">
 
       <!-- Summary Stats -->
       <div id="section-overview" class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -499,6 +520,7 @@
         </template>
       </section>
 
+      </div><!-- /refetch dim wrapper -->
     </template>
   </div>
 </template>
@@ -528,6 +550,7 @@ import LeadershipCard from '../components/LeadershipCard.vue'
 import ContributionTrendChart from '../components/ContributionTrendChart.vue'
 import OrgActivityCard from '../components/OrgActivityCard.vue'
 import ProjectCard from '../components/ProjectCard.vue'
+import { StatCardSkeleton, ContributionCardSkeleton, OrgCardSkeleton, ProjectCardSkeleton, ContributorRowSkeleton } from '../components/SkeletonLoaders.vue'
 
 const nav = inject('moduleNav')
 const MODULE_API = '/modules/upstream-pulse'
