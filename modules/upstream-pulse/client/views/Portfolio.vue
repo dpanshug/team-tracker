@@ -22,9 +22,31 @@
     </div>
 
     <!-- Loading -->
-    <div v-if="loading" class="flex flex-col items-center justify-center py-24">
-      <div class="animate-spin rounded-full h-10 w-10 border-2 border-gray-200 dark:border-gray-700 border-t-primary-600 mb-4"></div>
-      <p class="text-sm text-gray-500 dark:text-gray-400">Loading portfolio...</p>
+    <div v-if="loading">
+      <section class="mb-10">
+        <div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-5 w-32 mb-4"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <OrgCardSkeleton v-for="i in 4" :key="'os'+i" />
+        </div>
+      </section>
+      <section>
+        <div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-5 w-28 mb-4"></div>
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden border border-gray-100 dark:border-gray-700/60">
+          <table class="min-w-full">
+            <thead class="bg-gray-50 dark:bg-gray-750">
+              <tr>
+                <th class="px-6 py-3"><div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-3 w-16"></div></th>
+                <th class="px-6 py-3"><div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-3 w-20"></div></th>
+                <th class="px-6 py-3"><div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-3 w-12"></div></th>
+                <th class="px-6 py-3"><div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-3 w-24 ml-auto"></div></th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+              <TableRowSkeleton v-for="i in 6" :key="'tr'+i" :cols="4" />
+            </tbody>
+          </table>
+        </div>
+      </section>
     </div>
 
     <!-- Error -->
@@ -218,6 +240,7 @@ import {
 } from 'lucide-vue-next'
 import { apiRequest } from '@shared/client/services/api'
 import OrgActivityCard from '../components/OrgActivityCard.vue'
+import { OrgCardSkeleton, TableRowSkeleton } from '../components/SkeletonLoaders.vue'
 
 const nav = inject('moduleNav')
 

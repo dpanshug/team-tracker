@@ -47,10 +47,18 @@
       </div>
     </div>
 
-    <!-- Loading -->
-    <div v-if="loading" class="flex flex-col items-center justify-center py-24">
-      <div class="animate-spin rounded-full h-10 w-10 border-2 border-gray-200 dark:border-gray-700 border-t-primary-600 mb-4"></div>
-      <p class="text-sm text-gray-500 dark:text-gray-400">Loading project data...</p>
+    <!-- Loading skeleton -->
+    <div v-if="loading">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <StatCardSkeleton v-for="i in 4" :key="'ss'+i" />
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <ContributionCardSkeleton v-for="i in 4" :key="'cs'+i" />
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700/60 p-6">
+        <div class="animate-pulse bg-gray-200 dark:bg-gray-700 rounded h-5 w-36 mb-4"></div>
+        <ContributorRowSkeleton v-for="i in 5" :key="'cr'+i" />
+      </div>
     </div>
 
     <!-- Unreachable -->
@@ -393,6 +401,7 @@ import {
   Users as UsersIcon,
 } from 'lucide-vue-next'
 import { apiRequest } from '@shared/client/services/api'
+import { StatCardSkeleton, ContributionCardSkeleton, ContributorRowSkeleton } from '../components/SkeletonLoaders.vue'
 import StatCard from '../components/StatCard.vue'
 import ContributionTypeCard from '../components/ContributionTypeCard.vue'
 import LeadershipCard from '../components/LeadershipCard.vue'
