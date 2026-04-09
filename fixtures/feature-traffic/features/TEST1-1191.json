@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Daniel Ryszka",
+    "displayName": "Merit Blake",
     "accountId": "712020:456909bf-a7c9-40b8-8f28-212fbfbf495a"
   },
   "fixVersions": [
@@ -190,7 +190,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML",
             "DevOps"
@@ -232,7 +232,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML",
             "DevOps"
@@ -253,7 +253,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML"
           ],
@@ -274,7 +274,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML"
           ],
@@ -294,7 +294,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Lukasz Cmielowski",
+          "assignee": "Gray Zimmerman",
           "components": [
             "AutoML"
           ],
@@ -314,7 +314,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML"
           ],
@@ -334,7 +334,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML"
           ],
@@ -354,7 +354,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML"
           ],
@@ -436,7 +436,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Dorota Laczak",
+          "assignee": "Gray Udall",
           "components": [
             "AutoML"
           ],
@@ -518,7 +518,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML"
           ],
@@ -538,7 +538,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML"
           ],
@@ -558,7 +558,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML"
           ],
@@ -578,7 +578,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoML"
           ],
@@ -598,7 +598,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Adrian Sanz Gomiz",
+          "assignee": "Gray Sato",
           "components": [
             "AI Core Platform",
             "AutoML"
@@ -642,7 +642,7 @@
         "summary": "ODH Konflux Release Build Onboarding [AutoML Backend]",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Mhamad Chamseddin",
+        "assignee": "Onyx Webb",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -655,7 +655,7 @@
         "summary": "RHOAI Konflux Onboarding [AutoML Backend]",
         "status": "Review",
         "statusCategory": "In Progress",
-        "assignee": "Mhamad Chamseddin",
+        "assignee": "Onyx Webb",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -668,7 +668,7 @@
         "summary": "RHOAI Konflux Onboarding [AutoGluon KServe Runtime for AutoML]",
         "status": "Testing",
         "statusCategory": "In Progress",
-        "assignee": "Mhamad Chamseddin",
+        "assignee": "Onyx Webb",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -681,7 +681,7 @@
         "summary": "ODH Konflux Release Build Onboarding [AutoGluon KServe Runtime for AutoML]",
         "status": "Review",
         "statusCategory": "In Progress",
-        "assignee": "Mhamad Chamseddin",
+        "assignee": "Onyx Webb",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -694,7 +694,7 @@
         "summary": "Tech Preview - ODH and RHOAI Integrations [AutoML Backend]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Daniel Ryszka",
+        "assignee": "Merit Blake",
         "totalIssues": 21,
         "doneIssues": 9,
         "progressPct": 43,

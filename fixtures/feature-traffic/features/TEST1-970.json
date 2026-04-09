@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Rui Vieira",
+    "displayName": "Onyx Finn",
     "accountId": "70121:5a9a760a-598b-49c2-af0e-60c52f76c598"
   },
   "fixVersions": [],
@@ -63,7 +63,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Safety"
           ],
@@ -81,7 +81,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -102,7 +102,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ugo Giordano",
+          "assignee": "Gray Vaughn",
           "components": [
             "AI Core Platform",
             "AI Core Platform Security",
@@ -124,7 +124,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Safety"
           ],
@@ -164,7 +164,7 @@
         "summary": "[Eng] TrustyAI Operator OOMKilled",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Rui Vieira",
+        "assignee": "Onyx Finn",
         "totalIssues": 4,
         "doneIssues": 4,
         "progressPct": 100,

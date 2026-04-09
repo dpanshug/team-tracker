@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Esa Fazal",
+    "displayName": "Onyx Cole",
     "accountId": "712020:a5f50428-11f6-42e3-b9fa-addfc8f69605"
   },
   "fixVersions": [],
@@ -89,7 +89,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Former Member 12",
+      "assignee": "Kerry Hayes",
       "components": [
         "Documentation",
         "Training Kubeflow"
@@ -107,7 +107,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Saanchi Sampath",
+          "assignee": "Onyx Oates",
           "components": [
             "Documentation",
             "Training Kubeflow"
@@ -128,7 +128,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Saanchi Sampath",
+          "assignee": "Onyx Oates",
           "components": [
             "Documentation",
             "Training Kubeflow"
@@ -167,7 +167,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -187,7 +187,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -205,7 +205,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -223,7 +223,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -241,7 +241,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Minor",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -259,7 +259,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -277,7 +277,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -295,7 +295,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -313,7 +313,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -331,7 +331,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -349,7 +349,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -367,7 +367,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -387,7 +387,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -405,7 +405,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -423,7 +423,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -441,7 +441,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -459,7 +459,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -477,7 +477,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -495,7 +495,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -513,7 +513,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -531,7 +531,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -549,7 +549,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -569,7 +569,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -587,7 +587,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -605,7 +605,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Hari Haran Rathinakumar",
+          "assignee": "Onyx Vale",
           "components": [
             "Training Kubeflow"
           ],
@@ -625,7 +625,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Christoph Goern",
+          "assignee": "Kerry Kelley",
           "components": [
             "Training Kubeflow"
           ],
@@ -643,7 +643,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -663,7 +663,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Esa Fazal",
+          "assignee": "Onyx Cole",
           "components": [
             "Training Kubeflow"
           ],
@@ -702,7 +702,7 @@
         "summary": "[ccs epic] Document Model Checkpointing Support in RHOAI for Kubeflow Trainer",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Saanchi Sampath",
+        "assignee": "Onyx Oates",
         "totalIssues": 2,
         "doneIssues": 1,
         "progressPct": 50,
@@ -715,7 +715,7 @@
         "summary": "Model Checkpointing for Kubeflow Trainer v2 (GA)",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Esa Fazal",
+        "assignee": "Onyx Cole",
         "totalIssues": 28,
         "doneIssues": 28,
         "progressPct": 100,

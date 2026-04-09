@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Rob Greenberg",
+    "displayName": "Onyx Vance",
     "accountId": "712020:6da81bbe-44d3-451a-a220-f20dbe34d3af"
   },
   "fixVersions": [],
@@ -34,7 +34,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Former Member 4",
+      "assignee": "Kerry Joyce",
       "components": [
         "Documentation"
       ],
@@ -67,7 +67,7 @@
         "summary": "[CCS Epic] RHAIE Installation on cloud marketplaces",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Dana Brown",
+        "assignee": "Merit Fischer",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

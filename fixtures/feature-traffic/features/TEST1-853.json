@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Mahmoud Alhaj",
+    "displayName": "Onyx Upton",
     "accountId": "712020:32edded2-aff1-454d-9734-0a31f9cd4a00"
   },
   "fixVersions": [],
@@ -73,7 +73,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -91,7 +91,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -111,7 +111,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -149,7 +149,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -167,7 +167,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -185,7 +185,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "AI Core Platform",
             "Model Serving"
@@ -204,7 +204,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -222,7 +222,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -242,7 +242,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -260,7 +260,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -278,7 +278,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -296,7 +296,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -314,7 +314,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Vedant Mahabaleshwarkar",
+          "assignee": "Onyx Rowe",
           "components": [
             "Model Serving"
           ],
@@ -354,7 +354,7 @@
         "summary": "Implement Model Cache in RHOAI",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Vedant Mahabaleshwarkar",
+        "assignee": "Onyx Rowe",
         "totalIssues": 14,
         "doneIssues": 11,
         "progressPct": 79,

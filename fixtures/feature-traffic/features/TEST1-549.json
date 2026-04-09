@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Jay Koehler",
+    "displayName": "Onyx Kelley",
     "accountId": "606b693110a0a9006fd7ca32"
   },
   "fixVersions": [],
@@ -54,7 +54,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Gerard Ryan",
+          "assignee": "Merit Noble",
           "components": [
             "AI Core Platform"
           ],
@@ -72,7 +72,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Gerard Ryan",
+          "assignee": "Merit Noble",
           "components": [
             "AI Core Platform"
           ],
@@ -132,7 +132,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Gerard Ryan",
+          "assignee": "Merit Noble",
           "components": [
             "AI Core Platform"
           ],
@@ -152,7 +152,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Gerard Ryan",
+          "assignee": "Merit Noble",
           "components": [
             "AI Core Platform"
           ],
@@ -172,7 +172,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Gerard Ryan",
+          "assignee": "Merit Noble",
           "components": [
             "AI Core Platform"
           ],
@@ -192,7 +192,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Gerard Ryan",
+          "assignee": "Merit Noble",
           "components": [
             "AI Core Platform"
           ],
@@ -272,7 +272,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ugo Giordano",
+          "assignee": "Gray Vaughn",
           "components": [
             "AI Core Platform Security"
           ],
@@ -292,7 +292,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Ugo Giordano",
+          "assignee": "Gray Vaughn",
           "components": [
             "AI Core Platform"
           ],
@@ -312,7 +312,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ugo Giordano",
+          "assignee": "Gray Vaughn",
           "components": [
             "AI Core Platform",
             "AI Core Platform Security"
@@ -331,7 +331,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ugo Giordano",
+          "assignee": "Gray Vaughn",
           "components": [
             "AI Core Platform",
             "AI Core Platform Security"
@@ -389,7 +389,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Matthew Stratton",
+          "assignee": "Merit Judd",
           "components": [
             "AI Core Platform"
           ],
@@ -468,7 +468,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Bob Gregor",
+          "assignee": "Merit Winn",
           "components": [
             "AI Core Dashboard"
           ],
@@ -504,7 +504,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Filippe Spolti",
+          "assignee": "Onyx Thorne",
           "components": [
             "Model Serving"
           ],
@@ -522,7 +522,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Raghul M",
+          "assignee": "Frankie Yates",
           "components": [
             "Model Runtimes"
           ],
@@ -562,7 +562,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Rob Bell",
+          "assignee": "Frankie Knox",
           "components": [
             "Training Kubeflow"
           ],
@@ -580,7 +580,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Laura Fitzgerald",
+          "assignee": "Gray Dean",
           "components": [
             "KubeRay"
           ],
@@ -598,7 +598,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Varsha Prasad Narsing",
+          "assignee": "Kerry Dean",
           "components": [
             "Workload Orchestration"
           ],
@@ -616,7 +616,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Luca Giorgi",
+          "assignee": "Onyx Gold",
           "components": [
             "AI Hub"
           ],
@@ -634,7 +634,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Safety"
           ],
@@ -652,7 +652,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -670,7 +670,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Aniket Paluskar",
+          "assignee": "Kerry Ellis",
           "components": [
             "Feature Store"
           ],
@@ -688,7 +688,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Douglas Edgar",
+          "assignee": "Frankie Judd",
           "components": [
             "Llama Stack Core"
           ],
@@ -706,7 +706,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [
             "Model as a Service"
           ],
@@ -724,7 +724,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Filippe Spolti",
+          "assignee": "Onyx Thorne",
           "components": [
             "Model Serving"
           ],
@@ -1041,7 +1041,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Wen Liang",
+          "assignee": "Gray Carter",
           "components": [
             "Model as a Service"
           ],
@@ -1121,7 +1121,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Bob Gregor",
+          "assignee": "Merit Winn",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1157,7 +1157,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Filippe Spolti",
+          "assignee": "Onyx Thorne",
           "components": [
             "Model Serving"
           ],
@@ -1175,7 +1175,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Raghul M",
+          "assignee": "Frankie Yates",
           "components": [
             "Model Runtimes"
           ],
@@ -1233,7 +1233,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Laura Fitzgerald",
+          "assignee": "Gray Dean",
           "components": [
             "KubeRay"
           ],
@@ -1251,7 +1251,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Varsha Prasad Narsing",
+          "assignee": "Kerry Dean",
           "components": [
             "Workload Orchestration"
           ],
@@ -1269,7 +1269,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Luca Giorgi",
+          "assignee": "Onyx Gold",
           "components": [
             "AI Hub"
           ],
@@ -1287,7 +1287,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Safety"
           ],
@@ -1305,7 +1305,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -1323,7 +1323,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Jitendra Yejare",
+          "assignee": "Gray Kelley",
           "components": [
             "Feature Store"
           ],
@@ -1341,7 +1341,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -1359,7 +1359,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [
             "Model as a Service"
           ],
@@ -1377,7 +1377,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Hannah Tosi",
+          "assignee": "Frankie Grant",
           "components": [
             "Notebooks Extensions"
           ],
@@ -1440,7 +1440,7 @@
         "summary": "Use AI agent to detect DfFIPS violations",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Gerard Ryan",
+        "assignee": "Merit Noble",
         "totalIssues": 10,
         "doneIssues": 6,
         "progressPct": 60,
@@ -1453,7 +1453,7 @@
         "summary": "Security scanning automation: PR checks and weekly comprehensive scans",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Ugo Giordano",
+        "assignee": "Gray Vaughn",
         "totalIssues": 4,
         "doneIssues": 4,
         "progressPct": 100,
@@ -1479,7 +1479,7 @@
         "summary": "PoC for repo security scans",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "James Tanner",
+        "assignee": "Gray Palmer",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,

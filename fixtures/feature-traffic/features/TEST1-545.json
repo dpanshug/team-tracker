@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "John Haran",
+    "displayName": "Gray Swift",
     "accountId": "712020:a30bcd9e-6d87-4648-a129-497d103dbfd1"
   },
   "fixVersions": [
@@ -186,7 +186,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -207,7 +207,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Avik Kundu",
+          "assignee": "Frankie Underwood",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -249,7 +249,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "John Haran",
+          "assignee": "Gray Swift",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -270,7 +270,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Minor",
-          "assignee": "John Haran",
+          "assignee": "Gray Swift",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -312,7 +312,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "John Haran",
+          "assignee": "Gray Swift",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -333,7 +333,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "John Haran",
+          "assignee": "Gray Swift",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -354,7 +354,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "John Haran",
+          "assignee": "Gray Swift",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -396,7 +396,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "John Haran",
+          "assignee": "Gray Swift",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -417,7 +417,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Nick Gagan",
+          "assignee": "Onyx Anderson",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -479,7 +479,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "John Haran",
+          "assignee": "Gray Swift",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -500,7 +500,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Nick Gagan",
+          "assignee": "Onyx Anderson",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -602,7 +602,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "John Haran",
+          "assignee": "Gray Swift",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -645,7 +645,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "John Haran",
+          "assignee": "Gray Swift",
           "components": [
             "AI Core Dashboard"
           ],
@@ -666,7 +666,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Denise Hughes",
+          "assignee": "Gray Gold",
           "components": [
             "Update This Field With Components"
           ],
@@ -886,7 +886,7 @@
         "summary": "Investigate Surface Existing Vector Stores for playground",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "John Haran",
+        "assignee": "Gray Swift",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
@@ -899,7 +899,7 @@
         "summary": "Dev Preview Feature Flag for External Vector Stores",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "John Haran",
+        "assignee": "Gray Swift",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
@@ -912,7 +912,7 @@
         "summary": "External Vector Stores Registration During BFF LSD Install",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "John Haran",
+        "assignee": "Gray Swift",
         "totalIssues": 3,
         "doneIssues": 3,
         "progressPct": 100,
@@ -925,7 +925,7 @@
         "summary": "External Vector Store Can Be Enabled in Chat Session Knowledge Tab UI",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "John Haran",
+        "assignee": "Gray Swift",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
@@ -951,7 +951,7 @@
         "summary": "Add External Vector Stores to AI Asset Endpoints (AAE) and update Configure Playground modal",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "John Haran",
+        "assignee": "Gray Swift",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
@@ -964,7 +964,7 @@
         "summary": "Signoff: Surface Existing Vector Stores for playground",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "John Haran",
+        "assignee": "Gray Swift",
         "totalIssues": 2,
         "doneIssues": 1,
         "progressPct": 50,
@@ -977,7 +977,7 @@
         "summary": "Sanity tests for vector stores feature",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "John Haran",
+        "assignee": "Gray Swift",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,

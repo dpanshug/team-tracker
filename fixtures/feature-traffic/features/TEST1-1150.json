@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "David Tam",
+    "displayName": "Onyx Clay",
     "accountId": "712020:7c27708d-5dea-459a-a695-d0cfc6e36a1b"
   },
   "fixVersions": [
@@ -104,7 +104,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Nick Mazzitelli",
+          "assignee": "Gray Oates",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -125,7 +125,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Nick Mazzitelli",
+          "assignee": "Gray Oates",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -146,7 +146,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Anish Surti",
+          "assignee": "Kerry Hale",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -189,7 +189,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Anish Surti",
+          "assignee": "Kerry Hale",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -266,7 +266,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Anish Surti",
+          "assignee": "Kerry Hale",
           "components": [
             "AI Core Dashboard"
           ],
@@ -286,7 +286,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Anish Surti",
+          "assignee": "Kerry Hale",
           "components": [
             "AI Core Dashboard"
           ],
@@ -306,7 +306,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Nick Mazzitelli",
+          "assignee": "Gray Oates",
           "components": [
             "AI Core Dashboard"
           ],
@@ -326,7 +326,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Nick Mazzitelli",
+          "assignee": "Gray Oates",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -347,7 +347,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -368,7 +368,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "AI Core Dashboard"
           ],
@@ -388,7 +388,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nick Mazzitelli",
+          "assignee": "Gray Oates",
           "components": [
             "AI Core Dashboard"
           ],
@@ -408,7 +408,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -497,7 +497,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Zahra Jalia",
+          "assignee": "Gray Dunn",
           "components": [
             "AutoRAG"
           ],
@@ -515,7 +515,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Zahra Jalia",
+          "assignee": "Gray Dunn",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -536,7 +536,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Nikhil Sharma",
+          "assignee": "Kerry Gibbs",
           "components": [
             "AutoRAG"
           ],
@@ -556,7 +556,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Nikhil Sharma",
+          "assignee": "Kerry Gibbs",
           "components": [
             "AutoRAG"
           ],
@@ -596,7 +596,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Anish Surti",
+          "assignee": "Kerry Hale",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -617,7 +617,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Daniel Duong",
+          "assignee": "Onyx Hale",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -638,7 +638,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Jeffrey Ho",
+          "assignee": "Onyx Bishop",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -680,7 +680,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Jeffrey Ho",
+          "assignee": "Onyx Bishop",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -701,7 +701,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Nick Mazzitelli",
+          "assignee": "Gray Oates",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -722,7 +722,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Jeffrey Ho",
+          "assignee": "Onyx Bishop",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -743,7 +743,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Jeffrey Ho",
+          "assignee": "Onyx Bishop",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -764,7 +764,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Jeffrey Ho",
+          "assignee": "Onyx Bishop",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -803,7 +803,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Christopher Jones",
+          "assignee": "Gray Young",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -824,7 +824,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Nick Mazzitelli",
+          "assignee": "Gray Oates",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -845,7 +845,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Anish Surti",
+          "assignee": "Kerry Hale",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -866,7 +866,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Christopher Jones",
+          "assignee": "Gray Young",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -887,7 +887,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Christopher Jones",
+          "assignee": "Gray Young",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -908,7 +908,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Christopher Jones",
+          "assignee": "Gray Young",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -929,7 +929,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Christopher Jones",
+          "assignee": "Gray Young",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -950,7 +950,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Christopher Jones",
+          "assignee": "Gray Young",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -991,7 +991,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Daniel Duong",
+          "assignee": "Onyx Hale",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1012,7 +1012,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Gustavo Murcia",
+          "assignee": "Merit Mead",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1033,7 +1033,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Matthew Thompson",
+          "assignee": "Onyx Jay",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1054,7 +1054,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Nick Mazzitelli",
+          "assignee": "Gray Oates",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1093,7 +1093,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Daniel Duong",
+          "assignee": "Onyx Hale",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1114,7 +1114,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Julia Kyaw",
+          "assignee": "Onyx Flynn",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1153,7 +1153,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Gustavo Murcia",
+          "assignee": "Merit Mead",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1174,7 +1174,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Matthew Thompson",
+          "assignee": "Onyx Jay",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1195,7 +1195,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Matthew Thompson",
+          "assignee": "Onyx Jay",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1216,7 +1216,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Daniel Duong",
+          "assignee": "Onyx Hale",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1237,7 +1237,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Jeffrey Ho",
+          "assignee": "Onyx Bishop",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1258,7 +1258,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Gustavo Murcia",
+          "assignee": "Merit Mead",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1279,7 +1279,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Jeffrey Ho",
+          "assignee": "Onyx Bishop",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1300,7 +1300,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Daniel Duong",
+          "assignee": "Onyx Hale",
           "components": [
             "AI Core Dashboard",
             "AutoRAG"
@@ -1339,7 +1339,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "OpenShift AI Productization"
           ],
@@ -1377,7 +1377,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "AutoRAG",
             "DevOps"
@@ -1396,7 +1396,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "Update This Field With Components"
           ],
@@ -1414,7 +1414,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "DevOps"
           ],
@@ -1432,7 +1432,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Christopher Jones",
+          "assignee": "Gray Young",
           "components": [
             "Update This Field With Components"
           ],
@@ -1450,7 +1450,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Nikhil Sharma",
+          "assignee": "Kerry Gibbs",
           "components": [
             "Update This Field With Components"
           ],
@@ -1468,7 +1468,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "AutoRAG",
             "Update This Field With Components"
@@ -1523,7 +1523,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "AutoRAG"
           ],
@@ -1541,7 +1541,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "Update This Field With Components"
           ],
@@ -1559,7 +1559,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Mhamad Chamseddin",
+          "assignee": "Onyx Webb",
           "components": [
             "AutoRAG"
           ],
@@ -1577,7 +1577,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "AI Core Platform"
           ],
@@ -1617,7 +1617,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "Update This Field With Components"
           ],
@@ -1635,7 +1635,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "Update This Field With Components"
           ],
@@ -1653,7 +1653,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "David Tam",
+          "assignee": "Onyx Clay",
           "components": [
             "Update This Field With Components"
           ],
@@ -1671,7 +1671,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Scott Froberg",
+          "assignee": "Kerry Young",
           "components": [
             "AI Core Platform"
           ],
@@ -1752,7 +1752,7 @@
         "summary": "[3.3] [AutoRAG UI] Results & Evaluation UI",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Nick Mazzitelli",
+        "assignee": "Gray Oates",
         "totalIssues": 7,
         "doneIssues": 4,
         "progressPct": 57,
@@ -1765,7 +1765,7 @@
         "summary": "Dashboard AutoRag - Deployment",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "David Tam",
+        "assignee": "Onyx Clay",
         "totalIssues": 8,
         "doneIssues": 8,
         "progressPct": 100,
@@ -1778,7 +1778,7 @@
         "summary": "ODH Konflux Release Build Onboarding [AutoRAG]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Mhamad Chamseddin",
+        "assignee": "Onyx Webb",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1791,7 +1791,7 @@
         "summary": "RHOAI Konflux Onboarding [AutoRAG]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Mhamad Chamseddin",
+        "assignee": "Onyx Webb",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1804,7 +1804,7 @@
         "summary": "Write / Test AutoRAG Experience e2e scenarios ",
         "status": "Review",
         "statusCategory": "In Progress",
-        "assignee": "Nikhil Sharma",
+        "assignee": "Kerry Gibbs",
         "totalIssues": 4,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1817,7 +1817,7 @@
         "summary": "[1.0] [AutoRAG UI] Foundation & Navigation Setup",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Anish Surti",
+        "assignee": "Kerry Hale",
         "totalIssues": 3,
         "doneIssues": 3,
         "progressPct": 100,
@@ -1830,7 +1830,7 @@
         "summary": "[2.1] [AutoRAG UI] LlamaStack Integration BFF",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Jeffrey Ho",
+        "assignee": "Onyx Bishop",
         "totalIssues": 5,
         "doneIssues": 4,
         "progressPct": 80,
@@ -1843,7 +1843,7 @@
         "summary": "[2.2] [AutoRAG UI] Pipeline Management BFF",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Christopher Jones",
+        "assignee": "Gray Young",
         "totalIssues": 8,
         "doneIssues": 7,
         "progressPct": 88,
@@ -1856,7 +1856,7 @@
         "summary": "[2.3] [AutoRAG UI] S3 Storage & Connections BFF",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Gustavo Murcia",
+        "assignee": "Merit Mead",
         "totalIssues": 4,
         "doneIssues": 4,
         "progressPct": 100,
@@ -1869,7 +1869,7 @@
         "summary": "[3.1] [AutoRAG UI] Landing Page & Run List UI",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Julia Kyaw",
+        "assignee": "Onyx Flynn",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
@@ -1882,7 +1882,7 @@
         "summary": "[3.2] [AutoRAG UI] Create & Configure Experiment Flow",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Matthew Thompson",
+        "assignee": "Onyx Jay",
         "totalIssues": 8,
         "doneIssues": 8,
         "progressPct": 100,
@@ -1895,7 +1895,7 @@
         "summary": "Tech Preview - ODH and RHOAI Integrations [AutoRAG UI]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "David Tam",
+        "assignee": "Onyx Clay",
         "totalIssues": 21,
         "doneIssues": 11,
         "progressPct": 52,

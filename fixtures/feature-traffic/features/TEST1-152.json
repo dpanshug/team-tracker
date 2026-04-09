@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Rob Bell",
+    "displayName": "Frankie Knox",
     "accountId": "712020:a82ef133-297a-4b90-8dc4-298f69e76aa6"
   },
   "fixVersions": [],
@@ -858,7 +858,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Kapil Nema",
+          "assignee": "Merit Gordon",
           "components": [
             "Training Kubeflow"
           ],
@@ -894,7 +894,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Kapil Nema",
+          "assignee": "Merit Gordon",
           "components": [
             "Training Kubeflow"
           ],
@@ -930,7 +930,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Karel Suta",
+          "assignee": "Merit Oliver",
           "components": [
             "Training Kubeflow"
           ],
@@ -948,7 +948,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Kapil Nema",
+          "assignee": "Merit Gordon",
           "components": [
             "Training Kubeflow"
           ],
@@ -968,7 +968,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Karel Suta",
+          "assignee": "Merit Oliver",
           "components": [
             "Training Kubeflow"
           ],
@@ -986,7 +986,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Kapil Nema",
+          "assignee": "Merit Gordon",
           "components": [
             "Training Kubeflow"
           ],
@@ -1022,7 +1022,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Karel Suta",
+          "assignee": "Merit Oliver",
           "components": [
             "Training Kubeflow"
           ],
@@ -1040,7 +1040,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Karel Suta",
+          "assignee": "Merit Oliver",
           "components": [
             "Training Kubeflow"
           ],
@@ -1076,7 +1076,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Kapil Nema",
+          "assignee": "Merit Gordon",
           "components": [
             "Training Kubeflow"
           ],
@@ -1130,7 +1130,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Kapil Nema",
+          "assignee": "Merit Gordon",
           "components": [
             "Training Kubeflow"
           ],
@@ -1184,7 +1184,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Sridhar Pillai",
+          "assignee": "Frankie Tate",
           "components": [
             "Training Kubeflow"
           ],
@@ -1238,7 +1238,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Shilpa Chugh",
+          "assignee": "Kerry Grant",
           "components": [
             "Training Kubeflow"
           ],
@@ -1256,7 +1256,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Shilpa Chugh",
+          "assignee": "Kerry Grant",
           "components": [
             "Training Kubeflow"
           ],
@@ -1274,7 +1274,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Kapil Nema",
+          "assignee": "Merit Gordon",
           "components": [
             "Training Kubeflow"
           ],
@@ -1325,7 +1325,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Former Member 12",
+      "assignee": "Kerry Hayes",
       "components": [
         "Documentation",
         "Training Kubeflow"
@@ -1343,7 +1343,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Rob Bell",
+          "assignee": "Frankie Knox",
           "components": [
             "Training Kubeflow"
           ],
@@ -1361,7 +1361,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Saanchi Sampath",
+          "assignee": "Onyx Oates",
           "components": [
             "Documentation"
           ],
@@ -1379,7 +1379,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Saanchi Sampath",
+          "assignee": "Onyx Oates",
           "components": [
             "Documentation"
           ],
@@ -1397,7 +1397,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Saanchi Sampath",
+          "assignee": "Onyx Oates",
           "components": [
             "Documentation"
           ],
@@ -1531,7 +1531,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Karel Suta",
+          "assignee": "Merit Oliver",
           "components": [
             "DevOps",
             "Training Kubeflow"
@@ -1550,7 +1550,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Kapil Nema",
+          "assignee": "Merit Gordon",
           "components": [
             "DevOps",
             "Training Kubeflow"
@@ -1569,7 +1569,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Owen Watkins",
+          "assignee": "Onyx Noble",
           "components": [
             "Training Kubeflow"
           ],
@@ -1776,7 +1776,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Karel Suta",
+          "assignee": "Merit Oliver",
           "components": [
             "DevOps",
             "Training Kubeflow"
@@ -1983,7 +1983,7 @@
         "summary": "KFTv2 MPI works on OpenShift",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Kapil Nema",
+        "assignee": "Merit Gordon",
         "totalIssues": 8,
         "doneIssues": 3,
         "progressPct": 38,
@@ -1996,7 +1996,7 @@
         "summary": "Create OpenMPI Cluster Training Runtime",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Karel Suta",
+        "assignee": "Merit Oliver",
         "totalIssues": 7,
         "doneIssues": 3,
         "progressPct": 43,
@@ -2009,7 +2009,7 @@
         "summary": "Create OpenMPI benchmarks",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Kapil Nema",
+        "assignee": "Merit Gordon",
         "totalIssues": 9,
         "doneIssues": 2,
         "progressPct": 22,
@@ -2022,7 +2022,7 @@
         "summary": "[ccs Epic] Documentation for MPI workloads in KFTv2",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Saanchi Sampath",
+        "assignee": "Onyx Oates",
         "totalIssues": 10,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2035,7 +2035,7 @@
         "summary": "Tech Preview - ODH and RHOAI Integrations [Kubeflow Trainer MPI Images]",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Karel Suta",
+        "assignee": "Merit Oliver",
         "totalIssues": 14,
         "doneIssues": 5,
         "progressPct": 36,
@@ -2061,7 +2061,7 @@
         "summary": "Tech Preview MPI - Phase 2",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Kapil Nema",
+        "assignee": "Merit Gordon",
         "totalIssues": 6,
         "doneIssues": 0,
         "progressPct": 0,

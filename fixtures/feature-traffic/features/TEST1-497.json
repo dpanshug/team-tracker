@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Adnan Khan",
+    "displayName": "Kerry Vale",
     "accountId": "60a7898adafdf00068c10adc"
   },
   "fixVersions": [],
@@ -179,7 +179,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Claudia Alphonse",
+          "assignee": "Kerry Winn",
           "components": [
             "AI Core Dashboard"
           ],
@@ -199,7 +199,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Dipanshu Gupta",
+          "assignee": "Kerry Jay",
           "components": [
             "AI Core Dashboard"
           ],
@@ -217,7 +217,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Claudia Alphonse",
+          "assignee": "Kerry Winn",
           "components": [
             "AI Core Dashboard"
           ],
@@ -235,7 +235,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Claudia Alphonse",
+          "assignee": "Kerry Winn",
           "components": [
             "AI Core Dashboard"
           ],
@@ -253,7 +253,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Claudia Alphonse",
+          "assignee": "Kerry Winn",
           "components": [
             "AI Core Dashboard"
           ],
@@ -273,7 +273,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Claudia Alphonse",
+          "assignee": "Kerry Winn",
           "components": [
             "AI Core Dashboard"
           ],
@@ -291,7 +291,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Dipanshu Gupta",
+          "assignee": "Kerry Jay",
           "components": [
             "AI Core Dashboard"
           ],
@@ -311,7 +311,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Conor O'Malley",
+          "assignee": "Merit James",
           "components": [
             "AI Core Dashboard"
           ],
@@ -332,7 +332,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Claudia Alphonse",
+          "assignee": "Kerry Winn",
           "components": [
             "AI Core Dashboard"
           ],
@@ -373,7 +373,7 @@
         "summary": "Kueue integration in Workbench overview",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Dipanshu Gupta",
+        "assignee": "Kerry Jay",
         "totalIssues": 9,
         "doneIssues": 6,
         "progressPct": 67,

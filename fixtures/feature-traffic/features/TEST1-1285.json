@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Muneeza Azmat",
+    "displayName": "Onyx Price",
     "accountId": "712020:bb8a6a79-2d44-4fc2-a843-e695a33df84b"
   },
   "fixVersions": [],
@@ -67,7 +67,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -83,7 +83,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Safety"
           ],
@@ -101,7 +101,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Safety"
           ],
@@ -138,7 +138,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -157,7 +157,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -176,7 +176,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Safety"
           ],
@@ -194,7 +194,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Safety"
           ],
@@ -212,7 +212,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Safety"
           ],
@@ -230,7 +230,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Safety"
           ],
@@ -248,7 +248,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Safety"
           ],
@@ -285,7 +285,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -304,7 +304,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Muneeza Azmat",
+          "assignee": "Onyx Price",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -344,7 +344,7 @@
         "summary": "Experiment with AgentDojo",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Muneeza Azmat",
+        "assignee": "Onyx Price",
         "totalIssues": 3,
         "doneIssues": 3,
         "progressPct": 100,
@@ -357,7 +357,7 @@
         "summary": "explore translation+integration of agentDojo attack functions as garak probes",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Muneeza Azmat",
+        "assignee": "Onyx Price",
         "totalIssues": 7,
         "doneIssues": 5,
         "progressPct": 71,
@@ -370,7 +370,7 @@
         "summary": "Agentic Safety frameworks landscape analysis",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Muneeza Azmat",
+        "assignee": "Onyx Price",
         "totalIssues": 2,
         "doneIssues": 0,
         "progressPct": 0,

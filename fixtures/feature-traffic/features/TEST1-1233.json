@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Rob Geada",
+    "displayName": "Frankie Flynn",
     "accountId": "5e258328a7b9540e76f44821"
   },
   "fixVersions": [],
@@ -112,7 +112,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Rob Geada",
+          "assignee": "Frankie Flynn",
           "components": [
             "AI Safety"
           ],
@@ -130,7 +130,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Christina Xu",
+          "assignee": "Kerry James",
           "components": [
             "AI Core Platform",
             "AI Safety"
@@ -151,7 +151,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Rob Geada",
+          "assignee": "Frankie Flynn",
           "components": [
             "AI Safety"
           ],
@@ -208,7 +208,7 @@
         "summary": "Create Standalone Guardrails Deployment mode for TrustyAI Operator",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Rob Geada",
+        "assignee": "Frankie Flynn",
         "totalIssues": 3,
         "doneIssues": 3,
         "progressPct": 100,
@@ -221,7 +221,7 @@
         "summary": "QE: Test the splitting of the TrustyAI operator into subcomponents",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Shelton Cyril",
+        "assignee": "Kerry Sato",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

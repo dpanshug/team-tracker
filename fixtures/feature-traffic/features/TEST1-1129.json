@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Nikhil Kathole",
+    "displayName": "Merit Emery",
     "accountId": "70121:1052a58b-2d69-4663-b865-ce2f8db94c68"
   },
   "fixVersions": [],
@@ -153,7 +153,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -171,7 +171,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -189,7 +189,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -207,7 +207,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -225,7 +225,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -243,7 +243,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -261,7 +261,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -279,7 +279,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Abhijeet Dhumal",
+          "assignee": "Merit Rowe",
           "components": [
             "Feature Store"
           ],
@@ -297,7 +297,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Abhijeet Dhumal",
+          "assignee": "Merit Rowe",
           "components": [
             "Feature Store"
           ],
@@ -315,7 +315,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -333,7 +333,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Abhijeet Dhumal",
+          "assignee": "Merit Rowe",
           "components": [
             "Feature Store"
           ],
@@ -351,7 +351,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -369,7 +369,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -387,7 +387,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -405,7 +405,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Abhijeet Dhumal",
+          "assignee": "Merit Rowe",
           "components": [
             "Feature Store"
           ],
@@ -423,7 +423,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -441,7 +441,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -459,7 +459,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -477,7 +477,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nikhil Kathole",
+          "assignee": "Merit Emery",
           "components": [
             "Feature Store"
           ],
@@ -496,7 +496,7 @@
       "status": "Closed",
       "statusCategory": "Done",
       "priority": "Major",
-      "assignee": "Former Member 4",
+      "assignee": "Kerry Joyce",
       "components": [
         "Documentation",
         "Feature Store"
@@ -514,7 +514,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Former Member 4",
+      "assignee": "Kerry Joyce",
       "components": [
         "Documentation"
       ],
@@ -531,7 +531,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Dana Brown",
+          "assignee": "Merit Fischer",
           "components": [
             "Documentation"
           ],
@@ -549,7 +549,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Dana Brown",
+          "assignee": "Merit Fischer",
           "components": [
             "Documentation"
           ],
@@ -588,7 +588,7 @@
         "summary": "Feast Feature Server & On-Demand Transformations Performance Optimization",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Nikhil Kathole",
+        "assignee": "Merit Emery",
         "totalIssues": 19,
         "doneIssues": 18,
         "progressPct": 95,
@@ -601,7 +601,7 @@
         "summary": "[ccs Epic] Feast Feature Server & On-Demand Transformations Performance Optimization",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Dana Brown",
+        "assignee": "Merit Fischer",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -614,7 +614,7 @@
         "summary": "[ccs Epic] Document Feast Feature Server & On-Demand Transformations Performance - GA 3.4 (May)",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Dana Brown",
+        "assignee": "Merit Fischer",
         "totalIssues": 2,
         "doneIssues": 1,
         "progressPct": 50,

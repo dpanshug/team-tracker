@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Chris Hambridge",
+    "displayName": "Onyx Pierce",
     "accountId": "557058:ec20c857-da91-474b-990c-82f291123602"
   },
   "fixVersions": [],
@@ -165,7 +165,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -183,7 +183,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -201,7 +201,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "DevOps"
           ],
@@ -219,7 +219,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -237,7 +237,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -255,7 +255,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Rob Greenberg",
+          "assignee": "Onyx Vance",
           "components": [
             "AI Hub"
           ],
@@ -275,7 +275,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "DevOps"
           ],
@@ -293,7 +293,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -311,7 +311,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -329,7 +329,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Core Platform"
           ],
@@ -349,7 +349,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -367,7 +367,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Core Platform"
           ],
@@ -405,7 +405,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -443,7 +443,7 @@
         "summary": "Dev Preview - ODH and RHOAI Integrations [AI Hub/Integrate Validated Tool-Calling Metadata in RHOAI Catalog]",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Chris Hambridge",
+        "assignee": "Onyx Pierce",
         "totalIssues": 12,
         "doneIssues": 12,
         "progressPct": 100,
@@ -456,7 +456,7 @@
         "summary": "Model Catalog Tool-Calling Metadata & Visibility",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Chris Hambridge",
+        "assignee": "Onyx Pierce",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,

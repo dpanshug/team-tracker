@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Chris Hambridge",
+    "displayName": "Onyx Pierce",
     "accountId": "557058:ec20c857-da91-474b-990c-82f291123602"
   },
   "fixVersions": [],
@@ -138,7 +138,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -156,7 +156,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "OpenShift AI Productization"
           ],
@@ -174,7 +174,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "DevOps"
           ],
@@ -192,7 +192,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Rob Greenberg",
+          "assignee": "Onyx Vance",
           "components": [
             "AI Hub"
           ],
@@ -212,7 +212,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -230,7 +230,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -248,7 +248,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -266,7 +266,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -284,7 +284,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "DevOps"
           ],
@@ -302,7 +302,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Debarati Basu-Nag",
+          "assignee": "Kerry Oliver",
           "components": [
             "AI Hub"
           ],
@@ -320,7 +320,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Core Platform"
           ],
@@ -340,7 +340,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Core Platform"
           ],
@@ -360,7 +360,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -378,7 +378,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -396,7 +396,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -414,7 +414,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -432,7 +432,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -450,7 +450,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -468,7 +468,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -486,7 +486,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -504,7 +504,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Core Platform"
           ],
@@ -524,7 +524,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -543,7 +543,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Former Member 1",
+      "assignee": "Gray Ellis",
       "components": [
         "Documentation"
       ],
@@ -560,7 +560,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Stephen McCarthy",
+          "assignee": "Merit Voss",
           "components": [
             "Documentation"
           ],
@@ -578,7 +578,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Stephen McCarthy",
+          "assignee": "Merit Voss",
           "components": [
             "Documentation"
           ],
@@ -614,7 +614,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -653,7 +653,7 @@
         "summary": "Tech Preview - ODH and RHOAI Integrations [AI Hub/vLLM optimal config recipe in RHOAI Catalog]",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Chris Hambridge",
+        "assignee": "Onyx Pierce",
         "totalIssues": 22,
         "doneIssues": 22,
         "progressPct": 100,
@@ -666,7 +666,7 @@
         "summary": "[ccs Epic] Document vLLM optimal config recipe in AI Hub - TP 3.4",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Stephen McCarthy",
+        "assignee": "Merit Voss",
         "totalIssues": 2,
         "doneIssues": 0,
         "progressPct": 0,
@@ -679,7 +679,7 @@
         "summary": "vLLM Optimal Config Recipes in RHOAI Catalog",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Chris Hambridge",
+        "assignee": "Onyx Pierce",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,

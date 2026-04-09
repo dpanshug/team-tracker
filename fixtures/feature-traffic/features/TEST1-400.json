@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Blocker",
   "assignee": {
-    "displayName": "Stefan Mattejiet",
+    "displayName": "Onyx Sato",
     "accountId": "5c7d358f2d06b11cf7e38156"
   },
   "fixVersions": [],
@@ -162,7 +162,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Lena Horsley",
+          "assignee": "Kerry Knox",
           "components": [
             "Customer Exploration & Test"
           ],
@@ -182,7 +182,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Brid Mackey",
+          "assignee": "Kerry Gordon",
           "components": [
             "Customer Exploration & Test"
           ],
@@ -202,7 +202,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Charlie Doern",
+          "assignee": "Kerry Rand",
           "components": [
             "AI Core Platform",
             "Customer Exploration & Test"
@@ -223,7 +223,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Nelesh Singla",
+          "assignee": "Gray Grant",
           "components": [
             "AI Pipelines",
             "Customer Exploration & Test"
@@ -244,7 +244,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Varsha Prasad Narsing",
+          "assignee": "Kerry Dean",
           "components": [
             "Customer Exploration & Test",
             "Gen AI Studio",
@@ -267,7 +267,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Karel Suta",
+          "assignee": "Merit Oliver",
           "components": [
             "Customer Exploration & Test",
             "Training Kubeflow"
@@ -288,7 +288,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Eric Duen",
+          "assignee": "Onyx Winn",
           "components": [
             "Customer Exploration & Test",
             "Llama Stack Core"
@@ -309,7 +309,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Steven Grubb",
+          "assignee": "Gray Park",
           "components": [
             "Customer Exploration & Test",
             "Model Runtimes"
@@ -330,7 +330,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Jamie Land",
+          "assignee": "Onyx Voss",
           "components": [
             "Customer Exploration & Test",
             "Model as a Service"
@@ -351,7 +351,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Safety",
             "Customer Exploration & Test"
@@ -372,7 +372,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andres Llausas",
+          "assignee": "Gray Anderson",
           "components": [
             "Customer Exploration & Test",
             "llm-d",
@@ -394,7 +394,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andrea Tarocchi",
+          "assignee": "Kerry Blake",
           "components": [
             "Customer Exploration & Test",
             "Workload Orchestration"
@@ -415,7 +415,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Cathal O'Connor",
+          "assignee": "Merit Palmer",
           "components": [
             "Customer Exploration & Test",
             "Workload Orchestration"
@@ -436,7 +436,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Harshad Reddy Nalla",
+          "assignee": "Onyx Zane",
           "components": [
             "Customer Exploration & Test",
             "Notebooks Extensions",
@@ -460,7 +460,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Nick Ommen",
+          "assignee": "Frankie Dean",
           "components": [
             "Customer Exploration & Test",
             "Notebooks Images"
@@ -481,7 +481,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Debarati Basu-Nag",
+          "assignee": "Kerry Oliver",
           "components": [
             "AI Hub",
             "Customer Exploration & Test"
@@ -502,7 +502,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Anthony Coughlin",
+          "assignee": "Gray Rand",
           "components": [
             "AI Core Dashboard",
             "Customer Exploration & Test"
@@ -523,7 +523,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Srihari Venkataramaiah",
+          "assignee": "Kerry North",
           "components": [
             "Customer Exploration & Test",
             "Feature Store"
@@ -654,7 +654,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Lena Horsley",
+          "assignee": "Kerry Knox",
           "components": [
             "Customer Exploration & Test"
           ],
@@ -694,7 +694,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Thom Carlin",
+          "assignee": "Kerry Flynn",
           "components": [
             "Customer Exploration & Test"
           ],
@@ -732,7 +732,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Customer Exploration & Test",
             "Llama Stack Core"
@@ -753,7 +753,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Cesar Francisco San Nicolas Martinez",
+          "assignee": "Kerry Chang",
           "components": [
             "Customer Exploration & Test",
             "Workload Orchestration"
@@ -774,7 +774,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Jorge Garcia Oncins",
+          "assignee": "Kerry Swift",
           "components": [
             "Customer Exploration & Test",
             "RAG + Vector DB"
@@ -796,7 +796,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Harshad Reddy Nalla",
+          "assignee": "Onyx Zane",
           "components": [
             "Customer Exploration & Test",
             "Notebooks Extensions",
@@ -818,7 +818,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Safety",
             "Customer Exploration & Test"
@@ -839,7 +839,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Laura Fitzgerald",
+          "assignee": "Gray Dean",
           "components": [
             "Customer Exploration & Test",
             "KubeRay"
@@ -861,7 +861,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Jiri Danek",
+          "assignee": "Frankie Zane",
           "components": [
             "Customer Exploration & Test",
             "Notebooks Images"
@@ -882,7 +882,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Steven Grubb",
+          "assignee": "Gray Park",
           "components": [
             "Customer Exploration & Test",
             "Model Runtimes"
@@ -903,7 +903,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andres Llausas",
+          "assignee": "Gray Anderson",
           "components": [
             "Customer Exploration & Test",
             "llm-d",
@@ -925,7 +925,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Nelesh Singla",
+          "assignee": "Gray Grant",
           "components": [
             "AI Pipelines",
             "Customer Exploration & Test"
@@ -946,7 +946,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Swati Mukund Bagal",
+          "assignee": "Merit Tate",
           "components": [
             "Customer Exploration & Test",
             "Model as a Service"
@@ -967,7 +967,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Varsha Prasad Narsing",
+          "assignee": "Kerry Dean",
           "components": [
             "Customer Exploration & Test",
             "Gen AI Studio"
@@ -988,7 +988,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Kevin Howell",
+          "assignee": "Kerry Rowe",
           "components": [
             "AI Core Platform",
             "Customer Exploration & Test"
@@ -1028,7 +1028,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Srihari Venkataramaiah",
+          "assignee": "Kerry North",
           "components": [
             "Customer Exploration & Test",
             "Feature Store"
@@ -1049,7 +1049,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Umberto Manganiello",
+          "assignee": "Merit Ingram",
           "components": [
             "Workload Orchestration"
           ],
@@ -1106,7 +1106,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Thom Carlin",
+          "assignee": "Kerry Flynn",
           "components": [
             "AI Core Platform",
             "Customer Exploration & Test"
@@ -1125,7 +1125,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Neha Chopra",
+          "assignee": "Gray Reeves",
           "components": [
             "Customer Exploration & Test",
             "Gen AI Studio"
@@ -1144,7 +1144,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Neha Chopra",
+          "assignee": "Gray Reeves",
           "components": [
             "Customer Exploration & Test",
             "Model as a Service"
@@ -1163,7 +1163,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Nelesh Singla",
+          "assignee": "Gray Grant",
           "components": [
             "AI Pipelines",
             "Customer Exploration & Test"
@@ -1182,7 +1182,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Andres Llausas",
+          "assignee": "Gray Anderson",
           "components": [
             "Customer Exploration & Test",
             "Model Serving"
@@ -1201,7 +1201,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Thom Carlin",
+          "assignee": "Kerry Flynn",
           "components": [
             "Customer Exploration & Test",
             "Model Runtimes"
@@ -1220,7 +1220,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Lena Horsley",
+          "assignee": "Kerry Knox",
           "components": [
             "Customer Exploration & Test",
             "Notebooks Images"
@@ -1239,7 +1239,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Neha Chopra",
+          "assignee": "Gray Reeves",
           "components": [
             "Customer Exploration & Test",
             "KubeRay"
@@ -1258,7 +1258,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Lena Horsley",
+          "assignee": "Kerry Knox",
           "components": [
             "AI Safety",
             "Customer Exploration & Test"
@@ -1277,7 +1277,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Lena Horsley",
+          "assignee": "Kerry Knox",
           "components": [
             "Customer Exploration & Test",
             "Notebooks Extensions",
@@ -1297,7 +1297,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Jiri Petrlik",
+          "assignee": "Merit Cross",
           "components": [
             "Customer Exploration & Test",
             "RAG_Agentic",
@@ -1320,7 +1320,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Thom Carlin",
+          "assignee": "Kerry Flynn",
           "components": [
             "Customer Exploration & Test",
             "Workload Orchestration"
@@ -1339,7 +1339,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Artemy Hladenko",
+          "assignee": "Onyx Lambert",
           "components": [
             "Customer Exploration & Test",
             "Llama Stack Core"
@@ -1380,7 +1380,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Stefan Mattejiet",
+          "assignee": "Onyx Sato",
           "components": [
             "Customer Exploration & Test"
           ],
@@ -1418,7 +1418,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Blocker",
-          "assignee": "Laura Fitzgerald",
+          "assignee": "Gray Dean",
           "components": [
             "Customer Exploration & Test",
             "KubeRay"
@@ -1439,7 +1439,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Customer Exploration & Test",
             "Llama Stack Core"
@@ -1460,7 +1460,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Cesar Francisco San Nicolas Martinez",
+          "assignee": "Kerry Chang",
           "components": [
             "Customer Exploration & Test",
             "Workload Orchestration"
@@ -1481,7 +1481,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Jorge Garcia Oncins",
+          "assignee": "Kerry Swift",
           "components": [
             "Customer Exploration & Test",
             "RAG + Vector DB"
@@ -1503,7 +1503,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Jan Stourac",
+          "assignee": "Kerry Lowe",
           "components": [
             "Customer Exploration & Test",
             "Notebooks Extensions",
@@ -1526,7 +1526,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Safety",
             "Customer Exploration & Test"
@@ -1547,7 +1547,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Jiri Danek",
+          "assignee": "Frankie Zane",
           "components": [
             "Customer Exploration & Test",
             "Notebooks Images"
@@ -1568,7 +1568,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Blocker",
-          "assignee": "Raghul M",
+          "assignee": "Frankie Yates",
           "components": [
             "Customer Exploration & Test",
             "Model Runtimes"
@@ -1589,7 +1589,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Andres Llausas",
+          "assignee": "Gray Anderson",
           "components": [
             "Customer Exploration & Test",
             "Model Serving"
@@ -1610,7 +1610,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Nelesh Singla",
+          "assignee": "Gray Grant",
           "components": [
             "AI Pipelines",
             "Customer Exploration & Test"
@@ -1631,7 +1631,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Blocker",
-          "assignee": "Swati Mukund Bagal",
+          "assignee": "Merit Tate",
           "components": [
             "Customer Exploration & Test",
             "Model as a Service"
@@ -1652,7 +1652,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Blocker",
-          "assignee": "Varsha Prasad Narsing",
+          "assignee": "Kerry Dean",
           "components": [
             "Customer Exploration & Test",
             "Gen AI Studio"
@@ -1673,7 +1673,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Kevin Howell",
+          "assignee": "Kerry Rowe",
           "components": [
             "AI Core Platform",
             "Customer Exploration & Test"
@@ -1695,7 +1695,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Scott Froberg",
+          "assignee": "Kerry Young",
           "components": [
             "Customer Exploration & Test",
             "Workload Orchestration"
@@ -1714,7 +1714,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Srihari Venkataramaiah",
+          "assignee": "Kerry North",
           "components": [
             "Customer Exploration & Test",
             "Feature Store"
@@ -1735,7 +1735,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Umberto Manganiello",
+          "assignee": "Merit Ingram",
           "components": [
             "Customer Exploration & Test",
             "Training Kubeflow"
@@ -1790,7 +1790,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Max Whittingham",
+          "assignee": "Onyx Hunt",
           "components": [
             "AI Core Platform"
           ],
@@ -1811,7 +1811,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Marian Macik",
+          "assignee": "Gray Webb",
           "components": [
             "AI Core Platform"
           ],
@@ -1832,7 +1832,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Nelesh Singla",
+          "assignee": "Gray Grant",
           "components": [
             "AI Pipelines"
           ],
@@ -1852,7 +1852,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Cesar Francisco San Nicolas Martinez",
+          "assignee": "Kerry Chang",
           "components": [
             "AI Core Platform"
           ],
@@ -1873,7 +1873,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Thomas Recchiuto",
+          "assignee": "Onyx Chang",
           "components": [
             "llm-d",
             "Model Serving"
@@ -1894,7 +1894,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Harshad Reddy Nalla",
+          "assignee": "Onyx Zane",
           "components": [
             "Notebooks Server"
           ],
@@ -1915,7 +1915,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Laura Fitzgerald",
+          "assignee": "Gray Dean",
           "components": [
             "KubeRay"
           ],
@@ -1935,7 +1935,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Safety"
           ],
@@ -1955,7 +1955,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -1975,7 +1975,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Anthony Coughlin",
+          "assignee": "Gray Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1995,7 +1995,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Srihari Venkataramaiah",
+          "assignee": "Kerry North",
           "components": [
             "Feature Store"
           ],
@@ -2015,7 +2015,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Umberto Manganiello",
+          "assignee": "Merit Ingram",
           "components": [
             "Training Kubeflow"
           ],
@@ -2035,7 +2035,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Grainne Jennings",
+          "assignee": "Merit Underwood",
           "components": [
             "Documentation"
           ],
@@ -2055,7 +2055,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Stefan Mattejiet",
+          "assignee": "Onyx Sato",
           "components": [
             "Customer Exploration & Test"
           ],
@@ -2075,7 +2075,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Max Whittingham",
+          "assignee": "Onyx Hunt",
           "components": [
             "AI Core Platform"
           ],
@@ -2118,7 +2118,7 @@
         "summary": "3.x Migration and Upgrade Planning",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Thom Carlin",
+        "assignee": "Kerry Flynn",
         "totalIssues": 18,
         "doneIssues": 18,
         "progressPct": 100,
@@ -2131,7 +2131,7 @@
         "summary": "2.25z to 3.x Upgrade Scenarios definitions",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Thom Carlin",
+        "assignee": "Kerry Flynn",
         "totalIssues": 6,
         "doneIssues": 6,
         "progressPct": 100,
@@ -2144,7 +2144,7 @@
         "summary": "Upgrade support work",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Thom Carlin",
+        "assignee": "Kerry Flynn",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,
@@ -2157,7 +2157,7 @@
         "summary": "2.25z to 3.x Component upgrade execution",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Thom Carlin",
+        "assignee": "Kerry Flynn",
         "totalIssues": 16,
         "doneIssues": 16,
         "progressPct": 100,
@@ -2170,7 +2170,7 @@
         "summary": "Customer tools and notebooks",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Thom Carlin",
+        "assignee": "Kerry Flynn",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2183,7 +2183,7 @@
         "summary": "Create 2.25z component representative workloads",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Thom Carlin",
+        "assignee": "Kerry Flynn",
         "totalIssues": 13,
         "doneIssues": 13,
         "progressPct": 100,
@@ -2196,7 +2196,7 @@
         "summary": "2.25z to 3.x Upgrade Scenarios Execution",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Thom Carlin",
+        "assignee": "Kerry Flynn",
         "totalIssues": 1,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2209,7 +2209,7 @@
         "summary": "2.25z to 3.x Component upgrade execution in disconnected environment",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Thom Carlin",
+        "assignee": "Kerry Flynn",
         "totalIssues": 16,
         "doneIssues": 11,
         "progressPct": 69,
@@ -2222,7 +2222,7 @@
         "summary": "[odh-cli 2.25 to 3.3] Component deliverables for upgrade helper (pre-checks and scripts)",
         "status": "Review",
         "statusCategory": "In Progress",
-        "assignee": "Luca Burgazzoli",
+        "assignee": "Frankie Park",
         "totalIssues": 15,
         "doneIssues": 11,
         "progressPct": 73,

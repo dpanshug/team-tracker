@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Normal",
   "assignee": {
-    "displayName": "Matteo Mortari",
+    "displayName": "Gray Graham",
     "accountId": "5b6859ac36d4343beb82c7a7"
   },
   "fixVersions": [],
@@ -108,7 +108,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Matteo Mortari",
+          "assignee": "Gray Graham",
           "components": [
             "AI Evaluations"
           ],
@@ -126,7 +126,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Matteo Mortari",
+          "assignee": "Gray Graham",
           "components": [
             "AI Evaluations"
           ],
@@ -144,7 +144,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Matteo Mortari",
+          "assignee": "Gray Graham",
           "components": [
             "AI Evaluations"
           ],
@@ -162,7 +162,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Matteo Mortari",
+          "assignee": "Gray Graham",
           "components": [
             "AI Evaluations"
           ],
@@ -216,7 +216,7 @@
         "summary": "[Eng] Integrate eval-hub Evaluation Scores with OCI for Dynamic Model Cards",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Matteo Mortari",
+        "assignee": "Gray Graham",
         "totalIssues": 4,
         "doneIssues": 4,
         "progressPct": 100,
@@ -229,7 +229,7 @@
         "summary": "[QE] Integrate eval-hub Evaluation Scores with OCI for Dynamic Model Cards",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Shelton Cyril",
+        "assignee": "Kerry Sato",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

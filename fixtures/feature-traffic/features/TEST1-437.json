@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Normal",
   "assignee": {
-    "displayName": "Rob Geada",
+    "displayName": "Frankie Flynn",
     "accountId": "5e258328a7b9540e76f44821"
   },
   "fixVersions": [],
@@ -80,7 +80,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Rob Geada",
+          "assignee": "Frankie Flynn",
           "components": [
             "AI Safety"
           ],
@@ -98,7 +98,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Rob Geada",
+          "assignee": "Frankie Flynn",
           "components": [
             "AI Safety"
           ],
@@ -190,7 +190,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Bronagh Synnott",
+          "assignee": "Gray Rowe",
           "components": [
             "AI Safety",
             "Documentation"
@@ -232,7 +232,7 @@
         "summary": "Generic Numeric Data Drift Detection",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Rob Geada",
+        "assignee": "Frankie Flynn",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,

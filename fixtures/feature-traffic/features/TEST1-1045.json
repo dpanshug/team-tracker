@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Rui Vieira",
+    "displayName": "Onyx Finn",
     "accountId": "70121:5a9a760a-598b-49c2-af0e-60c52f76c598"
   },
   "fixVersions": [],
@@ -112,7 +112,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -133,7 +133,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -153,7 +153,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -173,7 +173,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -214,7 +214,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Matteo Mortari",
+          "assignee": "Gray Graham",
           "components": [
             "AI Evaluations"
           ],
@@ -234,7 +234,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Matteo Mortari",
+          "assignee": "Gray Graham",
           "components": [
             "AI Evaluations"
           ],
@@ -252,7 +252,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Matteo Mortari",
+          "assignee": "Gray Graham",
           "components": [
             "AI Evaluations"
           ],
@@ -293,7 +293,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -313,7 +313,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -354,7 +354,7 @@
         "summary": "[Eng] EvalHub controller",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Rui Vieira",
+        "assignee": "Onyx Finn",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -367,7 +367,7 @@
         "summary": "[EvalHub] TrustyAI Operator Controller [3.4EA1]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Rui Vieira",
+        "assignee": "Onyx Finn",
         "totalIssues": 4,
         "doneIssues": 4,
         "progressPct": 100,
@@ -380,7 +380,7 @@
         "summary": "(OPTIONAL) Trusty controller for EH and Providers config arch changes",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Matteo Mortari",
+        "assignee": "Gray Graham",
         "totalIssues": 3,
         "doneIssues": 3,
         "progressPct": 100,
@@ -393,7 +393,7 @@
         "summary": "[EvalHub] TrustyAI Operator Controller [3.4EA2]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Rui Vieira",
+        "assignee": "Onyx Finn",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,

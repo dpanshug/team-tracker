@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Adam Miller",
+    "displayName": "Onyx Irving",
     "accountId": "70121:03586c94-f3ea-476d-a1a1-81cd3a5e2509"
   },
   "fixVersions": [],
@@ -93,7 +93,7 @@
         "summary": "[TP] - Project Navigator: Intelligent Model recommendation and intelligent deployment Assistant",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Amit Oren",
+        "assignee": "Gray Pierce",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

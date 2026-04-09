@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Julian Payne",
+    "displayName": "Merit Vaughn",
     "accountId": "712020:e1bbe0c7-3d8c-4289-be71-d6360cdddd5b"
   },
   "fixVersions": [],
@@ -161,7 +161,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Marius Ion Danciu",
+          "assignee": "Merit Irving",
           "components": [
             "AI Evaluations"
           ],
@@ -182,7 +182,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Julian Payne",
+          "assignee": "Merit Vaughn",
           "components": [
             "AI Evaluations"
           ],
@@ -203,7 +203,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Julian Payne",
+          "assignee": "Merit Vaughn",
           "components": [
             "AI Evaluations"
           ],

@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Minor",
   "assignee": {
-    "displayName": "Purva Naik",
+    "displayName": "Frankie Rand",
     "accountId": "712020:6753113a-463c-46c5-9781-9b9d1ca6bd25"
   },
   "fixVersions": [],
@@ -216,7 +216,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -236,7 +236,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -256,7 +256,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -276,7 +276,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -296,7 +296,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -316,7 +316,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -356,7 +356,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -376,7 +376,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Divyanshi Gupta",
+          "assignee": "Kerry Archer",
           "components": [
             "AI Core Dashboard"
           ],
@@ -416,7 +416,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -436,7 +436,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Tobias Klumpp",
+          "assignee": "Merit Stone",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -457,7 +457,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -477,7 +477,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -497,7 +497,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -517,7 +517,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -537,7 +537,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -557,7 +557,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -577,7 +577,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Tobias Klumpp",
+          "assignee": "Merit Stone",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -598,7 +598,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Tobias Klumpp",
+          "assignee": "Merit Stone",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -637,7 +637,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [
             "AI Safety"
           ],
@@ -675,7 +675,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -693,7 +693,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -711,7 +711,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -729,7 +729,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -747,7 +747,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -765,7 +765,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "DevOps"
           ],
@@ -801,7 +801,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -819,7 +819,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -837,7 +837,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -855,7 +855,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -873,7 +873,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Platform"
           ],
@@ -891,7 +891,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -927,7 +927,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -945,7 +945,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -965,7 +965,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "DevOps"
           ],
@@ -983,7 +983,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -1001,7 +1001,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Platform"
           ],
@@ -1037,7 +1037,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Platform"
           ],
@@ -1055,7 +1055,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "Update This Field With Components"
           ],
@@ -1095,7 +1095,7 @@
         "summary": "BFF integration for Basic Guardrails intregations",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Purva Naik",
+        "assignee": "Frankie Rand",
         "totalIssues": 9,
         "doneIssues": 9,
         "progressPct": 100,
@@ -1108,7 +1108,7 @@
         "summary": "UI Guardrails Integrations",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Purva Naik",
+        "assignee": "Frankie Rand",
         "totalIssues": 10,
         "doneIssues": 10,
         "progressPct": 100,
@@ -1121,7 +1121,7 @@
         "summary": "Supply NeMo Guardrails configuration templates to UI team",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Mac Misiura",
+        "assignee": "Merit Young",
         "totalIssues": 1,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1134,7 +1134,7 @@
         "summary": "Tech Preview - ODH and RHOAI Integrations [AI Core Dashboard/GenAi - Guardrails]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Purva Naik",
+        "assignee": "Frankie Rand",
         "totalIssues": 22,
         "doneIssues": 20,
         "progressPct": 91,

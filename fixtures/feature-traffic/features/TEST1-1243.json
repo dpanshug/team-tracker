@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Normal",
   "assignee": {
-    "displayName": "Chris Hambridge",
+    "displayName": "Onyx Pierce",
     "accountId": "557058:ec20c857-da91-474b-990c-82f291123602"
   },
   "fixVersions": [],
@@ -138,7 +138,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -174,7 +174,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -192,7 +192,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Rob Greenberg",
+          "assignee": "Onyx Vance",
           "components": [
             "AI Hub"
           ],
@@ -232,7 +232,7 @@
         "summary": "Add Granite Quantized Modelcars for IBM Z",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Chris Hambridge",
+        "assignee": "Onyx Pierce",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,
@@ -245,7 +245,7 @@
         "summary": "General Availability - ODH and RHOAI Integrations [AI Hub/Add Granite modelcars for IBM Z + Power to RHOAI Catalog]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Chris Hambridge",
+        "assignee": "Onyx Pierce",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,

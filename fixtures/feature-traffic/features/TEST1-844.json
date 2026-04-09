@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Adriel Paredes",
+    "displayName": "Merit Walsh",
     "accountId": "557058:8123280f-6f48-4b0f-8728-019c7db73f87"
   },
   "fixVersions": [],
@@ -134,7 +134,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andy Stoneberg",
+          "assignee": "Kerry Edge",
           "components": [
             "Notebooks Server"
           ],
@@ -156,7 +156,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andy Stoneberg",
+          "assignee": "Kerry Edge",
           "components": [
             "Notebooks Server"
           ],
@@ -200,7 +200,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andy Stoneberg",
+          "assignee": "Kerry Edge",
           "components": [
             "Notebooks Server"
           ],
@@ -222,7 +222,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andy Stoneberg",
+          "assignee": "Kerry Edge",
           "components": [
             "Notebooks Server"
           ],
@@ -269,7 +269,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Harshad Reddy Nalla",
+          "assignee": "Onyx Zane",
           "components": [
             "Notebooks Server"
           ],
@@ -291,7 +291,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andy Stoneberg",
+          "assignee": "Kerry Edge",
           "components": [
             "Notebooks Server"
           ],
@@ -336,7 +336,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andy Stoneberg",
+          "assignee": "Kerry Edge",
           "components": [
             "Notebooks Server"
           ],
@@ -385,7 +385,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Major",
-          "assignee": "Paulo Rego",
+          "assignee": "Onyx Reed",
           "components": [
             "Notebooks Server"
           ],
@@ -457,7 +457,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Andy Stoneberg",
+          "assignee": "Kerry Edge",
           "components": [
             "Notebooks Server"
           ],
@@ -480,7 +480,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Harshad Reddy Nalla",
+          "assignee": "Onyx Zane",
           "components": [
             "Notebooks Server"
           ],
@@ -502,7 +502,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Major",
-          "assignee": "Andy Stoneberg",
+          "assignee": "Kerry Edge",
           "components": [
             "Notebooks Server"
           ],
@@ -525,7 +525,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Major",
-          "assignee": "Harshad Reddy Nalla",
+          "assignee": "Onyx Zane",
           "components": [
             "Notebooks Server"
           ],
@@ -548,7 +548,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Paulo Rego",
+          "assignee": "Onyx Reed",
           "components": [
             "Notebooks Server"
           ],
@@ -571,7 +571,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Paulo Rego",
+          "assignee": "Onyx Reed",
           "components": [
             "Notebooks Server"
           ],
@@ -595,7 +595,7 @@
       "status": "Closed",
       "statusCategory": "Done",
       "priority": "Major",
-      "assignee": "Former Member 24",
+      "assignee": "Frankie Shaw",
       "components": [
         "Notebooks Server"
       ],
@@ -617,7 +617,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Yehudit Kerido",
+          "assignee": "Merit Torres",
           "components": [
             "Notebooks Server"
           ],
@@ -641,7 +641,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Abdallah Samara",
+          "assignee": "Onyx Judd",
           "components": [
             "Notebooks Server"
           ],
@@ -665,7 +665,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Asaad Balum",
+          "assignee": "Onyx Kane",
           "components": [
             "Notebooks Server"
           ],
@@ -689,7 +689,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Yehudit Kerido",
+          "assignee": "Merit Torres",
           "components": [
             "Notebooks Server"
           ],
@@ -713,7 +713,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Liav Weiss",
+          "assignee": "Gray Chang",
           "components": [
             "Notebooks Server"
           ],
@@ -737,7 +737,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Liav Weiss",
+          "assignee": "Gray Chang",
           "components": [
             "Notebooks Server"
           ],
@@ -762,7 +762,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Yehudit Kerido",
+          "assignee": "Merit Torres",
           "components": [
             "Notebooks Server"
           ],
@@ -787,7 +787,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Yehudit Kerido",
+          "assignee": "Merit Torres",
           "components": [
             "Notebooks Server"
           ],
@@ -812,7 +812,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Noa Limoy",
+          "assignee": "Merit True",
           "components": [
             "Notebooks Server"
           ],
@@ -837,7 +837,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Liav Weiss",
+          "assignee": "Gray Chang",
           "components": [
             "Notebooks Server"
           ],
@@ -884,7 +884,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Guilherme Caponetto",
+          "assignee": "Merit Sato",
           "components": [
             "Notebooks Server"
           ],
@@ -906,7 +906,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Guilherme Caponetto",
+          "assignee": "Merit Sato",
           "components": [
             "Notebooks Server"
           ],
@@ -928,7 +928,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Guilherme Caponetto",
+          "assignee": "Merit Sato",
           "components": [
             "Notebooks Server"
           ],
@@ -950,7 +950,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Guilherme Caponetto",
+          "assignee": "Merit Sato",
           "components": [
             "Notebooks Server"
           ],
@@ -1046,7 +1046,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Paulo Rego",
+          "assignee": "Onyx Reed",
           "components": [
             "Notebooks Server"
           ],
@@ -1069,7 +1069,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Harshad Reddy Nalla",
+          "assignee": "Onyx Zane",
           "components": [
             "Notebooks Server"
           ],
@@ -1139,7 +1139,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Harshad Reddy Nalla",
+          "assignee": "Onyx Zane",
           "components": [
             "Notebooks Server"
           ],
@@ -1161,7 +1161,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Harshad Reddy Nalla",
+          "assignee": "Onyx Zane",
           "components": [
             "Notebooks Server"
           ],
@@ -1258,7 +1258,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Guilherme Caponetto",
+          "assignee": "Merit Sato",
           "components": [
             "Notebooks Server"
           ],
@@ -1282,7 +1282,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Paulo Rego",
+          "assignee": "Onyx Reed",
           "components": [
             "Notebooks Server"
           ],
@@ -1330,7 +1330,7 @@
         "summary": "Setup kubeflow-ui-essentials repository",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Paulo Rego",
+        "assignee": "Onyx Reed",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1343,7 +1343,7 @@
         "summary": "Community Tracker #270: [EPIC] Create WorkspaceKind [Phase 1] ",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Charles Thao",
+        "assignee": "Frankie Price",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1356,7 +1356,7 @@
         "summary": "Setting up a workspace to fine-tune a Gen AI model",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Andy Stoneberg",
+        "assignee": "Kerry Edge",
         "totalIssues": 5,
         "doneIssues": 5,
         "progressPct": 100,
@@ -1369,7 +1369,7 @@
         "summary": "Community Tracker #291: [EPIC] Connecting to a running workspace",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Harshad Reddy Nalla",
+        "assignee": "Onyx Zane",
         "totalIssues": 4,
         "doneIssues": 4,
         "progressPct": 100,
@@ -1382,7 +1382,7 @@
         "summary": "Community Tracker #544: [EPIC] Managing and updating running workspaces",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Paulo Rego",
+        "assignee": "Onyx Reed",
         "totalIssues": 1,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1395,7 +1395,7 @@
         "summary": "Repository setup and developer experience",
         "status": "Backlog",
         "statusCategory": "To Do",
-        "assignee": "Andy Stoneberg",
+        "assignee": "Kerry Edge",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1408,7 +1408,7 @@
         "summary": "Outstanding Architectural Topics for Notebooks 2.0",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Eder Ignatowicz",
+        "assignee": "Frankie Vaughn",
         "totalIssues": 6,
         "doneIssues": 2,
         "progressPct": 33,
@@ -1421,7 +1421,7 @@
         "summary": "Release from kubeflow/dashboards",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Liav Weiss",
+        "assignee": "Gray Chang",
         "totalIssues": 10,
         "doneIssues": 10,
         "progressPct": 100,
@@ -1434,7 +1434,7 @@
         "summary": "[SPIKE] Investigate Kubeflow Notebooks 2.0 integration with odh-dashboard",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Paulo Rego",
+        "assignee": "Onyx Reed",
         "totalIssues": 4,
         "doneIssues": 4,
         "progressPct": 100,
@@ -1447,7 +1447,7 @@
         "summary": "Community Tracker #320: [EPIC] Deploy Kubeflow Notebooks 2.0 to a k8s cluster",
         "status": "Review",
         "statusCategory": "In Progress",
-        "assignee": "Andy Stoneberg",
+        "assignee": "Kerry Edge",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1460,7 +1460,7 @@
         "summary": "[EPIC] Kubeflow Notebooks 2.0 integration with odh-dashboard",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Paulo Rego",
+        "assignee": "Onyx Reed",
         "totalIssues": 4,
         "doneIssues": 1,
         "progressPct": 25,
@@ -1473,7 +1473,7 @@
         "summary": "Community Tracker #741: [FEATURE] Backend for culling workspaces",
         "status": "Backlog",
         "statusCategory": "To Do",
-        "assignee": "Harshad Reddy Nalla",
+        "assignee": "Onyx Zane",
         "totalIssues": 2,
         "doneIssues": 1,
         "progressPct": 50,
@@ -1486,7 +1486,7 @@
         "summary": "Community Tracker #543: Updating Workspace Kinds [Phase 1]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Charles Thao",
+        "assignee": "Frankie Price",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1499,7 +1499,7 @@
         "summary": "Community Tracker #299: [FEATURE] Edit workspace wizard",
         "status": "Backlog",
         "statusCategory": "To Do",
-        "assignee": "Guilherme Caponetto",
+        "assignee": "Merit Sato",
         "totalIssues": 3,
         "doneIssues": 3,
         "progressPct": 100,

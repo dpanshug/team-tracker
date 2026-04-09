@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Normal",
   "assignee": {
-    "displayName": "Chris Hambridge",
+    "displayName": "Onyx Pierce",
     "accountId": "557058:ec20c857-da91-474b-990c-82f291123602"
   },
   "fixVersions": [
@@ -107,7 +107,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -125,7 +125,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -143,7 +143,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -161,7 +161,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -179,7 +179,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -197,7 +197,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "DevOps"
           ],
@@ -215,7 +215,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -233,7 +233,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -251,7 +251,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -267,7 +267,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -283,7 +283,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -301,7 +301,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Core Platform"
           ],
@@ -321,7 +321,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -339,7 +339,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -357,7 +357,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -375,7 +375,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Blocker",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -395,7 +395,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "DevOps"
           ],
@@ -431,7 +431,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Core Platform"
           ],
@@ -451,7 +451,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "OpenShift AI Productization"
           ],
@@ -469,7 +469,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Core Platform"
           ],
@@ -489,7 +489,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -563,7 +563,7 @@
         "summary": "Tech Preview - ODH and RHOAI Integrations [AI Hub/Add Eagle3 Models to RHOAI Catalog]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Chris Hambridge",
+        "assignee": "Onyx Pierce",
         "totalIssues": 22,
         "doneIssues": 20,
         "progressPct": 91,
@@ -576,7 +576,7 @@
         "summary": "Enable Speculative Decoding in RHOAI via Eagle3 Model Catalog Integration",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Chris Hambridge",
+        "assignee": "Onyx Pierce",
         "totalIssues": 1,
         "doneIssues": 0,
         "progressPct": 0,

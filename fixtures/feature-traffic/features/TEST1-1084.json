@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Chris Hambridge",
+    "displayName": "Onyx Pierce",
     "accountId": "557058:ec20c857-da91-474b-990c-82f291123602"
   },
   "fixVersions": [
@@ -455,7 +455,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Alessio Pragliola",
+          "assignee": "Gray Ward",
           "components": [
             "AI Hub"
           ],
@@ -473,7 +473,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -491,7 +491,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -509,7 +509,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -527,7 +527,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -545,7 +545,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Alessio Pragliola",
+          "assignee": "Gray Ward",
           "components": [
             "AI Hub"
           ],
@@ -563,7 +563,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Alessio Pragliola",
+          "assignee": "Gray Ward",
           "components": [
             "AI Hub"
           ],
@@ -581,7 +581,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -599,7 +599,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -617,7 +617,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -635,7 +635,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -653,7 +653,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Alessio Pragliola",
+          "assignee": "Gray Ward",
           "components": [
             "AI Hub"
           ],
@@ -671,7 +671,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -691,7 +691,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -711,7 +711,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -731,7 +731,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -751,7 +751,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessio Pragliola",
+          "assignee": "Gray Ward",
           "components": [
             "AI Hub"
           ],
@@ -769,7 +769,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -787,7 +787,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Alessio Pragliola",
+          "assignee": "Gray Ward",
           "components": [
             "AI Hub"
           ],
@@ -805,7 +805,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -825,7 +825,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -845,7 +845,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -865,7 +865,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -885,7 +885,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -905,7 +905,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -925,7 +925,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -945,7 +945,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -965,7 +965,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -983,7 +983,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -1001,7 +1001,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -1021,7 +1021,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -1039,7 +1039,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -1057,7 +1057,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -1075,7 +1075,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -1093,7 +1093,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -1111,7 +1111,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Adysen Rothman",
+          "assignee": "Gray Tate",
           "components": [
             "AI Hub"
           ],
@@ -1133,7 +1133,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -1151,7 +1151,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Paul Boyd",
+          "assignee": "Kerry Foster",
           "components": [
             "AI Hub"
           ],
@@ -1169,7 +1169,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -1189,7 +1189,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Federico Mosca",
+          "assignee": "Gray Thorne",
           "components": [
             "AI Hub"
           ],
@@ -1209,7 +1209,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessio Pragliola",
+          "assignee": "Gray Ward",
           "components": [
             "AI Hub"
           ],
@@ -1228,7 +1228,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Former Member 1",
+      "assignee": "Gray Ellis",
       "components": [
         "Documentation"
       ],
@@ -1254,7 +1254,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Stephen McCarthy",
+          "assignee": "Merit Voss",
           "components": [
             "AI Hub",
             "Documentation"
@@ -1273,7 +1273,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Stephen McCarthy",
+          "assignee": "Merit Voss",
           "components": [
             "Documentation"
           ],
@@ -1312,7 +1312,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Pushpa Padti",
+          "assignee": "Merit Chang",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1332,7 +1332,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Philip Carneiro",
+          "assignee": "Merit Park",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1352,7 +1352,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Manaswini Das",
+          "assignee": "Merit Knox",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1372,7 +1372,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Pushpa Padti",
+          "assignee": "Merit Chang",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1393,7 +1393,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Conor O'Malley",
+          "assignee": "Merit James",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1413,7 +1413,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Philip Carneiro",
+          "assignee": "Merit Park",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1433,7 +1433,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Philip Carneiro",
+          "assignee": "Merit Park",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1453,7 +1453,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Yulia Krimerman",
+          "assignee": "Merit Thorne",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1473,7 +1473,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Manaswini Das",
+          "assignee": "Merit Knox",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1493,7 +1493,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Yulia Krimerman",
+          "assignee": "Merit Thorne",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1513,7 +1513,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Pushpa Padti",
+          "assignee": "Merit Chang",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1533,7 +1533,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Arsheen Taj Syed",
+          "assignee": "Frankie Fischer",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1553,7 +1553,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Manaswini Das",
+          "assignee": "Merit Knox",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1573,7 +1573,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Pushpa Padti",
+          "assignee": "Merit Chang",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1631,7 +1631,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Yulia Krimerman",
+          "assignee": "Merit Thorne",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1671,7 +1671,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Manaswini Das",
+          "assignee": "Merit Knox",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1691,7 +1691,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Manaswini Das",
+          "assignee": "Merit Knox",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1711,7 +1711,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andrew Ballantyne",
+          "assignee": "Gray Walsh",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1731,7 +1731,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Manaswini Das",
+          "assignee": "Merit Knox",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1751,7 +1751,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Pushpa Padti",
+          "assignee": "Merit Chang",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1771,7 +1771,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Yulia Krimerman",
+          "assignee": "Merit Thorne",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1791,7 +1791,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Arsheen Taj Syed",
+          "assignee": "Frankie Fischer",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1811,7 +1811,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Pushpa Padti",
+          "assignee": "Merit Chang",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1831,7 +1831,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Mike Turley",
+          "assignee": "Kerry Ingram",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1852,7 +1852,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Mike Turley",
+          "assignee": "Kerry Ingram",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1874,7 +1874,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Manaswini Das",
+          "assignee": "Merit Knox",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1894,7 +1894,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Manaswini Das",
+          "assignee": "Merit Knox",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1914,7 +1914,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Pushpa Padti",
+          "assignee": "Merit Chang",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1934,7 +1934,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Pushpa Padti",
+          "assignee": "Merit Chang",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1954,7 +1954,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Minor",
-          "assignee": "Manaswini Das",
+          "assignee": "Merit Knox",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1974,7 +1974,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Minor",
-          "assignee": "Mike Turley",
+          "assignee": "Kerry Ingram",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1994,7 +1994,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Arsheen Taj Syed",
+          "assignee": "Frankie Fischer",
           "components": [
             "AI Core Dashboard"
           ],
@@ -2014,7 +2014,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Manaswini Das",
+          "assignee": "Merit Knox",
           "components": [
             "AI Core Dashboard"
           ],
@@ -2034,7 +2034,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Pushpa Padti",
+          "assignee": "Merit Chang",
           "components": [
             "AI Core Dashboard"
           ],
@@ -2054,7 +2054,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Yulia Krimerman",
+          "assignee": "Merit Thorne",
           "components": [
             "AI Core Dashboard"
           ],
@@ -2094,7 +2094,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -2112,7 +2112,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "DevOps"
           ],
@@ -2130,7 +2130,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -2148,7 +2148,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -2166,7 +2166,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -2184,7 +2184,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -2204,7 +2204,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Core Platform"
           ],
@@ -2224,7 +2224,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -2242,7 +2242,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -2260,7 +2260,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "DevOps"
           ],
@@ -2278,7 +2278,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Hub"
           ],
@@ -2296,7 +2296,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Hambridge",
+          "assignee": "Onyx Pierce",
           "components": [
             "AI Core Platform"
           ],
@@ -2340,7 +2340,7 @@
         "summary": "MCP Catalog Backend",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Chris Hambridge",
+        "assignee": "Onyx Pierce",
         "totalIssues": 41,
         "doneIssues": 41,
         "progressPct": 100,
@@ -2353,7 +2353,7 @@
         "summary": "[ccs Epic] MCP Catalog – Enterprise Control of MCP Assets - DP 3.4",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Stephen McCarthy",
+        "assignee": "Merit Voss",
         "totalIssues": 2,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2366,7 +2366,7 @@
         "summary": "MCP Server Catalog UI",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Pushpa Padti",
+        "assignee": "Merit Chang",
         "totalIssues": 14,
         "doneIssues": 12,
         "progressPct": 86,
@@ -2379,7 +2379,7 @@
         "summary": "MCP Lifecycle operator for MCP server deployment",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Gordon Sim",
+        "assignee": "Gray Clay",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2392,7 +2392,7 @@
         "summary": "MCP Server Deployment UI",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Pushpa Padti",
+        "assignee": "Merit Chang",
         "totalIssues": 22,
         "doneIssues": 15,
         "progressPct": 68,
@@ -2405,7 +2405,7 @@
         "summary": "Dev Preview - ODH and RHOAI Integrations [AI Hub/MCP Catalog]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Chris Hambridge",
+        "assignee": "Onyx Pierce",
         "totalIssues": 12,
         "doneIssues": 11,
         "progressPct": 92,

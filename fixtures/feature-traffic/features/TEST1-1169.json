@@ -188,7 +188,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Marek Lassak",
+          "assignee": "Kerry Reeves",
           "components": [
             "AI Core Platform"
           ],
@@ -248,7 +248,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Rinaldo Pitzer Junior",
+          "assignee": "Merit Reed",
           "components": [
             "AI Core Platform"
           ],
@@ -292,7 +292,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Ajay Jaganathan",
+          "assignee": "Onyx Carter",
           "components": [
             "AI Core Platform"
           ],
@@ -312,7 +312,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Denis Moskalenko",
+          "assignee": "Onyx Nolan",
           "components": [
             "AI Core Platform"
           ],
@@ -332,7 +332,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Davide Bianchi",
+          "assignee": "Gray Zane",
           "components": [
             "AI Core Platform"
           ],
@@ -388,7 +388,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Davide Bianchi",
+          "assignee": "Gray Zane",
           "components": [
             "AI Core Platform"
           ],

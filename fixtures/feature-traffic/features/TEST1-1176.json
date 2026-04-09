@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Daniel Ryszka",
+    "displayName": "Merit Blake",
     "accountId": "712020:456909bf-a7c9-40b8-8f28-212fbfbf495a"
   },
   "fixVersions": [
@@ -308,7 +308,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoRAG"
           ],
@@ -328,7 +328,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoRAG"
           ],
@@ -348,7 +348,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoRAG",
             "DevOps"
@@ -369,7 +369,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoRAG"
           ],
@@ -389,7 +389,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoRAG",
             "DevOps"
@@ -430,7 +430,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoRAG"
           ],
@@ -450,7 +450,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Lukasz Cmielowski",
+          "assignee": "Gray Zimmerman",
           "components": [
             "AutoRAG"
           ],
@@ -534,7 +534,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoRAG"
           ],
@@ -554,7 +554,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoRAG"
           ],
@@ -574,7 +574,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoRAG"
           ],
@@ -594,7 +594,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Daniel Ryszka",
+          "assignee": "Merit Blake",
           "components": [
             "AutoRAG"
           ],
@@ -614,7 +614,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Scott Froberg",
+          "assignee": "Kerry Young",
           "components": [
             "AI Core Platform",
             "AutoRAG"
@@ -637,7 +637,7 @@
       "status": "Resolved",
       "statusCategory": "Done",
       "priority": "Critical",
-      "assignee": "Former Member 5",
+      "assignee": "Merit Upton",
       "components": [
         "DevOps"
       ],
@@ -697,7 +697,7 @@
         "summary": "ODH Konflux Release Build Onboarding [AutoRAG Backend]",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Mhamad Chamseddin",
+        "assignee": "Onyx Webb",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -710,7 +710,7 @@
         "summary": "RHOAI Konflux Onboarding [AutoRAG Backend]",
         "status": "Review",
         "statusCategory": "In Progress",
-        "assignee": "Mhamad Chamseddin",
+        "assignee": "Onyx Webb",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -723,7 +723,7 @@
         "summary": "Tech Preview - ODH and RHOAI Integrations [AutoRAG Backend]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Daniel Ryszka",
+        "assignee": "Merit Blake",
         "totalIssues": 21,
         "doneIssues": 9,
         "progressPct": 43,
@@ -736,7 +736,7 @@
         "summary": "ODH Konflux CI Build Onboarding [pipelines-components]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Peter Keappock",
+        "assignee": "Merit Oates",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -749,7 +749,7 @@
         "summary": "RHOAI Konflux Onboarding [pipelines-components]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Waldemar Znoinski",
+        "assignee": "Kerry Xu",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

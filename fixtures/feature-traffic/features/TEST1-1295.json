@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Roy Nissim",
+    "displayName": "Frankie Mead",
     "accountId": "712020:3e6483d7-a7f9-4847-950f-102899cadf8f"
   },
   "fixVersions": [],
@@ -90,7 +90,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [
             "Update This Field With Components"
           ],
@@ -108,7 +108,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Nir Rozenbaum",
+          "assignee": "Kerry Upton",
           "components": [
             "Update This Field With Components"
           ],
@@ -126,7 +126,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Senan Zedan",
+          "assignee": "Merit Gold",
           "components": [
             "Update This Field With Components"
           ],
@@ -144,7 +144,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Senan Zedan",
+          "assignee": "Merit Gold",
           "components": [
             "Update This Field With Components"
           ],
@@ -180,7 +180,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [
             "DevOps"
           ],
@@ -198,7 +198,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Senan Zedan",
+          "assignee": "Merit Gold",
           "components": [
             "Update This Field With Components"
           ],
@@ -216,7 +216,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "Senan Zedan",
+          "assignee": "Merit Gold",
           "components": [
             "Update This Field With Components"
           ],
@@ -234,7 +234,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Senan Zedan",
+          "assignee": "Merit Gold",
           "components": [
             "Update This Field With Components"
           ],
@@ -270,7 +270,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Denise Hughes",
+          "assignee": "Gray Gold",
           "components": [
             "Update This Field With Components"
           ],
@@ -288,7 +288,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Noy Itzikowitz",
+          "assignee": "Frankie Dawson",
           "components": [
             "AI Core Platform"
           ],
@@ -308,7 +308,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [
             "Update This Field With Components"
           ],
@@ -326,7 +326,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Senan Zedan",
+          "assignee": "Merit Gold",
           "components": [
             "Update This Field With Components"
           ],
@@ -344,7 +344,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Senan Zedan",
+          "assignee": "Merit Gold",
           "components": [
             "Update This Field With Components"
           ],
@@ -362,7 +362,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Blocker",
-          "assignee": "Roy Nissim",
+          "assignee": "Frankie Mead",
           "components": [
             "Update This Field With Components"
           ],
@@ -382,7 +382,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [
             "DevOps"
           ],
@@ -400,7 +400,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Noy Itzikowitz",
+          "assignee": "Frankie Dawson",
           "components": [
             "Update This Field With Components"
           ],
@@ -418,7 +418,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Noy Itzikowitz",
+          "assignee": "Frankie Dawson",
           "components": [
             "AI Core Platform"
           ],
@@ -438,7 +438,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [
             "OpenShift AI Productization"
           ],
@@ -456,7 +456,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Cesar Francisco San Nicolas Martinez",
+          "assignee": "Kerry Chang",
           "components": [
             "AI Core Platform"
           ],
@@ -476,7 +476,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Nir Rozenbaum",
+          "assignee": "Kerry Upton",
           "components": [
             "Update This Field With Components"
           ],
@@ -494,7 +494,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -510,7 +510,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -526,7 +526,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -542,7 +542,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -558,7 +558,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Yuriy Teodorovych",
+          "assignee": "Gray York",
           "components": [
             "Model as a Service"
           ],
@@ -617,7 +617,7 @@
         "summary": "ODH Konflux CI Build Onboarding [AI-Gateway-Payload-Processing]",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Mhamad Chamseddin",
+        "assignee": "Onyx Webb",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -643,7 +643,7 @@
         "summary": "RHOAI Konflux Onboarding [AI-Gateway-Payload-Processing]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Waldemar Znoinski",
+        "assignee": "Kerry Xu",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

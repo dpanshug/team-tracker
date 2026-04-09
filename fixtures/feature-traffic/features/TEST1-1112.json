@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Danny Pierce",
+    "displayName": "Merit Jay",
     "accountId": "712020:f6a72143-e1ad-4089-b050-1c4b9a926b3b"
   },
   "fixVersions": [
@@ -231,7 +231,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -252,7 +252,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -273,7 +273,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -294,7 +294,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -315,7 +315,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -336,7 +336,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Blocker",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard"
           ],
@@ -378,7 +378,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -399,7 +399,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -420,7 +420,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -441,7 +441,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -462,7 +462,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -483,7 +483,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -504,7 +504,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -525,7 +525,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -546,7 +546,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Eder Ignatowicz",
+          "assignee": "Frankie Vaughn",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -588,7 +588,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -651,7 +651,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -672,7 +672,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -693,7 +693,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -735,7 +735,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -756,7 +756,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -777,7 +777,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -798,7 +798,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -819,7 +819,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -840,7 +840,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -861,7 +861,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -882,7 +882,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -924,7 +924,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1008,7 +1008,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1050,7 +1050,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1113,7 +1113,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1197,7 +1197,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1281,7 +1281,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1302,7 +1302,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Divyanshi Gupta",
+          "assignee": "Kerry Archer",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1323,7 +1323,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Divyanshi Gupta",
+          "assignee": "Kerry Archer",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1344,7 +1344,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Divyanshi Gupta",
+          "assignee": "Kerry Archer",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1406,7 +1406,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Divyanshi Gupta",
+          "assignee": "Kerry Archer",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1427,7 +1427,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1464,7 +1464,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Divyanshi Gupta",
+          "assignee": "Kerry Archer",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1521,7 +1521,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1542,7 +1542,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Danny Pierce",
+          "assignee": "Merit Jay",
           "components": [
             "AI Core Dashboard",
             "Gen AI Studio"
@@ -1587,7 +1587,7 @@
         "summary": "Integrate Prompt Management in the GenAI Playground",
         "status": "Review",
         "statusCategory": "In Progress",
-        "assignee": "Danny Pierce",
+        "assignee": "Merit Jay",
         "totalIssues": 7,
         "doneIssues": 6,
         "progressPct": 86,
@@ -1600,7 +1600,7 @@
         "summary": "Create mlflow-go sdk and create APIs for Prompt management",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Eder Ignatowicz",
+        "assignee": "Frankie Vaughn",
         "totalIssues": 9,
         "doneIssues": 9,
         "progressPct": 100,
@@ -1613,7 +1613,7 @@
         "summary": "Load Prompt Modal - Browse and load governed prompts in Playground",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Danny Pierce",
+        "assignee": "Merit Jay",
         "totalIssues": 15,
         "doneIssues": 15,
         "progressPct": 100,
@@ -1626,7 +1626,7 @@
         "summary": "Prompt State & Editing - Track provenance and enable safe editing",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Danny Pierce",
+        "assignee": "Merit Jay",
         "totalIssues": 11,
         "doneIssues": 11,
         "progressPct": 100,
@@ -1639,7 +1639,7 @@
         "summary": "Save Prompt - Persist prompts to registry with versioning",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Danny Pierce",
+        "assignee": "Merit Jay",
         "totalIssues": 9,
         "doneIssues": 9,
         "progressPct": 100,
@@ -1652,7 +1652,7 @@
         "summary": "Prompt management follow up stories",
         "status": "Backlog",
         "statusCategory": "To Do",
-        "assignee": "Danny Pierce",
+        "assignee": "Merit Jay",
         "totalIssues": 9,
         "doneIssues": 5,
         "progressPct": 56,

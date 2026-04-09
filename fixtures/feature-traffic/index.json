@@ -9,7 +9,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Frank Jansen",
+      "assignee": "Merit Bennett",
       "fixVersions": [],
       "labels": [
         "Gaudi",
@@ -28,7 +28,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Alex Calhoun",
+      "assignee": "Gray Nash",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -50,7 +50,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Paul McCarthy",
+      "assignee": "Kerry Kane",
       "fixVersions": [],
       "labels": [
         "GPU-as-a-Service",
@@ -69,7 +69,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Paul McCarthy",
+      "assignee": "Kerry Kane",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -85,7 +85,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Leslie Matzinger",
+      "assignee": "Merit Ives",
       "fixVersions": [
         "rhoai-3.0"
       ],
@@ -105,7 +105,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Jennifer Ciroli",
+      "assignee": "Onyx Park",
       "fixVersions": [],
       "labels": [],
       "completionPct": 100,
@@ -121,7 +121,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Blocker",
-      "assignee": "Francisco Arceo",
+      "assignee": "Gray Day",
       "fixVersions": [],
       "labels": [
         "data-processing",
@@ -141,7 +141,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Jehlum Vitasta Pandit",
+      "assignee": "Frankie Frost",
       "fixVersions": [
         "rhoai-3.0"
       ],
@@ -163,7 +163,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Bill Murdock",
+      "assignee": "Kerry Webb",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -186,7 +186,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -206,7 +206,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Francisco Arceo",
+      "assignee": "Gray Day",
       "fixVersions": [],
       "labels": [
         "3.2-candidate",
@@ -228,7 +228,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Eoin Fennessy",
+      "assignee": "Gray Bishop",
       "fixVersions": [],
       "labels": [
         "UX",
@@ -393,7 +393,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Kezia Cook",
+      "assignee": "Merit Kirk",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -411,7 +411,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "needs-doc",
@@ -432,7 +432,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Shivchander Sudalairaj",
+      "assignee": "Frankie Xu",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -448,7 +448,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Adam Miller",
+      "assignee": "Onyx Irving",
       "fixVersions": [],
       "labels": [
         "disconnected",
@@ -483,7 +483,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Luca Burgazzoli",
+      "assignee": "Frankie Park",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -518,7 +518,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [
         "Notebooks",
@@ -560,7 +560,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Adel Zaalouk",
+      "assignee": "Kerry Palmer",
       "fixVersions": [],
       "labels": [
         "core",
@@ -599,7 +599,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Myriam Fentanes Gutierrez",
+      "assignee": "Kerry Hunt",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -615,7 +615,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Dimitri Saridakis",
+      "assignee": "Onyx Mitchell",
       "fixVersions": [],
       "labels": [
         "needs-tech-review",
@@ -634,7 +634,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -656,7 +656,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Kyle Walker",
+      "assignee": "Onyx Hart",
       "fixVersions": [],
       "labels": [
         "GPU-as-a-Service",
@@ -675,7 +675,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Darach Cawley",
+      "assignee": "Onyx Underwood",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -696,7 +696,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Ramesh Reddy",
+      "assignee": "Gray Mitchell",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -719,7 +719,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Selbi Siddiqi",
+      "assignee": "Frankie Clay",
       "fixVersions": [
         "RHAIIS-3.4"
       ],
@@ -737,7 +737,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Bob Gregor",
+      "assignee": "Merit Winn",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -762,7 +762,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Rob Bell",
+      "assignee": "Frankie Knox",
       "fixVersions": [],
       "labels": [
         "GPU-as-a-Service",
@@ -815,7 +815,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Amita Sharma",
+      "assignee": "Merit Gibbs",
       "fixVersions": [],
       "labels": [
         "GPU-as-a-Service"
@@ -833,7 +833,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Amita Sharma",
+      "assignee": "Merit Gibbs",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -851,7 +851,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Modassar Rana",
+      "assignee": "Kerry Udall",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -873,7 +873,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Normal",
-      "assignee": "Varad Ahirwadkar",
+      "assignee": "Onyx Drake",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -894,7 +894,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Eder Ignatowicz",
+      "assignee": "Frankie Vaughn",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -917,7 +917,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Andrew Ballantyne",
+      "assignee": "Gray Walsh",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -937,7 +937,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Andrew Ballantyne",
+      "assignee": "Gray Walsh",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -957,7 +957,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Nick Gagan",
+      "assignee": "Onyx Anderson",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -982,7 +982,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Alessandro Lazarotti",
+      "assignee": "Frankie Drake",
       "fixVersions": [
         "rhoai-3.3"
       ],
@@ -1004,7 +1004,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Yi Zheng",
+      "assignee": "Gray Knox",
       "fixVersions": [
         "rhoai-3.5"
       ],
@@ -1024,7 +1024,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Yi Zheng",
+      "assignee": "Gray Knox",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -1058,7 +1058,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Ashish Kamra",
+      "assignee": "Merit Dunn",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -1074,7 +1074,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Roland Huss",
+      "assignee": "Onyx Evans",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -1128,7 +1128,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Laura Fitzgerald",
+      "assignee": "Gray Dean",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -1167,7 +1167,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Mustafa Eyceoz",
+      "assignee": "Gray Brock",
       "fixVersions": [
         "rhoai-3.5"
       ],
@@ -1185,7 +1185,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Normal",
-      "assignee": "Mustafa Eyceoz",
+      "assignee": "Gray Brock",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -1203,7 +1203,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Laura Fitzgerald",
+      "assignee": "Gray Dean",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -1221,7 +1221,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Dimitri Saridakis",
+      "assignee": "Onyx Mitchell",
       "fixVersions": [
         "rhoai-3.5"
       ],
@@ -1243,7 +1243,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Umberto Manganiello",
+      "assignee": "Merit Ingram",
       "fixVersions": [],
       "labels": [
         "GPU-as-a-Service",
@@ -1262,7 +1262,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Erwan Gallen",
+      "assignee": "Onyx Dunn",
       "fixVersions": [],
       "labels": [
         "INFERSTRAT_251116"
@@ -1280,7 +1280,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Andy Linfoot",
+      "assignee": "Frankie Ward",
       "fixVersions": [],
       "labels": [
         "INFERSTRAT_251116",
@@ -1317,7 +1317,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Erwan Gallen",
+      "assignee": "Onyx Dunn",
       "fixVersions": [
         "RHAIIS-3.2.5"
       ],
@@ -1337,7 +1337,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Taneem Ibrahim",
+      "assignee": "Merit Rand",
       "fixVersions": [
         "RHAIIS-3.4EA1"
       ],
@@ -1359,7 +1359,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Michael Goin",
+      "assignee": "Kerry Gold",
       "fixVersions": [],
       "labels": [
         "INFERSTRAT_251116"
@@ -1395,7 +1395,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Klara Bezdekova",
+      "assignee": "Merit Foster",
       "fixVersions": [
         "RHELAI-3.2"
       ],
@@ -1433,7 +1433,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Erwan Gallen",
+      "assignee": "Onyx Dunn",
       "fixVersions": [],
       "labels": [
         "INFERSTRAT_251116",
@@ -1471,7 +1471,7 @@
       "status": "Backlog",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Jay Koehler",
+      "assignee": "Onyx Kelley",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -1491,7 +1491,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Yi Zheng",
+      "assignee": "Gray Knox",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -1511,7 +1511,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -1529,7 +1529,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -1548,7 +1548,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Mahmoud Alhaj",
+      "assignee": "Onyx Upton",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -1564,7 +1564,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Andrew Ballantyne",
+      "assignee": "Gray Walsh",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -1588,7 +1588,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Imran Khalidi",
+      "assignee": "Gray Evans",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -1609,7 +1609,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -1629,7 +1629,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -1650,7 +1650,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Ashish Kamra",
+      "assignee": "Merit Dunn",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -1671,7 +1671,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -1690,7 +1690,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -1708,7 +1708,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Esa Fazal",
+      "assignee": "Onyx Cole",
       "fixVersions": [],
       "labels": [
         "3.4",
@@ -1728,7 +1728,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Minor",
-      "assignee": "Purva Naik",
+      "assignee": "Frankie Rand",
       "fixVersions": [],
       "labels": [
         "ai-studio",
@@ -1751,7 +1751,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Kezia Cook",
+      "assignee": "Merit Kirk",
       "fixVersions": [],
       "labels": [
         "field-request"
@@ -1769,7 +1769,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -1876,7 +1876,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Andrew Ballantyne",
+      "assignee": "Gray Walsh",
       "fixVersions": [
         "rhoai-3.3"
       ],
@@ -1898,7 +1898,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Laura Fitzgerald",
+      "assignee": "Gray Dean",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -1914,7 +1914,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Ana Biazetti",
+      "assignee": "Frankie Gordon",
       "fixVersions": [],
       "labels": [
         "Accelerator_Platform"
@@ -1984,7 +1984,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [
         "enhancement"
@@ -2002,7 +2002,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Blocker",
-      "assignee": "Stefan Mattejiet",
+      "assignee": "Onyx Sato",
       "fixVersions": [],
       "labels": [],
       "completionPct": 88,
@@ -2018,7 +2018,7 @@
       "status": "Backlog",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Bryan Keane",
+      "assignee": "Onyx Quinn",
       "fixVersions": [],
       "labels": [
         "3.4",
@@ -2038,7 +2038,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Andrej Smigala",
+      "assignee": "Merit Udall",
       "fixVersions": [],
       "labels": [
         "aicp-team-forge"
@@ -2056,7 +2056,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Luca Burgazzoli",
+      "assignee": "Frankie Park",
       "fixVersions": [],
       "labels": [
         "Accelerator_Platform",
@@ -2075,7 +2075,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Andrew Ballantyne",
+      "assignee": "Gray Walsh",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -2091,7 +2091,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Roy Nissim",
+      "assignee": "Frankie Mead",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -2128,7 +2128,7 @@
       "status": "Backlog",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Adnan Khan",
+      "assignee": "Kerry Vale",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -2170,7 +2170,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Rob Geada",
+      "assignee": "Frankie Flynn",
       "fixVersions": [],
       "labels": [],
       "completionPct": 50,
@@ -2186,7 +2186,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Kezia Cook",
+      "assignee": "Merit Kirk",
       "fixVersions": [],
       "labels": [
         "field-request",
@@ -2205,7 +2205,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -2239,7 +2239,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Roy Nissim",
+      "assignee": "Frankie Mead",
       "fixVersions": [],
       "labels": [
         "llm-d",
@@ -2276,7 +2276,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Georgios Zaronikas Karagiannis",
+      "assignee": "Kerry Fischer",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -2375,7 +2375,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Dana Gutride",
+      "assignee": "Merit Zane",
       "fixVersions": [],
       "labels": [
         "Notebooks2.0-related"
@@ -2393,7 +2393,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Dominik Dahlem",
+      "assignee": "Kerry Price",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -2416,7 +2416,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Jeff DeMoss",
+      "assignee": "Frankie Abbott",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -2432,7 +2432,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Adnan Khan",
+      "assignee": "Kerry Vale",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -2454,7 +2454,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Lindani Phiri",
+      "assignee": "Onyx Xu",
       "fixVersions": [
         "RHAIIS-3.2.5"
       ],
@@ -2508,7 +2508,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Jay Koehler",
+      "assignee": "Onyx Kelley",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -2526,7 +2526,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -2542,7 +2542,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Chris Sams",
+      "assignee": "Kerry Yates",
       "fixVersions": [],
       "labels": [
         "needs-tech-review",
@@ -2561,7 +2561,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Blocker",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -2579,7 +2579,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Dhiraj Bokde",
+      "assignee": "Merit North",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -2595,7 +2595,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Catherine Weeks",
+      "assignee": "Kerry Tate",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -2630,7 +2630,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -2649,7 +2649,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Marian Macik",
+      "assignee": "Gray Webb",
       "fixVersions": [],
       "labels": [
         "aicp-team-forge"
@@ -2667,7 +2667,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "John Haran",
+      "assignee": "Gray Swift",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -2711,7 +2711,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Minor",
-      "assignee": "Jenny Yi",
+      "assignee": "Gray Bennett",
       "fixVersions": [],
       "labels": [
         "branding",
@@ -2732,7 +2732,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Jay Koehler",
+      "assignee": "Onyx Kelley",
       "fixVersions": [],
       "labels": [],
       "completionPct": 37,
@@ -2780,7 +2780,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Matej Horinek",
+      "assignee": "Merit Lloyd",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -2796,7 +2796,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -2812,7 +2812,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Paul Boyd",
+      "assignee": "Kerry Foster",
       "fixVersions": [
         "rhoai-3.3"
       ],
@@ -2835,7 +2835,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Yuan Tang",
+      "assignee": "Merit Swift",
       "fixVersions": [],
       "labels": [
         "dashboard_scrum",
@@ -2854,7 +2854,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "llm-d"
@@ -2872,7 +2872,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Blocker",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -2908,7 +2908,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Gaurav Kamathe",
+      "assignee": "Onyx Emery",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -2924,7 +2924,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Dana Gutride",
+      "assignee": "Merit Zane",
       "fixVersions": [],
       "labels": [
         "eng",
@@ -2960,7 +2960,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Jonathan Zarecki",
+      "assignee": "Kerry Lambert",
       "fixVersions": [],
       "labels": [
         "needs-tech-review"
@@ -3012,7 +3012,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Roy Nissim",
+      "assignee": "Frankie Mead",
       "fixVersions": [],
       "labels": [],
       "completionPct": 85,
@@ -3028,7 +3028,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Rob Geada",
+      "assignee": "Frankie Flynn",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3044,7 +3044,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Lindani Phiri",
+      "assignee": "Onyx Xu",
       "fixVersions": [],
       "labels": [
         "RH-request",
@@ -3063,7 +3063,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Minor",
-      "assignee": "Christoph Goern",
+      "assignee": "Kerry Kelley",
       "fixVersions": [],
       "labels": [
         "GPU-as-a-Service",
@@ -3098,7 +3098,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Jenny Yi",
+      "assignee": "Gray Bennett",
       "fixVersions": [],
       "labels": [
         "needs-tech-review",
@@ -3117,7 +3117,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Christoph Goern",
+      "assignee": "Kerry Kelley",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3133,7 +3133,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Deepak Chourasia",
+      "assignee": "Kerry Hill",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3149,7 +3149,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3165,7 +3165,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3181,7 +3181,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Lindani Phiri",
+      "assignee": "Onyx Xu",
       "fixVersions": [],
       "labels": [
         "p0"
@@ -3199,7 +3199,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Deepak Chourasia",
+      "assignee": "Kerry Hill",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3231,7 +3231,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Steven Grubb",
+      "assignee": "Gray Park",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3279,7 +3279,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3295,7 +3295,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Minor",
-      "assignee": "Christoph Goern",
+      "assignee": "Kerry Kelley",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3359,7 +3359,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Normal",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [],
       "completionPct": 50,
@@ -3375,7 +3375,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Naina Singh",
+      "assignee": "Kerry Pierce",
       "fixVersions": [],
       "labels": [
         "PSAP",
@@ -3417,7 +3417,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Adel Zaalouk",
+      "assignee": "Kerry Palmer",
       "fixVersions": [],
       "labels": [
         "data",
@@ -3438,7 +3438,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Blocker",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [
         "ai-hub",
@@ -3457,7 +3457,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Jenny Yi",
+      "assignee": "Gray Bennett",
       "fixVersions": [],
       "labels": [
         "FY22",
@@ -3479,7 +3479,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Laura Fitzgerald",
+      "assignee": "Gray Dean",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3495,7 +3495,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -3513,7 +3513,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Umberto Manganiello",
+      "assignee": "Merit Ingram",
       "fixVersions": [],
       "labels": [
         "GPU-as-a-Service"
@@ -3531,7 +3531,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Myriam Fentanes Gutierrez",
+      "assignee": "Kerry Hunt",
       "fixVersions": [],
       "labels": [
         "GPU-as-a-Service"
@@ -3585,7 +3585,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Laura Fitzgerald",
+      "assignee": "Gray Dean",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3601,7 +3601,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Kevin Howell",
+      "assignee": "Kerry Rowe",
       "fixVersions": [],
       "labels": [
         "aicp-team-compass",
@@ -3686,7 +3686,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Roy Nissim",
+      "assignee": "Frankie Mead",
       "fixVersions": [],
       "labels": [
         "aicp-team-compass",
@@ -3705,7 +3705,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Duncan Hardie",
+      "assignee": "Gray Shaw",
       "fixVersions": [],
       "labels": [
         "Accelerator_Platform"
@@ -3723,7 +3723,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "William Eaton",
+      "assignee": "Merit Kane",
       "fixVersions": [],
       "labels": [
         "llm-d"
@@ -3741,7 +3741,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Rishab Prasad",
+      "assignee": "Kerry Walsh",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3757,7 +3757,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Jay Koehler",
+      "assignee": "Onyx Kelley",
       "fixVersions": [],
       "labels": [
         "SDElements",
@@ -3793,7 +3793,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Deepak Chourasia",
+      "assignee": "Kerry Hill",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3809,7 +3809,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3825,7 +3825,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Matteo Mortari",
+      "assignee": "Gray Graham",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -3847,7 +3847,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Jeff DeMoss",
+      "assignee": "Frankie Abbott",
       "fixVersions": [],
       "labels": [],
       "completionPct": 100,
@@ -3879,7 +3879,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Adriel Paredes",
+      "assignee": "Merit Walsh",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -3899,7 +3899,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "llm-d"
@@ -3917,7 +3917,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Myriam Fentanes Gutierrez",
+      "assignee": "Kerry Hunt",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -3933,7 +3933,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Mahmoud Alhaj",
+      "assignee": "Onyx Upton",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -4001,7 +4001,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4022,7 +4022,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Brian Gallagher",
+      "assignee": "Gray Cole",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -4060,7 +4060,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Lindani Phiri",
+      "assignee": "Onyx Xu",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -4080,7 +4080,7 @@
       "status": "Backlog",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Kelly Brown",
+      "assignee": "Merit Adler",
       "fixVersions": [],
       "labels": [
         "Approved-RFE"
@@ -4098,7 +4098,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "llm-d"
@@ -4116,7 +4116,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Erwan Gallen",
+      "assignee": "Onyx Dunn",
       "fixVersions": [
         "RHAIIS-3.3"
       ],
@@ -4136,7 +4136,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Peter Double",
+      "assignee": "Frankie Hayes",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -4161,7 +4161,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Shivchander Sudalairaj",
+      "assignee": "Frankie Xu",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -4180,7 +4180,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Russell Bryant",
+      "assignee": "Kerry Abbott",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4219,7 +4219,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -4239,7 +4239,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Selbi Siddiqi",
+      "assignee": "Frankie Clay",
       "fixVersions": [
         "RHAIIS-3.4 EA-2"
       ],
@@ -4262,7 +4262,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "William Caban Babilonia",
+      "assignee": "Gray Cross",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -4282,7 +4282,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Eshwar Prasad Sivaramakrishnan",
+      "assignee": "Gray Stone",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4302,7 +4302,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Aditi Saluja",
+      "assignee": "Onyx Stone",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -4321,7 +4321,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Umberto Manganiello",
+      "assignee": "Merit Ingram",
       "fixVersions": [],
       "labels": [
         "GPU-as-a-Service"
@@ -4339,7 +4339,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [
         "rhoai-3.4.EA2"
       ],
@@ -4361,7 +4361,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Selbi Siddiqi",
+      "assignee": "Frankie Clay",
       "fixVersions": [],
       "labels": [
         "INFERSTRAT_251116"
@@ -4379,7 +4379,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Douglas Edgar",
+      "assignee": "Frankie Judd",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4439,7 +4439,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Aileen O'Connor",
+      "assignee": "Merit Shaw",
       "fixVersions": [],
       "labels": [
         "Approved-RFE"
@@ -4457,7 +4457,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Aileen O'Connor",
+      "assignee": "Merit Shaw",
       "fixVersions": [],
       "labels": [
         "Approved-RFE"
@@ -4493,7 +4493,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Umberto Manganiello",
+      "assignee": "Merit Ingram",
       "fixVersions": [],
       "labels": [
         "needs-RICE",
@@ -4512,7 +4512,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Selbi Siddiqi",
+      "assignee": "Frankie Clay",
       "fixVersions": [
         "RHAIIS-3.4 EA-2"
       ],
@@ -4530,7 +4530,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4549,7 +4549,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Andrew Ballantyne",
+      "assignee": "Gray Walsh",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -4567,7 +4567,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Rob Geada",
+      "assignee": "Frankie Flynn",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -4593,7 +4593,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Bryan Keane",
+      "assignee": "Onyx Quinn",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -4609,7 +4609,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Justin Sun",
+      "assignee": "Gray Jay",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -4634,7 +4634,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Aidan Reilly",
+      "assignee": "Onyx Cross",
       "fixVersions": [
         "RHAIIS-3.3"
       ],
@@ -4654,7 +4654,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Yi Zheng",
+      "assignee": "Gray Knox",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -4673,7 +4673,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Vaishnavi Hire",
+      "assignee": "Merit Yates",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -4694,7 +4694,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Yi Zheng",
+      "assignee": "Gray Knox",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4713,7 +4713,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Luca Burgazzoli",
+      "assignee": "Frankie Park",
       "fixVersions": [],
       "labels": [
         "aicp-team-compass"
@@ -4731,7 +4731,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Humair Khan",
+      "assignee": "Kerry Zane",
       "fixVersions": [],
       "labels": [
         "Approved-RFE"
@@ -4749,7 +4749,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Bob Gregor",
+      "assignee": "Merit Winn",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4768,7 +4768,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Shivchander Sudalairaj",
+      "assignee": "Frankie Xu",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4788,7 +4788,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Laura Fitzgerald",
+      "assignee": "Gray Dean",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -4808,7 +4808,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Chris Hambridge",
+      "assignee": "Onyx Pierce",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -4836,7 +4836,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Varsha Prasad Narsing",
+      "assignee": "Kerry Dean",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4855,7 +4855,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Laura Fitzgerald",
+      "assignee": "Gray Dean",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -4875,7 +4875,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Sebastien Han",
+      "assignee": "Kerry Stone",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4895,7 +4895,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Normal",
-      "assignee": "Matteo Mortari",
+      "assignee": "Gray Graham",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -4915,7 +4915,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Adel Zaalouk",
+      "assignee": "Kerry Palmer",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -4936,7 +4936,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Danny Pierce",
+      "assignee": "Merit Jay",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -4963,7 +4963,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Kezia Cook",
+      "assignee": "Merit Kirk",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -4984,7 +4984,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Blocker",
-      "assignee": "Roy Nissim",
+      "assignee": "Frankie Mead",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5007,7 +5007,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Humair Khan",
+      "assignee": "Kerry Zane",
       "fixVersions": [],
       "labels": [
         "3.5-candidate"
@@ -5025,7 +5025,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Roy Nissim",
+      "assignee": "Frankie Mead",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5048,7 +5048,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "David Tam",
+      "assignee": "Onyx Clay",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -5068,7 +5068,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Nikhil Kathole",
+      "assignee": "Merit Emery",
       "fixVersions": [],
       "labels": [
         "3.4-candidate"
@@ -5086,7 +5086,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Jitendra Yejare",
+      "assignee": "Gray Kelley",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -5105,7 +5105,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Aniket Paluskar",
+      "assignee": "Kerry Ellis",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -5124,7 +5124,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -5143,7 +5143,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Emmanuel Ikeola",
+      "assignee": "Merit Bishop",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5167,7 +5167,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Bob Gregor",
+      "assignee": "Merit Winn",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -5190,7 +5190,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Umberto Manganiello",
+      "assignee": "Merit Ingram",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -5206,7 +5206,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Rob Bell",
+      "assignee": "Frankie Knox",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -5222,7 +5222,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Jehlum Vitasta Pandit",
+      "assignee": "Frankie Frost",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -5238,7 +5238,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Jehlum Vitasta Pandit",
+      "assignee": "Frankie Frost",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -5254,7 +5254,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Julian Payne",
+      "assignee": "Merit Vaughn",
       "fixVersions": [],
       "labels": [
         "3.4-candidate"
@@ -5272,7 +5272,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Derek Higgins",
+      "assignee": "Kerry Torres",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -5291,7 +5291,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Bill Murdock",
+      "assignee": "Kerry Webb",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5321,7 +5321,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "David Tam",
+      "assignee": "Onyx Clay",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5346,7 +5346,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Imran Khalidi",
+      "assignee": "Gray Evans",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5366,7 +5366,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Jitendra Yejare",
+      "assignee": "Gray Kelley",
       "fixVersions": [],
       "labels": [
         "3.5-candidate"
@@ -5384,7 +5384,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Selbi Siddiqi",
+      "assignee": "Frankie Clay",
       "fixVersions": [
         "RHAIIS-3.4 GA"
       ],
@@ -5404,7 +5404,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Demethria Ramseur",
+      "assignee": "Gray Foster",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5427,7 +5427,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Luca Burgazzoli",
+      "assignee": "Frankie Park",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -5447,7 +5447,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Aviran Badli",
+      "assignee": "Kerry Clay",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -5463,7 +5463,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Andrew Ballantyne",
+      "assignee": "Gray Walsh",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5486,7 +5486,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Arik Hadas",
+      "assignee": "Merit Kelley",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -5524,7 +5524,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Jen Albertson",
+      "assignee": "Kerry Reed",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -5544,7 +5544,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Rob Geada",
+      "assignee": "Frankie Flynn",
       "fixVersions": [],
       "labels": [
         "confidence-yellow",
@@ -5565,7 +5565,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Amita Sharma",
+      "assignee": "Merit Gibbs",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -5581,7 +5581,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Daniel Ryszka",
+      "assignee": "Merit Blake",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5603,7 +5603,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Stuart Battersby",
+      "assignee": "Merit Webb",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -5625,7 +5625,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Stuart Battersby",
+      "assignee": "Merit Webb",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -5648,7 +5648,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Stuart Battersby",
+      "assignee": "Merit Webb",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -5670,7 +5670,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Yi Zheng",
+      "assignee": "Gray Knox",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -5690,7 +5690,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Adriel Paredes",
+      "assignee": "Merit Walsh",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -5712,7 +5712,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Erwan Gallen",
+      "assignee": "Onyx Dunn",
       "fixVersions": [
         "RHAIIS-3.4 EA-1"
       ],
@@ -5748,7 +5748,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Daniel Ryszka",
+      "assignee": "Merit Blake",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5771,7 +5771,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -5807,7 +5807,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Sumanth Kamenani",
+      "assignee": "Onyx Edge",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -5826,7 +5826,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Rob Bell",
+      "assignee": "Frankie Knox",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -5842,7 +5842,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Greg Pereira",
+      "assignee": "Kerry Evans",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -5862,7 +5862,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Roy Nissim",
+      "assignee": "Frankie Mead",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5884,7 +5884,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Andrew Ballantyne",
+      "assignee": "Gray Walsh",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -5900,7 +5900,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Matteo Mortari",
+      "assignee": "Gray Graham",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -5920,7 +5920,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "David Tam",
+      "assignee": "Onyx Clay",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5944,7 +5944,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Aneesh Puttur",
+      "assignee": "Kerry Finn",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -5968,7 +5968,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -5987,7 +5987,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Dimitri Saridakis",
+      "assignee": "Onyx Mitchell",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -6009,7 +6009,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Dimitri Saridakis",
+      "assignee": "Onyx Mitchell",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -6029,7 +6029,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Dimitri Saridakis",
+      "assignee": "Onyx Mitchell",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -6048,7 +6048,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Dimitri Saridakis",
+      "assignee": "Onyx Mitchell",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -6070,7 +6070,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Adam Miller",
+      "assignee": "Onyx Irving",
       "fixVersions": [],
       "labels": [
         "autorag",
@@ -6092,7 +6092,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Arthy Loganathan",
+      "assignee": "Gray James",
       "fixVersions": [],
       "labels": [],
       "completionPct": 47,
@@ -6108,7 +6108,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Arthy Loganathan",
+      "assignee": "Gray James",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -6124,7 +6124,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Jehlum Vitasta Pandit",
+      "assignee": "Frankie Frost",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -6143,7 +6143,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -6159,7 +6159,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Charlie Doern",
+      "assignee": "Kerry Rand",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6180,7 +6180,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Adel Zaalouk",
+      "assignee": "Kerry Palmer",
       "fixVersions": [],
       "labels": [
         "RAG",
@@ -6238,7 +6238,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Rob Geada",
+      "assignee": "Frankie Flynn",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6259,7 +6259,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Blocker",
-      "assignee": "Roy Nissim",
+      "assignee": "Frankie Mead",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -6281,7 +6281,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Nicolo Lucchesi",
+      "assignee": "Merit Clay",
       "fixVersions": [],
       "labels": [
         "Approved-RFE"
@@ -6299,7 +6299,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Tyler Smith",
+      "assignee": "Gray Hale",
       "fixVersions": [],
       "labels": [
         "Approved-RFE"
@@ -6317,7 +6317,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Tyler Smith",
+      "assignee": "Gray Hale",
       "fixVersions": [],
       "labels": [
         "Approved-RFE"
@@ -6335,7 +6335,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Adriel Paredes",
+      "assignee": "Merit Walsh",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6356,7 +6356,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Normal",
-      "assignee": "Chris Hambridge",
+      "assignee": "Onyx Pierce",
       "fixVersions": [],
       "labels": [],
       "completionPct": 100,
@@ -6372,7 +6372,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Chris Hambridge",
+      "assignee": "Onyx Pierce",
       "fixVersions": [],
       "labels": [],
       "completionPct": 93,
@@ -6388,7 +6388,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Nathan Weinberg",
+      "assignee": "Merit York",
       "fixVersions": [],
       "labels": [
         "3.5-candidate"
@@ -6406,7 +6406,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Derek Higgins",
+      "assignee": "Kerry Torres",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6425,7 +6425,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Francisco Arceo",
+      "assignee": "Gray Day",
       "fixVersions": [],
       "labels": [
         "RAG",
@@ -6446,7 +6446,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Matt Leader",
+      "assignee": "Kerry Nolan",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6466,7 +6466,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Mahmoud Alhaj",
+      "assignee": "Onyx Upton",
       "fixVersions": [],
       "labels": [
         "needs-tech-review"
@@ -6484,7 +6484,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.4-candidate"
@@ -6521,7 +6521,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6542,7 +6542,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Deepak Jha",
+      "assignee": "Kerry Ward",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -6558,7 +6558,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Aditi Saluja",
+      "assignee": "Onyx Stone",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -6574,7 +6574,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Adysen Rothman",
+      "assignee": "Gray Tate",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6595,7 +6595,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Dimitri Saridakis",
+      "assignee": "Onyx Mitchell",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -6615,7 +6615,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Eder Ignatowicz",
+      "assignee": "Frankie Vaughn",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -6638,7 +6638,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Chris Hambridge",
+      "assignee": "Onyx Pierce",
       "fixVersions": [],
       "labels": [
         "model-catalog",
@@ -6657,7 +6657,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Blocker",
-      "assignee": "Ali Maredia",
+      "assignee": "Merit Evans",
       "fixVersions": [],
       "labels": [],
       "completionPct": 63,
@@ -6673,7 +6673,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Alex Brooks",
+      "assignee": "Merit Jensen",
       "fixVersions": [],
       "labels": [
         "3.5-candidate"
@@ -6691,7 +6691,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Christian Vogt",
+      "assignee": "Onyx Walsh",
       "fixVersions": [],
       "labels": [
         "3.5-ea1-candidate",
@@ -6711,7 +6711,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6732,7 +6732,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6754,7 +6754,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6776,7 +6776,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Witold Nowogorski",
+      "assignee": "Kerry Voss",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -6792,7 +6792,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Anish Asthana",
+      "assignee": "Kerry Lane",
       "fixVersions": [],
       "labels": [
         "Approved-RFE",
@@ -6811,7 +6811,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Andrew Ballantyne",
+      "assignee": "Gray Walsh",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -6827,7 +6827,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Lindani Phiri",
+      "assignee": "Onyx Xu",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -6846,7 +6846,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -6862,7 +6862,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Eder Ignatowicz",
+      "assignee": "Frankie Vaughn",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6882,7 +6882,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Muneeza Azmat",
+      "assignee": "Onyx Price",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -6902,7 +6902,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Ali Maredia",
+      "assignee": "Merit Evans",
       "fixVersions": [],
       "labels": [
         "needs-refinement",
@@ -6937,7 +6937,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Chris Hambridge",
+      "assignee": "Onyx Pierce",
       "fixVersions": [],
       "labels": [],
       "completionPct": 92,
@@ -6953,7 +6953,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [
         "3.4-arch-walkthrough",
@@ -6974,7 +6974,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -6990,7 +6990,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Roy Nissim",
+      "assignee": "Frankie Mead",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -7009,7 +7009,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -7025,7 +7025,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Divyanshi Gupta",
+      "assignee": "Kerry Archer",
       "fixVersions": [],
       "labels": [
         "ai-studio",
@@ -7049,7 +7049,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Rob Greenberg",
+      "assignee": "Onyx Vance",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -7083,7 +7083,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Chris Hambridge",
+      "assignee": "Onyx Pierce",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -7106,7 +7106,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Normal",
-      "assignee": "Chris Hambridge",
+      "assignee": "Onyx Pierce",
       "fixVersions": [
         "rhoai-3.5.EA1"
       ],
@@ -7124,7 +7124,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Jehlum Vitasta Pandit",
+      "assignee": "Frankie Frost",
       "fixVersions": [],
       "labels": [
         "3.5-candidate"
@@ -7142,7 +7142,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Roy Nissim",
+      "assignee": "Frankie Mead",
       "fixVersions": [],
       "labels": [
         "3.5-candidate"
@@ -7160,7 +7160,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Normal",
-      "assignee": "Mustafa Eyceoz",
+      "assignee": "Gray Brock",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -7179,7 +7179,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Mustafa Eyceoz",
+      "assignee": "Gray Brock",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -7198,7 +7198,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Diego Maniloff",
+      "assignee": "Kerry Frost",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -7214,7 +7214,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Diego Maniloff",
+      "assignee": "Kerry Frost",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -7230,7 +7230,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Nir Rozenbaum",
+      "assignee": "Kerry Upton",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -7249,7 +7249,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Sumanth Kamenani",
+      "assignee": "Onyx Edge",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7268,7 +7268,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Adam Miller",
+      "assignee": "Onyx Irving",
       "fixVersions": [],
       "labels": [
         "navigator"
@@ -7306,7 +7306,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Rishabh Saini",
+      "assignee": "Kerry Bennett",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -7327,7 +7327,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Deepak Jha",
+      "assignee": "Kerry Ward",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -7382,7 +7382,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Rob Geada",
+      "assignee": "Frankie Flynn",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7402,7 +7402,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Sumanth Kamenani",
+      "assignee": "Onyx Edge",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7422,7 +7422,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Douglas Edgar",
+      "assignee": "Frankie Judd",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7442,7 +7442,7 @@
       "status": "Backlog",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -7458,7 +7458,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -7474,7 +7474,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Mustafa Eyceoz",
+      "assignee": "Gray Brock",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -7493,7 +7493,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Adam Miller",
+      "assignee": "Onyx Irving",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7514,7 +7514,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -7533,7 +7533,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Greg Pereira",
+      "assignee": "Kerry Evans",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7625,7 +7625,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Vaishnavi Hire",
+      "assignee": "Merit Yates",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7645,7 +7645,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Nathan Weinberg",
+      "assignee": "Merit York",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7665,7 +7665,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Alina Ryan",
+      "assignee": "Frankie Walsh",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7684,7 +7684,7 @@
       "status": "Refinement",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -7704,7 +7704,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Jonathan Zarecki",
+      "assignee": "Kerry Lambert",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -7724,7 +7724,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Eder Ignatowicz",
+      "assignee": "Frankie Vaughn",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7744,7 +7744,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Blocker",
-      "assignee": "Luca Burgazzoli",
+      "assignee": "Frankie Park",
       "fixVersions": [],
       "labels": [
         "3.4-committed"
@@ -7762,7 +7762,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Matteo Mortari",
+      "assignee": "Gray Graham",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7782,7 +7782,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Selbi Siddiqi",
+      "assignee": "Frankie Clay",
       "fixVersions": [
         "RHAIIS-3.5"
       ],
@@ -7802,7 +7802,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Selbi Siddiqi",
+      "assignee": "Frankie Clay",
       "fixVersions": [
         "RHAIIS-3.4"
       ],
@@ -7823,7 +7823,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Selbi Siddiqi",
+      "assignee": "Frankie Clay",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -7855,7 +7855,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Normal",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.4-candidate"
@@ -7873,7 +7873,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Selbi Siddiqi",
+      "assignee": "Frankie Clay",
       "fixVersions": [
         "RHAIIS-3.4"
       ],
@@ -7894,7 +7894,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Michael Goin",
+      "assignee": "Kerry Gold",
       "fixVersions": [],
       "labels": [
         "needs-tech-review"
@@ -7912,7 +7912,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Yi Zheng",
+      "assignee": "Gray Knox",
       "fixVersions": [
         "rhoai-3.5"
       ],
@@ -7930,7 +7930,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Nick Ommen",
+      "assignee": "Frankie Dean",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -7946,7 +7946,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Minor",
-      "assignee": "Jehlum Vitasta Pandit",
+      "assignee": "Frankie Frost",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate"
@@ -7964,7 +7964,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Pierangelo Di Pilato",
+      "assignee": "Onyx Oliver",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -7986,7 +7986,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Francisco Arceo",
+      "assignee": "Gray Day",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -8023,7 +8023,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Muneeza Azmat",
+      "assignee": "Onyx Price",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -8039,7 +8039,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Francisco Arceo",
+      "assignee": "Gray Day",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate"
@@ -8057,7 +8057,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Erwan Gallen",
+      "assignee": "Onyx Dunn",
       "fixVersions": [
         "RHAIIS-3.4 EA-1"
       ],
@@ -8077,7 +8077,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Jonathan Zarecki",
+      "assignee": "Kerry Lambert",
       "fixVersions": [],
       "labels": [
         "3.4-candidate",
@@ -8097,7 +8097,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Francisco Arceo",
+      "assignee": "Gray Day",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8116,7 +8116,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Shruthi Sankepelly",
+      "assignee": "Gray Vale",
       "fixVersions": [],
       "labels": [
         "rhoai-3.5"
@@ -8134,7 +8134,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Blocker",
-      "assignee": "Rishabh Singh",
+      "assignee": "Gray Yates",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8153,7 +8153,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Alina Ryan",
+      "assignee": "Frankie Walsh",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8172,7 +8172,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Blocker",
-      "assignee": "Jay Koehler",
+      "assignee": "Onyx Kelley",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -8188,7 +8188,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Ana Biazetti",
+      "assignee": "Frankie Gordon",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8207,7 +8207,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Ana Biazetti",
+      "assignee": "Frankie Gordon",
       "fixVersions": [],
       "labels": [
         "3.5",
@@ -8247,7 +8247,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Charlie Doern",
+      "assignee": "Kerry Rand",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8288,7 +8288,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Bill Murdock",
+      "assignee": "Kerry Webb",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -8307,7 +8307,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Adriel Paredes",
+      "assignee": "Merit Walsh",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8326,7 +8326,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Lukasz Cmielowski",
+      "assignee": "Gray Zimmerman",
       "fixVersions": [
         "rhoai-3.5"
       ],
@@ -8346,7 +8346,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Lukasz Cmielowski",
+      "assignee": "Gray Zimmerman",
       "fixVersions": [
         "rhoai-3.5"
       ],
@@ -8366,7 +8366,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Lukasz Cmielowski",
+      "assignee": "Gray Zimmerman",
       "fixVersions": [
         "rhoai-3.5"
       ],
@@ -8386,7 +8386,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Lukasz Cmielowski",
+      "assignee": "Gray Zimmerman",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8405,7 +8405,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Bill Murdock",
+      "assignee": "Kerry Webb",
       "fixVersions": [],
       "labels": [
         "3.Next-candidate",
@@ -8424,7 +8424,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Eder Ignatowicz",
+      "assignee": "Frankie Vaughn",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8444,7 +8444,7 @@
       "status": "Review",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [
         "rhoai-3.4"
       ],
@@ -8465,7 +8465,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Nelesh Singla",
+      "assignee": "Gray Grant",
       "fixVersions": [],
       "labels": [
         "MLflow",
@@ -8485,7 +8485,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Erwan Gallen",
+      "assignee": "Onyx Dunn",
       "fixVersions": [],
       "labels": [
         "tech-reviewed"
@@ -8529,7 +8529,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Normal",
-      "assignee": "Rui Vieira",
+      "assignee": "Onyx Finn",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8549,7 +8549,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Rob Geada",
+      "assignee": "Frankie Flynn",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8588,7 +8588,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Selbi Siddiqi",
+      "assignee": "Frankie Clay",
       "fixVersions": [],
       "labels": [
         "needs-tech-review",
@@ -8608,7 +8608,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Kezia Cook",
+      "assignee": "Merit Kirk",
       "fixVersions": [],
       "labels": [],
       "completionPct": 0,
@@ -8624,7 +8624,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Adam Bellusci",
+      "assignee": "Merit Zimmerman",
       "fixVersions": [],
       "labels": [
         "NIM",
@@ -8644,7 +8644,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Tyler Smith",
+      "assignee": "Gray Hale",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8665,7 +8665,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Russell Bryant",
+      "assignee": "Kerry Abbott",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8685,7 +8685,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Sida Feng",
+      "assignee": "Onyx Blake",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",
@@ -8705,7 +8705,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Sida Feng",
+      "assignee": "Onyx Blake",
       "fixVersions": [],
       "labels": [
         "3.5-candidate",

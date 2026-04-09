@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Aniket Paluskar",
+    "displayName": "Kerry Ellis",
     "accountId": "712020:dfc9ab32-d4ac-427e-8ef1-bb2ab45a1696"
   },
   "fixVersions": [],
@@ -96,7 +96,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Aniket Paluskar",
+          "assignee": "Kerry Ellis",
           "components": [
             "Feature Store"
           ],
@@ -114,7 +114,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Aniket Paluskar",
+          "assignee": "Kerry Ellis",
           "components": [
             "Feature Store"
           ],
@@ -132,7 +132,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Aniket Paluskar",
+          "assignee": "Kerry Ellis",
           "components": [
             "Feature Store"
           ],
@@ -150,7 +150,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Aniket Paluskar",
+          "assignee": "Kerry Ellis",
           "components": [
             "Feature Store"
           ],
@@ -169,7 +169,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Former Member 4",
+      "assignee": "Kerry Joyce",
       "components": [
         "Documentation"
       ],
@@ -186,7 +186,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Dana Brown",
+          "assignee": "Merit Fischer",
           "components": [
             "Documentation"
           ],
@@ -204,7 +204,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Dana Brown",
+          "assignee": "Merit Fischer",
           "components": [
             "Documentation"
           ],
@@ -240,7 +240,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Srihari Venkataramaiah",
+          "assignee": "Kerry North",
           "components": [
             "Feature Store"
           ],
@@ -296,7 +296,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Gowtham Shanmugasundaram",
+          "assignee": "Onyx Tate",
           "components": [
             "AI Core Platform"
           ],
@@ -339,7 +339,7 @@
         "summary": "Feature Store OIDC Authentication Support",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Aniket Paluskar",
+        "assignee": "Kerry Ellis",
         "totalIssues": 4,
         "doneIssues": 1,
         "progressPct": 25,
@@ -352,7 +352,7 @@
         "summary": "[ccs Epic] Document Feature Store OIDC Authentication",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Dana Brown",
+        "assignee": "Merit Fischer",
         "totalIssues": 2,
         "doneIssues": 0,
         "progressPct": 0,
@@ -365,7 +365,7 @@
         "summary": "Feature Store OIDC Authentication Support Testing",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Srihari Venkataramaiah",
+        "assignee": "Kerry North",
         "totalIssues": 2,
         "doneIssues": 1,
         "progressPct": 50,

@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Major",
   "assignee": {
-    "displayName": "Rob Geada",
+    "displayName": "Frankie Flynn",
     "accountId": "5e258328a7b9540e76f44821"
   },
   "fixVersions": [],
@@ -56,7 +56,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Christina Xu",
+          "assignee": "Kerry James",
           "components": [
             "AI Safety"
           ],
@@ -110,7 +110,7 @@
         "summary": "Integrate Kagenti Plugin Adapter into TrustyAI",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Christina Xu",
+        "assignee": "Kerry James",
         "totalIssues": 1,
         "doneIssues": 0,
         "progressPct": 0,
@@ -123,7 +123,7 @@
         "summary": "Understand Request Pathways from MCP Servers, Gateway, Plugin Adapter, and NeMo",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Christina Xu",
+        "assignee": "Kerry James",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

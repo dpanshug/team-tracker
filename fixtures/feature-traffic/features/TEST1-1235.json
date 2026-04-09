@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Blocker",
   "assignee": {
-    "displayName": "Roy Nissim",
+    "displayName": "Frankie Mead",
     "accountId": "712020:3e6483d7-a7f9-4847-950f-102899cadf8f"
   },
   "fixVersions": [],
@@ -193,7 +193,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Steven Tobin",
+          "assignee": "Gray Finn",
           "components": [
             "AI Core Dashboard",
             "AI Core Platform"
@@ -215,7 +215,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Andrew Ballantyne",
+          "assignee": "Gray Walsh",
           "components": [
             "AI Core Dashboard"
           ],
@@ -235,7 +235,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Christian Vogt",
+          "assignee": "Onyx Walsh",
           "components": [
             "AI Core Dashboard"
           ],
@@ -255,7 +255,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Andrew Ballantyne",
+          "assignee": "Gray Walsh",
           "components": [
             "AI Core Dashboard"
           ],
@@ -275,7 +275,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Christian Vogt",
+          "assignee": "Onyx Walsh",
           "components": [
             "AI Core Dashboard"
           ],
@@ -314,7 +314,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Tal Gitelman",
+          "assignee": "Merit Lambert",
           "components": [
             "Inference Extensions"
           ],
@@ -332,7 +332,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Tal Gitelman",
+          "assignee": "Merit Lambert",
           "components": [
             "Inference Extensions"
           ],
@@ -350,7 +350,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Tal Gitelman",
+          "assignee": "Merit Lambert",
           "components": [
             "Inference Extensions"
           ],
@@ -368,7 +368,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -386,7 +386,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -404,7 +404,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Somya Bhatnagar",
+          "assignee": "Onyx Hayes",
           "components": [
             "Model as a Service"
           ],
@@ -458,7 +458,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "liel bondy",
+          "assignee": "Kerry Nash",
           "components": [
             "Inference Extensions"
           ],
@@ -476,7 +476,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Tal Gitelman",
+          "assignee": "Merit Lambert",
           "components": [
             "Inference Extensions"
           ],
@@ -494,7 +494,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Arik Hadas",
+          "assignee": "Merit Kelley",
           "components": [
             "Inference Extensions"
           ],
@@ -512,7 +512,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Tal Gitelman",
+          "assignee": "Merit Lambert",
           "components": [
             "Inference Extensions"
           ],
@@ -530,7 +530,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Tal Gitelman",
+          "assignee": "Merit Lambert",
           "components": [
             "Inference Extensions"
           ],
@@ -548,7 +548,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "liel bondy",
+          "assignee": "Kerry Nash",
           "components": [
             "Inference Extensions"
           ],
@@ -566,7 +566,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "liel bondy",
+          "assignee": "Kerry Nash",
           "components": [
             "Inference Extensions"
           ],
@@ -584,7 +584,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Arik Hadas",
+          "assignee": "Merit Kelley",
           "components": [
             "Inference Extensions"
           ],
@@ -602,7 +602,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Tal Gitelman",
+          "assignee": "Merit Lambert",
           "components": [
             "Inference Extensions"
           ],
@@ -643,7 +643,7 @@
         "summary": "Tech Preview - MaaS Observability & Showback UI [Dashboard]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Andrew Ballantyne",
+        "assignee": "Gray Walsh",
         "totalIssues": 5,
         "doneIssues": 3,
         "progressPct": 60,
@@ -656,7 +656,7 @@
         "summary": "Prometheus Dashboards for MaaS Showback",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Tal Gitelman",
+        "assignee": "Merit Lambert",
         "totalIssues": 6,
         "doneIssues": 2,
         "progressPct": 33,
@@ -669,7 +669,7 @@
         "summary": "Optimize the observability stack for showback",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Tal Gitelman",
+        "assignee": "Merit Lambert",
         "totalIssues": 10,
         "doneIssues": 2,
         "progressPct": 20,

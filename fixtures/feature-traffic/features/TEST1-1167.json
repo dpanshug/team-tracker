@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Andrew Ballantyne",
+    "displayName": "Gray Walsh",
     "accountId": "5fdb88f09edf280075ce339d"
   },
   "fixVersions": [
@@ -170,7 +170,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Andrew Ballantyne",
+          "assignee": "Gray Walsh",
           "components": [
             "AI Core Dashboard"
           ],
@@ -191,7 +191,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -211,7 +211,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Sri Sai Sowjanya Darna",
+          "assignee": "Gray Frost",
           "components": [
             "AI Core Dashboard"
           ],
@@ -232,7 +232,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Ashley McEntee",
+          "assignee": "Frankie Zimmerman",
           "components": [
             "AI Core Dashboard"
           ],
@@ -252,7 +252,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Ashley McEntee",
+          "assignee": "Frankie Zimmerman",
           "components": [
             "AI Core Dashboard"
           ],
@@ -272,7 +272,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Ashley McEntee",
+          "assignee": "Frankie Zimmerman",
           "components": [
             "AI Core Dashboard"
           ],
@@ -292,7 +292,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -312,7 +312,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -332,7 +332,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -352,7 +352,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Ashley McEntee",
+          "assignee": "Frankie Zimmerman",
           "components": [
             "AI Core Dashboard"
           ],
@@ -372,7 +372,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Andrew Ballantyne",
+          "assignee": "Gray Walsh",
           "components": [
             "AI Core Dashboard"
           ],
@@ -392,7 +392,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Ashley McEntee",
+          "assignee": "Frankie Zimmerman",
           "components": [
             "AI Core Dashboard"
           ],
@@ -412,7 +412,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Ashley McEntee",
+          "assignee": "Frankie Zimmerman",
           "components": [],
           "labels": [
             "dashboard-area-model-serving"
@@ -430,7 +430,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Ashley McEntee",
+          "assignee": "Frankie Zimmerman",
           "components": [
             "AI Core Dashboard"
           ],
@@ -450,7 +450,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Ashley McEntee",
+          "assignee": "Frankie Zimmerman",
           "components": [
             "AI Core Dashboard"
           ],
@@ -470,7 +470,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -490,7 +490,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -534,7 +534,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Killian Golds",
+          "assignee": "Kerry Mitchell",
           "components": [
             "IBM P",
             "IBM Z",
@@ -557,7 +557,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Killian Golds",
+          "assignee": "Kerry Mitchell",
           "components": [
             "IBM P",
             "IBM Z",
@@ -580,7 +580,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Killian Golds",
+          "assignee": "Kerry Mitchell",
           "components": [
             "IBM P",
             "IBM Z",
@@ -603,7 +603,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Killian Golds",
+          "assignee": "Kerry Mitchell",
           "components": [
             "llm-d",
             "Model Serving"
@@ -624,7 +624,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Killian Golds",
+          "assignee": "Kerry Mitchell",
           "components": [
             "IBM P",
             "IBM Z",
@@ -647,7 +647,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Killian Golds",
+          "assignee": "Kerry Mitchell",
           "components": [
             "llm-d",
             "Model as a Service",
@@ -668,7 +668,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Killian Golds",
+          "assignee": "Kerry Mitchell",
           "components": [
             "llm-d",
             "Model as a Service",
@@ -712,7 +712,7 @@
         "summary": "vLLM on MaaS",
         "status": "Review",
         "statusCategory": "In Progress",
-        "assignee": "Emily Samoylov",
+        "assignee": "Merit Carter",
         "totalIssues": 17,
         "doneIssues": 14,
         "progressPct": 82,
@@ -725,7 +725,7 @@
         "summary": "Enable vLLM Runtime Support in MaaS",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Killian Golds",
+        "assignee": "Kerry Mitchell",
         "totalIssues": 7,
         "doneIssues": 5,
         "progressPct": 71,

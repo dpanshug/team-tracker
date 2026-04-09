@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Lindani Phiri",
+    "displayName": "Onyx Xu",
     "accountId": "70121:f3dfd35d-9dbc-4225-9e98-a28612802cc7"
   },
   "fixVersions": [],
@@ -115,7 +115,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Sukumar Subramani",
+          "assignee": "Gray Fischer",
           "components": [
             "AI Core Platform"
           ],
@@ -135,7 +135,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Sukumar Subramani",
+          "assignee": "Gray Fischer",
           "components": [
             "AI Core Platform"
           ],
@@ -155,7 +155,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Sukumar Subramani",
+          "assignee": "Gray Fischer",
           "components": [
             "AI Core Platform"
           ],
@@ -175,7 +175,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Sukumar Subramani",
+          "assignee": "Gray Fischer",
           "components": [
             "AI Core Platform"
           ],
@@ -253,7 +253,7 @@
         "summary": "[AI Core Platform] Verify RHOAI runs on HCP on OCP Virt",
         "status": "Backlog",
         "statusCategory": "To Do",
-        "assignee": "Carl Kyrillos",
+        "assignee": "Merit Xu",
         "totalIssues": 4,
         "doneIssues": 1,
         "progressPct": 25,

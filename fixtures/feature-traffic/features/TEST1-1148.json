@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Derek Higgins",
+    "displayName": "Kerry Torres",
     "accountId": "70121:a61c7103-234c-42fe-aad3-ec1cda893c0d"
   },
   "fixVersions": [],
@@ -89,7 +89,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -107,7 +107,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Blocker",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -127,7 +127,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -145,7 +145,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -163,7 +163,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -181,7 +181,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -199,7 +199,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -217,7 +217,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -235,7 +235,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -253,7 +253,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -271,7 +271,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -289,7 +289,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -307,7 +307,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -325,7 +325,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -343,7 +343,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -361,7 +361,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -379,7 +379,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -397,7 +397,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -415,7 +415,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -433,7 +433,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -451,7 +451,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -469,7 +469,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Derek Higgins",
+          "assignee": "Kerry Torres",
           "components": [
             "Llama Stack Core"
           ],
@@ -507,7 +507,7 @@
         "summary": "Tech Preview - ODH and RHOAI Integrations [Llamastack ABAC]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Derek Higgins",
+        "assignee": "Kerry Torres",
         "totalIssues": 22,
         "doneIssues": 15,
         "progressPct": 68,

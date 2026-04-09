@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Deepak Chourasia",
+    "displayName": "Kerry Hill",
     "accountId": "712020:395040de-1e7a-4630-a23b-c43f216d8baa"
   },
   "fixVersions": [],
@@ -1155,7 +1155,7 @@
         "summary": "Stretch Goal: RHOAI Early Gate Infrastructure",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Deepak Chourasia",
+        "assignee": "Kerry Hill",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Stuart Battersby",
+    "displayName": "Merit Webb",
     "accountId": "712020:d1f056a6-a23c-41b9-99b1-6d58953ce814"
   },
   "fixVersions": [],
@@ -79,7 +79,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Safety"
           ],
@@ -152,7 +152,7 @@
         "summary": "Create HTML report for Garak output",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Henrique Nunes",
+        "assignee": "Onyx Zimmerman",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,
@@ -165,7 +165,7 @@
         "summary": "QE for HTML report generation",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Karishma Punwatkar",
+        "assignee": "Kerry Cross",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -178,7 +178,7 @@
         "summary": "Implement generation of Garak intent typology and stub files from a red-teaming dataset and generate risk-based assessment report from Garak results.",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Henrique Nunes",
+        "assignee": "Onyx Zimmerman",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

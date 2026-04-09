@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Emmanuel Ikeola",
+    "displayName": "Merit Bishop",
     "accountId": "712020:ae505486-f587-4834-bec0-a32773e90835"
   },
   "fixVersions": [
@@ -236,7 +236,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -257,7 +257,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -277,7 +277,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -297,7 +297,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -318,7 +318,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -339,7 +339,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -360,7 +360,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -381,7 +381,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -421,7 +421,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -441,7 +441,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -461,7 +461,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -481,7 +481,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -501,7 +501,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -521,7 +521,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -542,7 +542,7 @@
       "status": "Resolved",
       "statusCategory": "Done",
       "priority": "Major",
-      "assignee": "Former Member 5",
+      "assignee": "Merit Upton",
       "components": [
         "DevOps"
       ],
@@ -561,7 +561,7 @@
       "status": "Resolved",
       "statusCategory": "Done",
       "priority": "Critical",
-      "assignee": "Former Member 5",
+      "assignee": "Merit Upton",
       "components": [
         "DevOps"
       ],
@@ -600,7 +600,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -660,7 +660,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -680,7 +680,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -700,7 +700,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -720,7 +720,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -740,7 +740,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -760,7 +760,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -800,7 +800,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -820,7 +820,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -860,7 +860,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -880,7 +880,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -920,7 +920,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -940,7 +940,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -980,7 +980,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1000,7 +1000,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1040,7 +1040,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1060,7 +1060,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1080,7 +1080,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1100,7 +1100,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1140,7 +1140,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1160,7 +1160,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1180,7 +1180,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1200,7 +1200,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1320,7 +1320,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1340,7 +1340,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1360,7 +1360,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1400,7 +1400,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1420,7 +1420,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Emmanuel Ikeola",
+          "assignee": "Merit Bishop",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1500,7 +1500,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1520,7 +1520,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Purva Naik",
+          "assignee": "Frankie Rand",
           "components": [
             "AI Core Dashboard"
           ],
@@ -2000,7 +2000,7 @@
         "summary": "Dashboard Eval Hub - Deployment",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Purva Naik",
+        "assignee": "Frankie Rand",
         "totalIssues": 8,
         "doneIssues": 8,
         "progressPct": 100,
@@ -2013,7 +2013,7 @@
         "summary": "Eval Hub - 3.4 EA2",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Emmanuel Ikeola",
+        "assignee": "Merit Bishop",
         "totalIssues": 6,
         "doneIssues": 6,
         "progressPct": 100,
@@ -2026,7 +2026,7 @@
         "summary": "ODH Konflux Release Build Onboarding [Eval Hub Modular Architecture]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Peter Keappock",
+        "assignee": "Merit Oates",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2039,7 +2039,7 @@
         "summary": "RHOAI Konflux Onboarding [Eval Hub Modular Architecture]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Peter Keappock",
+        "assignee": "Merit Oates",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2052,7 +2052,7 @@
         "summary": "Eval Hub - Foundation",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Purva Naik",
+        "assignee": "Frankie Rand",
         "totalIssues": 9,
         "doneIssues": 9,
         "progressPct": 100,
@@ -2065,7 +2065,7 @@
         "summary": "Eval Hub - Collections Browse",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Purva Naik",
+        "assignee": "Frankie Rand",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
@@ -2078,7 +2078,7 @@
         "summary": "Eval Hub - Trigger Evaluation",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Emmanuel Ikeola",
+        "assignee": "Merit Bishop",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
@@ -2091,7 +2091,7 @@
         "summary": "Eval Hub - Runs List & Status Monitoring ",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Emmanuel Ikeola",
+        "assignee": "Merit Bishop",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
@@ -2117,7 +2117,7 @@
         "summary": "Eval Hub - Benchmarks and Benchmark suite",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Purva Naik",
+        "assignee": "Frankie Rand",
         "totalIssues": 9,
         "doneIssues": 8,
         "progressPct": 89,
@@ -2143,7 +2143,7 @@
         "summary": "Evalhub - MLFlow Embedded UI",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Emmanuel Ikeola",
+        "assignee": "Merit Bishop",
         "totalIssues": 3,
         "doneIssues": 3,
         "progressPct": 100,
@@ -2156,7 +2156,7 @@
         "summary": "Evalhub - Mocked Tests",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Emmanuel Ikeola",
+        "assignee": "Merit Bishop",
         "totalIssues": 4,
         "doneIssues": 2,
         "progressPct": 50,
@@ -2169,7 +2169,7 @@
         "summary": "Evalhub - UI Bugs",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Purva Naik",
+        "assignee": "Frankie Rand",
         "totalIssues": 3,
         "doneIssues": 2,
         "progressPct": 67,
@@ -2182,7 +2182,7 @@
         "summary": "Tech Preview - ODH and RHOAI Integrations [AI Core Dashboard - EvalHub]",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Emmanuel Ikeola",
+        "assignee": "Merit Bishop",
         "totalIssues": 22,
         "doneIssues": 22,
         "progressPct": 100,

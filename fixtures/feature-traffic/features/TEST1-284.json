@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Major",
   "assignee": {
-    "displayName": "Jay Koehler",
+    "displayName": "Onyx Kelley",
     "accountId": "606b693110a0a9006fd7ca32"
   },
   "fixVersions": [],
@@ -77,7 +77,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Major",
-          "assignee": "Matthew Stratton",
+          "assignee": "Merit Judd",
           "components": [
             "AI Core Platform"
           ],

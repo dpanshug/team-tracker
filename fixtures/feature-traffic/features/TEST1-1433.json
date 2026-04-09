@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Nelesh Singla",
+    "displayName": "Gray Grant",
     "accountId": "712020:07c24d45-743b-4e25-a6fc-2e87b3176f76"
   },
   "fixVersions": [],
@@ -230,7 +230,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Helber Belmiro",
+          "assignee": "Onyx Yates",
           "components": [
             "AI Pipelines"
           ],
@@ -248,7 +248,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Vani Haripriya Mudadla",
+          "assignee": "Onyx Foster",
           "components": [
             "AI Pipelines"
           ],
@@ -266,7 +266,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Alyssa Goins",
+          "assignee": "Onyx North",
           "components": [
             "AI Pipelines"
           ],
@@ -284,7 +284,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Alyssa Goins",
+          "assignee": "Onyx North",
           "components": [
             "AI Pipelines"
           ],
@@ -302,7 +302,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Alyssa Goins",
+          "assignee": "Onyx North",
           "components": [
             "AI Pipelines"
           ],
@@ -320,7 +320,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Alyssa Goins",
+          "assignee": "Onyx North",
           "components": [
             "AI Pipelines"
           ],
@@ -338,7 +338,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Vani Haripriya Mudadla",
+          "assignee": "Onyx Foster",
           "components": [],
           "labels": [],
           "storyPoints": 5,
@@ -354,7 +354,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Nelesh Singla",
+          "assignee": "Gray Grant",
           "components": [
             "AI Pipelines"
           ],
@@ -392,7 +392,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Guilherme Caponetto",
+          "assignee": "Merit Sato",
           "components": [
             "AI Core Dashboard"
           ],
@@ -412,7 +412,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Guilherme Caponetto",
+          "assignee": "Merit Sato",
           "components": [
             "AI Core Dashboard"
           ],
@@ -432,7 +432,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Guilherme Caponetto",
+          "assignee": "Merit Sato",
           "components": [
             "AI Core Dashboard"
           ],
@@ -452,7 +452,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Guilherme Caponetto",
+          "assignee": "Merit Sato",
           "components": [
             "AI Core Dashboard"
           ],
@@ -472,7 +472,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Guilherme Caponetto",
+          "assignee": "Merit Sato",
           "components": [
             "AI Core Dashboard"
           ],
@@ -516,7 +516,7 @@
         "summary": "Integrate MLflow with KFP",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Nelesh Singla",
+        "assignee": "Gray Grant",
         "totalIssues": 8,
         "doneIssues": 2,
         "progressPct": 25,
@@ -529,7 +529,7 @@
         "summary": "Integrate Dashboard Pipelines Runs with MLflow",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Guilherme Caponetto",
+        "assignee": "Merit Sato",
         "totalIssues": 5,
         "doneIssues": 4,
         "progressPct": 80,

@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Divyanshi Gupta",
+    "displayName": "Kerry Archer",
     "accountId": "5cae085960d95a751f0f12b5"
   },
   "fixVersions": [],
@@ -99,7 +99,7 @@
       "status": "Backlog",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Former Member 10",
+      "assignee": "Onyx Ellis",
       "components": [
         "AI Core Dashboard"
       ],
@@ -118,7 +118,7 @@
       "status": "Backlog",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Former Member 10",
+      "assignee": "Onyx Ellis",
       "components": [
         "AI Core Dashboard"
       ],
@@ -137,7 +137,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Divyanshi Gupta",
+          "assignee": "Kerry Archer",
           "components": [
             "AI Core Dashboard"
           ],
@@ -157,7 +157,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Divyanshi Gupta",
+          "assignee": "Kerry Archer",
           "components": [
             "AI Core Dashboard"
           ],
@@ -177,7 +177,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Divyanshi Gupta",
+          "assignee": "Kerry Archer",
           "components": [
             "AI Core Dashboard"
           ],
@@ -198,7 +198,7 @@
       "status": "Backlog",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Former Member 10",
+      "assignee": "Onyx Ellis",
       "components": [
         "AI Core Dashboard"
       ],
@@ -278,7 +278,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Former Member 10",
+      "assignee": "Onyx Ellis",
       "components": [
         "AI Core Dashboard"
       ],
@@ -335,7 +335,7 @@
         "summary": "Guardrails support for each chat in chat compare mode",
         "status": "Backlog",
         "statusCategory": "To Do",
-        "assignee": "Divyanshi Gupta",
+        "assignee": "Kerry Archer",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -348,7 +348,7 @@
         "summary": "NeMo Guardrails API Integration & LLS Guardrails Removal",
         "status": "Backlog",
         "statusCategory": "To Do",
-        "assignee": "Divyanshi Gupta",
+        "assignee": "Kerry Archer",
         "totalIssues": 3,
         "doneIssues": 0,
         "progressPct": 0,
@@ -361,7 +361,7 @@
         "summary": "NeMo Guardrails Configuration & Lifecycle Management",
         "status": "Backlog",
         "statusCategory": "To Do",
-        "assignee": "Divyanshi Gupta",
+        "assignee": "Kerry Archer",
         "totalIssues": 3,
         "doneIssues": 0,
         "progressPct": 0,
@@ -374,7 +374,7 @@
         "summary": "Signoff - Migrate Guardrails Integration to NeMo Guardrails",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Divyanshi Gupta",
+        "assignee": "Kerry Archer",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

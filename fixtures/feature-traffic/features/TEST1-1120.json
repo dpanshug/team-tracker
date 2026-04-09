@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Roy Nissim",
+    "displayName": "Frankie Mead",
     "accountId": "712020:3e6483d7-a7f9-4847-950f-102899cadf8f"
   },
   "fixVersions": [
@@ -112,7 +112,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Bartosz Majsak",
+          "assignee": "Merit Quinn",
           "components": [
             "Model as a Service"
           ],
@@ -130,7 +130,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Jim Rhyness",
+          "assignee": "Frankie Day",
           "components": [
             "Model as a Service"
           ],
@@ -152,7 +152,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Yuriy Teodorovych",
+          "assignee": "Gray York",
           "components": [
             "Model as a Service"
           ],

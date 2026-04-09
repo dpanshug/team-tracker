@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Blocker",
   "assignee": {
-    "displayName": "Ali Maredia",
+    "displayName": "Merit Evans",
     "accountId": "5aba8737f4b3dd2a74573cf7"
   },
   "fixVersions": [],
@@ -96,7 +96,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Shruthi Sankepelly",
+          "assignee": "Gray Vale",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -136,7 +136,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Ali Maredia",
+          "assignee": "Merit Evans",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -155,7 +155,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Shruthi Sankepelly",
+          "assignee": "Gray Vale",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -174,7 +174,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Shruthi Sankepelly",
+          "assignee": "Gray Vale",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -196,7 +196,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Ali Maredia",
+          "assignee": "Merit Evans",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -215,7 +215,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Shruthi Sankepelly",
+          "assignee": "Gray Vale",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -237,7 +237,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Vedant Deshpande",
+          "assignee": "Onyx Ward",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -256,7 +256,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Ali Maredia",
+          "assignee": "Merit Evans",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -275,7 +275,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Ali Maredia",
+          "assignee": "Merit Evans",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -294,7 +294,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Ali Maredia",
+          "assignee": "Merit Evans",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -409,7 +409,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Adrian Sanz Gomiz",
+          "assignee": "Gray Sato",
           "components": [
             "AI Core Platform"
           ],
@@ -429,7 +429,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Rishabh Singh",
+          "assignee": "Gray Yates",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -448,7 +448,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Vedant Deshpande",
+          "assignee": "Onyx Ward",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -467,7 +467,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Ali Maredia",
+          "assignee": "Merit Evans",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -489,7 +489,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Shruthi Sankepelly",
+          "assignee": "Gray Vale",
           "components": [
             "Data Processing",
             "Kubeflow Spark Operator"
@@ -511,7 +511,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Shruthi Sankepelly",
+          "assignee": "Gray Vale",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -551,7 +551,7 @@
         "summary": "Tech Preview - ODH and RHOAI Integrations [Kubeflow Spark Operator]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Ali Maredia",
+        "assignee": "Merit Evans",
         "totalIssues": 24,
         "doneIssues": 15,
         "progressPct": 63,

@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Rui Vieira",
+    "displayName": "Onyx Finn",
     "accountId": "70121:5a9a760a-598b-49c2-af0e-60c52f76c598"
   },
   "fixVersions": [
@@ -297,7 +297,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -318,7 +318,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -359,7 +359,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Narayan Sagar B S",
+          "assignee": "Merit Lowe",
           "components": [
             "AI Evaluations"
           ],
@@ -380,7 +380,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Julian Payne",
+          "assignee": "Merit Vaughn",
           "components": [
             "AI Evaluations"
           ],
@@ -401,7 +401,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Gin Biak Naulak",
+          "assignee": "Frankie Young",
           "components": [
             "AI Evaluations"
           ],
@@ -421,7 +421,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Julian Payne",
+          "assignee": "Merit Vaughn",
           "components": [
             "AI Evaluations"
           ],
@@ -503,7 +503,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Narayan Sagar B S",
+          "assignee": "Merit Lowe",
           "components": [
             "AI Evaluations",
             "Documentation"
@@ -528,7 +528,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Sobha Cheruku",
+          "assignee": "Merit Cole",
           "components": [
             "AI Safety"
           ],
@@ -546,7 +546,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Sobha Cheruku",
+          "assignee": "Merit Cole",
           "components": [
             "AI Safety"
           ],
@@ -564,7 +564,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -605,7 +605,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Sobha Cheruku",
+          "assignee": "Merit Cole",
           "components": [
             "AI Evaluations"
           ],
@@ -645,7 +645,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -665,7 +665,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -685,7 +685,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -725,7 +725,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Marius Ion Danciu",
+          "assignee": "Merit Irving",
           "components": [
             "AI Evaluations"
           ],
@@ -745,7 +745,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -766,7 +766,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -807,7 +807,7 @@
         "summary": "[EvalHub] 3.4EA2 Support frameworks support",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Rui Vieira",
+        "assignee": "Onyx Finn",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
@@ -820,7 +820,7 @@
         "summary": "[Eng] EvalHub platform enhancements for 3.4 EA2",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Marius Ion Danciu",
+        "assignee": "Merit Irving",
         "totalIssues": 4,
         "doneIssues": 4,
         "progressPct": 100,
@@ -833,7 +833,7 @@
         "summary": "[Eng] Eval Hub Golang Service implementation [3.4EA2]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Marius Ion Danciu",
+        "assignee": "Merit Irving",
         "totalIssues": 6,
         "doneIssues": 6,
         "progressPct": 100,
@@ -846,7 +846,7 @@
         "summary": "[EvalHub] Custom data support",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Rui Vieira",
+        "assignee": "Onyx Finn",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,
@@ -859,7 +859,7 @@
         "summary": "[Eng] EvalHub repository hygiene & developer experience [3.4EA2]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Rui Vieira",
+        "assignee": "Onyx Finn",
         "totalIssues": 3,
         "doneIssues": 3,
         "progressPct": 100,
@@ -872,7 +872,7 @@
         "summary": "[Evalhub] MultiTenancy Support ",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Rui Vieira",
+        "assignee": "Onyx Finn",
         "totalIssues": 3,
         "doneIssues": 3,
         "progressPct": 100,

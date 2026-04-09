@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Stuart Battersby",
+    "displayName": "Merit Webb",
     "accountId": "712020:d1f056a6-a23c-41b9-99b1-6d58953ce814"
   },
   "fixVersions": [],
@@ -82,7 +82,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Former Member 8",
+      "assignee": "Frankie Jensen",
       "components": [
         "AI Safety",
         "Documentation"
@@ -100,7 +100,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Bronagh Synnott",
+          "assignee": "Gray Rowe",
           "components": [
             "AI Safety",
             "Documentation"
@@ -119,7 +119,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Bronagh Synnott",
+          "assignee": "Gray Rowe",
           "components": [
             "AI Safety",
             "Documentation"
@@ -160,7 +160,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -181,7 +181,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Safety"
           ],
@@ -201,7 +201,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -220,7 +220,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -239,7 +239,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -258,7 +258,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -277,7 +277,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations"
           ],
@@ -295,7 +295,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -314,7 +314,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -333,7 +333,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Narayan Sagar B S",
+          "assignee": "Merit Lowe",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -356,7 +356,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Safety"
           ],
@@ -374,7 +374,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -393,7 +393,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -415,7 +415,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -453,7 +453,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -472,7 +472,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Stuart Battersby",
+          "assignee": "Merit Webb",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -491,7 +491,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -510,7 +510,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -529,7 +529,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -567,7 +567,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Karishma Punwatkar",
+          "assignee": "Kerry Cross",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -624,7 +624,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -643,7 +643,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -662,7 +662,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -681,7 +681,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -700,7 +700,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -719,7 +719,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -738,7 +738,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -757,7 +757,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -776,7 +776,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -833,7 +833,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Sudip Sinha",
+          "assignee": "Merit Reeves",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -852,7 +852,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -871,7 +871,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -890,7 +890,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -909,7 +909,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -928,7 +928,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -947,7 +947,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Minor",
-          "assignee": "Sai Chandra Pandraju",
+          "assignee": "Gray Drake",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -990,7 +990,7 @@
         "summary": "[ccs Epic] Document Garak for AISafety (TrustyAI)",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Bronagh Synnott",
+        "assignee": "Gray Rowe",
         "totalIssues": 2,
         "doneIssues": 1,
         "progressPct": 50,
@@ -1003,7 +1003,7 @@
         "summary": "[EvalHub] Garak/EvalHub integration",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Rui Vieira",
+        "assignee": "Onyx Finn",
         "totalIssues": 20,
         "doneIssues": 18,
         "progressPct": 90,
@@ -1016,7 +1016,7 @@
         "summary": "QE for KFP/EvalHub backend flow",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Karishma Punwatkar",
+        "assignee": "Kerry Cross",
         "totalIssues": 2,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1029,7 +1029,7 @@
         "summary": "Create demo notebooks of process",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Henrique Nunes",
+        "assignee": "Onyx Zimmerman",
         "totalIssues": 10,
         "doneIssues": 8,
         "progressPct": 80,
@@ -1042,7 +1042,7 @@
         "summary": "Productize EvalHub Garak KFP Intents flow",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Sai Chandra Pandraju",
+        "assignee": "Gray Drake",
         "totalIssues": 7,
         "doneIssues": 7,
         "progressPct": 100,

@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Rob Geada",
+    "displayName": "Frankie Flynn",
     "accountId": "5e258328a7b9540e76f44821"
   },
   "fixVersions": [],
@@ -54,7 +54,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Christina Xu",
+          "assignee": "Kerry James",
           "components": [
             "AI Safety"
           ],
@@ -72,7 +72,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [
             "AI Safety"
           ],
@@ -90,7 +90,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [
             "AI Safety"
           ],
@@ -108,7 +108,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "Rob Geada",
+          "assignee": "Frankie Flynn",
           "components": [
             "AI Safety"
           ],
@@ -126,7 +126,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Christina Xu",
+          "assignee": "Kerry James",
           "components": [
             "AI Safety"
           ],
@@ -144,7 +144,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -178,7 +178,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Rob Geada",
+          "assignee": "Frankie Flynn",
           "components": [
             "AI Safety"
           ],
@@ -196,7 +196,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Rob Geada",
+          "assignee": "Frankie Flynn",
           "components": [
             "AI Safety"
           ],
@@ -214,7 +214,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Rob Geada",
+          "assignee": "Frankie Flynn",
           "components": [
             "AI Safety"
           ],
@@ -254,7 +254,7 @@
         "summary": "NeMo Guardrails: Provide features for 3.5 release",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Rob Geada",
+        "assignee": "Frankie Flynn",
         "totalIssues": 6,
         "doneIssues": 1,
         "progressPct": 17,
@@ -267,7 +267,7 @@
         "summary": "QE: Add NeMo Guardrails test suite to opendatahub-tests",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Rob Geada",
+        "assignee": "Frankie Flynn",
         "totalIssues": 3,
         "doneIssues": 0,
         "progressPct": 0,

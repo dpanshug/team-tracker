@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Rob Geada",
+    "displayName": "Frankie Flynn",
     "accountId": "5e258328a7b9540e76f44821"
   },
   "fixVersions": [],
@@ -39,7 +39,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Major",
-      "assignee": "Former Member 8",
+      "assignee": "Frankie Jensen",
       "components": [
         "AI Safety",
         "Documentation"
@@ -57,7 +57,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Bronagh Synnott",
+          "assignee": "Gray Rowe",
           "components": [
             "AI Safety",
             "Documentation"
@@ -76,7 +76,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Bronagh Synnott",
+          "assignee": "Gray Rowe",
           "components": [
             "AI Safety",
             "Documentation"
@@ -95,7 +95,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Bronagh Synnott",
+          "assignee": "Gray Rowe",
           "components": [
             "AI Safety",
             "Documentation"
@@ -114,7 +114,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Bronagh Synnott",
+          "assignee": "Gray Rowe",
           "components": [
             "AI Safety",
             "Documentation"
@@ -223,7 +223,7 @@
         "summary": "[ccs Epic] Document 'Lemonade stand' / AI Safety Starter Kit for AISafety-TrustyAI",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Bronagh Synnott",
+        "assignee": "Gray Rowe",
         "totalIssues": 4,
         "doneIssues": 3,
         "progressPct": 75,

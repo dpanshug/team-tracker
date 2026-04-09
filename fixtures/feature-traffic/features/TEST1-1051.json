@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Rob Geada",
+    "displayName": "Frankie Flynn",
     "accountId": "5e258328a7b9540e76f44821"
   },
   "fixVersions": [
@@ -82,7 +82,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [
             "AI Safety"
           ],
@@ -100,7 +100,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Christina Xu",
+          "assignee": "Kerry James",
           "components": [
             "AI Safety"
           ],
@@ -118,7 +118,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [
             "AI Safety"
           ],
@@ -136,7 +136,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [],
           "labels": [],
           "storyPoints": 9,
@@ -152,7 +152,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Shelton Cyril",
+          "assignee": "Kerry Sato",
           "components": [
             "AI Safety"
           ],
@@ -170,7 +170,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [
             "AI Safety"
           ],
@@ -188,7 +188,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [],
           "labels": [],
           "storyPoints": 5,
@@ -204,7 +204,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [],
           "labels": [],
           "storyPoints": 3,
@@ -220,7 +220,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Rob Geada",
+          "assignee": "Frankie Flynn",
           "components": [
             "AI Safety"
           ],
@@ -238,7 +238,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [],
           "labels": [],
           "storyPoints": 3,
@@ -254,7 +254,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Mac Misiura",
+          "assignee": "Merit Young",
           "components": [],
           "labels": [],
           "storyPoints": 3,
@@ -291,7 +291,7 @@
         "summary": "NeMo Guardrails: Provide features for 3.4 GA release",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Rob Geada",
+        "assignee": "Frankie Flynn",
         "totalIssues": 11,
         "doneIssues": 6,
         "progressPct": 55,

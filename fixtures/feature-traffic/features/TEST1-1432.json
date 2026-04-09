@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Rui Vieira",
+    "displayName": "Onyx Finn",
     "accountId": "70121:5a9a760a-598b-49c2-af0e-60c52f76c598"
   },
   "fixVersions": [
@@ -65,7 +65,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -87,7 +87,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Sobha Cheruku",
+          "assignee": "Merit Cole",
           "components": [
             "AI Evaluations"
           ],
@@ -111,7 +111,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Julian Payne",
+          "assignee": "Merit Vaughn",
           "components": [
             "AI Evaluations"
           ],
@@ -131,7 +131,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Narayan Sagar B S",
+          "assignee": "Merit Lowe",
           "components": [
             "AI Evaluations"
           ],
@@ -151,7 +151,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Julian Payne",
+          "assignee": "Merit Vaughn",
           "components": [
             "AI Evaluations"
           ],
@@ -172,7 +172,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Julian Payne",
+          "assignee": "Merit Vaughn",
           "components": [
             "AI Evaluations"
           ],
@@ -193,7 +193,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Sobha Cheruku",
+          "assignee": "Merit Cole",
           "components": [
             "AI Evaluations"
           ],
@@ -214,7 +214,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Narayan Sagar B S",
+          "assignee": "Merit Lowe",
           "components": [
             "AI Evaluations"
           ],
@@ -234,7 +234,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Matteo Mortari",
+          "assignee": "Gray Graham",
           "components": [
             "AI Evaluations"
           ],
@@ -270,7 +270,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -290,7 +290,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -310,7 +310,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -331,7 +331,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Narayan Sagar B S",
+          "assignee": "Merit Lowe",
           "components": [
             "AI Core Dashboard",
             "AI Evaluations"
@@ -355,7 +355,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [],
           "labels": [
             "evalhub",
@@ -374,7 +374,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [],
           "labels": [
             "evalhub"
@@ -392,7 +392,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -412,7 +412,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Prabhu Padashetty",
+          "assignee": "Gray Joyce",
           "components": [
             "AI Core Dashboard",
             "AI Evaluations"
@@ -435,7 +435,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Sobha Cheruku",
+          "assignee": "Merit Cole",
           "components": [
             "AI Evaluations"
           ],
@@ -458,7 +458,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Matteo Mortari",
+          "assignee": "Gray Graham",
           "components": [
             "AI Evaluations"
           ],
@@ -478,7 +478,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -499,7 +499,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Sobha Cheruku",
+          "assignee": "Merit Cole",
           "components": [
             "AI Evaluations"
           ],
@@ -520,7 +520,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -541,7 +541,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Julian Payne",
+          "assignee": "Merit Vaughn",
           "components": [],
           "labels": [
             "evalhub"
@@ -559,7 +559,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Julian Payne",
+          "assignee": "Merit Vaughn",
           "components": [],
           "labels": [
             "evalhub"
@@ -577,7 +577,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Rui Vieira",
+          "assignee": "Onyx Finn",
           "components": [
             "AI Evaluations"
           ],
@@ -620,7 +620,7 @@
         "summary": "[Eng] EvalHub work for 3.4",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Rui Vieira",
+        "assignee": "Onyx Finn",
         "totalIssues": 26,
         "doneIssues": 19,
         "progressPct": 73,

@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Bob Gregor",
+    "displayName": "Merit Winn",
     "accountId": "712020:6933584a-f175-48eb-84b9-47f7bb496833"
   },
   "fixVersions": [
@@ -185,7 +185,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nana Nosirova",
+          "assignee": "Onyx Bennett",
           "components": [
             "AI Core Dashboard",
             "MLflow"
@@ -206,7 +206,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Critical",
-          "assignee": "Nana Nosirova",
+          "assignee": "Onyx Bennett",
           "components": [
             "AI Core Dashboard"
           ],
@@ -224,7 +224,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Nana Nosirova",
+          "assignee": "Onyx Bennett",
           "components": [
             "AI Core Dashboard"
           ],
@@ -244,7 +244,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nana Nosirova",
+          "assignee": "Onyx Bennett",
           "components": [
             "AI Core Dashboard",
             "MLflow"
@@ -265,7 +265,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nana Nosirova",
+          "assignee": "Onyx Bennett",
           "components": [
             "AI Core Dashboard",
             "MLflow"
@@ -286,7 +286,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Nana Nosirova",
+          "assignee": "Onyx Bennett",
           "components": [],
           "labels": [
             "dashboard-razzmatazz-scrum"
@@ -324,7 +324,7 @@
         "summary": "Prompt Management - MLFlow Embedded UI",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Nana Nosirova",
+        "assignee": "Onyx Bennett",
         "totalIssues": 6,
         "doneIssues": 5,
         "progressPct": 83,

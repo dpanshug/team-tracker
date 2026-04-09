@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Stuart Battersby",
+    "displayName": "Merit Webb",
     "accountId": "712020:d1f056a6-a23c-41b9-99b1-6d58953ce814"
   },
   "fixVersions": [],
@@ -105,7 +105,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -124,7 +124,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -143,7 +143,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -162,7 +162,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -181,7 +181,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -200,7 +200,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -219,7 +219,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -238,7 +238,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -257,7 +257,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -276,7 +276,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -295,7 +295,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -314,7 +314,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -333,7 +333,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -352,7 +352,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -371,7 +371,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Sudip Sinha",
+          "assignee": "Merit Reeves",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -387,7 +387,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Safety"
           ],
@@ -405,7 +405,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Safety"
           ],
@@ -425,7 +425,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -483,7 +483,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Undefined",
-      "assignee": "Former Member 8",
+      "assignee": "Frankie Jensen",
       "components": [
         "AI Evaluations",
         "AI Safety",
@@ -505,7 +505,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -524,7 +524,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Henrique Nunes",
+          "assignee": "Onyx Zimmerman",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -543,7 +543,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Alessandro Beltramo",
+          "assignee": "Frankie Emery",
           "components": [
             "AI Evaluations",
             "AI Safety"
@@ -661,7 +661,7 @@
         "summary": "QE for new Garak implementations",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Karishma Punwatkar",
+        "assignee": "Kerry Cross",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -674,7 +674,7 @@
         "summary": "Update midstream garak with automated red teaming logic",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Henrique Nunes",
+        "assignee": "Onyx Zimmerman",
         "totalIssues": 20,
         "doneIssues": 17,
         "progressPct": 85,
@@ -687,7 +687,7 @@
         "summary": "[ccs Epic] Document Chatterbox integration with Garak ",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Bronagh Synnott",
+        "assignee": "Gray Rowe",
         "totalIssues": 7,
         "doneIssues": 2,
         "progressPct": 29,

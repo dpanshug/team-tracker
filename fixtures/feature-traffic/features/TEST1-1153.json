@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Major",
   "assignee": {
-    "displayName": "Jitendra Yejare",
+    "displayName": "Gray Kelley",
     "accountId": "70121:477befce-5ca3-4a68-84b6-49b07964a721"
   },
   "fixVersions": [],
@@ -126,7 +126,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Jitendra Yejare",
+          "assignee": "Gray Kelley",
           "components": [
             "Feature Store"
           ],
@@ -144,7 +144,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Jitendra Yejare",
+          "assignee": "Gray Kelley",
           "components": [
             "Feature Store"
           ],
@@ -162,7 +162,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Jitendra Yejare",
+          "assignee": "Gray Kelley",
           "components": [
             "Feature Store"
           ],
@@ -180,7 +180,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Jitendra Yejare",
+          "assignee": "Gray Kelley",
           "components": [],
           "labels": [],
           "storyPoints": 5,
@@ -196,7 +196,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Major",
-          "assignee": "Jitendra Yejare",
+          "assignee": "Gray Kelley",
           "components": [],
           "labels": [],
           "storyPoints": 3,
@@ -212,7 +212,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Major",
-          "assignee": "Jitendra Yejare",
+          "assignee": "Gray Kelley",
           "components": [],
           "labels": [],
           "storyPoints": 3,
@@ -229,7 +229,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Major",
-      "assignee": "Former Member 4",
+      "assignee": "Kerry Joyce",
       "components": [
         "Documentation"
       ],
@@ -267,7 +267,7 @@
         "summary": "Feature Store Real-Time Feature Monitoring & Drift Detection",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Jitendra Yejare",
+        "assignee": "Gray Kelley",
         "totalIssues": 6,
         "doneIssues": 3,
         "progressPct": 50,
@@ -280,7 +280,7 @@
         "summary": "[ccs Epic] Documentation support of Feature Store Monitoring & Distribution Visualization",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Dana Brown",
+        "assignee": "Merit Fischer",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

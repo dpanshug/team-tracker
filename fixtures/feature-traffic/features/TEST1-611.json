@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Lindani Phiri",
+    "displayName": "Onyx Xu",
     "accountId": "70121:f3dfd35d-9dbc-4225-9e98-a28612802cc7"
   },
   "fixVersions": [],
@@ -111,7 +111,7 @@
       "status": "Closed",
       "statusCategory": "Done",
       "priority": "Major",
-      "assignee": "Former Member 19",
+      "assignee": "Merit Mitchell",
       "components": [
         "AI Core Platform"
       ],
@@ -128,7 +128,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -146,7 +146,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -164,7 +164,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -182,7 +182,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -200,7 +200,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -238,7 +238,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ugo Giordano",
+          "assignee": "Gray Vaughn",
           "components": [
             "AI Core Platform"
           ],
@@ -256,7 +256,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Ugo Giordano",
+          "assignee": "Gray Vaughn",
           "components": [
             "AI Core Platform"
           ],
@@ -297,7 +297,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andrej Smigala",
+          "assignee": "Merit Udall",
           "components": [
             "AI Core Platform",
             "TestOps"
@@ -337,7 +337,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andrej Smigala",
+          "assignee": "Merit Udall",
           "components": [
             "AI Core Platform",
             "TestOps"
@@ -356,7 +356,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Andrej Smigala",
+          "assignee": "Merit Udall",
           "components": [
             "AI Core Platform",
             "TestOps"
@@ -375,7 +375,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Andrej Smigala",
+          "assignee": "Merit Udall",
           "components": [
             "AI Core Platform",
             "TestOps"
@@ -395,7 +395,7 @@
       "status": "Closed",
       "statusCategory": "Done",
       "priority": "Critical",
-      "assignee": "Former Member 19",
+      "assignee": "Merit Mitchell",
       "components": [
         "AI Core Platform"
       ],
@@ -415,7 +415,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -435,7 +435,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -455,7 +455,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -475,7 +475,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -495,7 +495,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -535,7 +535,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -575,7 +575,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -595,7 +595,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Chris Santiago",
+          "assignee": "Onyx Lowe",
           "components": [
             "AI Core Platform"
           ],
@@ -676,7 +676,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Gowtham Shanmugasundaram",
+          "assignee": "Onyx Tate",
           "components": [
             "AI Core Platform"
           ],
@@ -694,7 +694,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Gowtham Shanmugasundaram",
+          "assignee": "Onyx Tate",
           "components": [
             "AI Core Platform"
           ],
@@ -851,7 +851,7 @@
         "summary": "BYO OIDC dev cluster automation",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Andrej Smigala",
+        "assignee": "Merit Udall",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,
@@ -864,7 +864,7 @@
         "summary": "[BYOIDC] Measure Gateway Architecture Performance Impact",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Chris Santiago",
+        "assignee": "Onyx Lowe",
         "totalIssues": 5,
         "doneIssues": 5,
         "progressPct": 100,
@@ -877,7 +877,7 @@
         "summary": "[kube-auth-proxy] security posture and cve remediation plan",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Ugo Giordano",
+        "assignee": "Gray Vaughn",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
@@ -890,7 +890,7 @@
         "summary": "Gateway API and BYOIDC changes for QE",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Andrej Smigala",
+        "assignee": "Merit Udall",
         "totalIssues": 5,
         "doneIssues": 5,
         "progressPct": 100,
@@ -903,7 +903,7 @@
         "summary": "gateway & kube-auth-proxy scaling",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Chris Santiago",
+        "assignee": "Onyx Lowe",
         "totalIssues": 10,
         "doneIssues": 10,
         "progressPct": 100,
@@ -916,7 +916,7 @@
         "summary": "[kube-auth-proxy] sync with upstream oauth2-proxy",
         "status": "Backlog",
         "statusCategory": "To Do",
-        "assignee": "Gowtham Shanmugasundaram",
+        "assignee": "Onyx Tate",
         "totalIssues": 1,
         "doneIssues": 0,
         "progressPct": 0,
@@ -929,7 +929,7 @@
         "summary": "E2E Testing for Gateway Feature",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Gowtham Shanmugasundaram",
+        "assignee": "Onyx Tate",
         "totalIssues": 4,
         "doneIssues": 4,
         "progressPct": 100,
@@ -942,7 +942,7 @@
         "summary": "GA Add RHOAI support for Direct Authentication with an OIDC Identity Provider",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Lindani Phiri",
+        "assignee": "Onyx Xu",
         "totalIssues": 3,
         "doneIssues": 2,
         "progressPct": 67,

@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Sebastien Han",
+    "displayName": "Kerry Stone",
     "accountId": "62022b5fff9289006eeb789e"
   },
   "fixVersions": [],
@@ -59,7 +59,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Sumanth Kamenani",
+          "assignee": "Onyx Edge",
           "components": [
             "Llama Stack Core"
           ],
@@ -96,7 +96,7 @@
         "summary": "Define Feature Responsibilities and Integration Strategy: Model-as-a-Service (MaaS) vs. LlamaStack for Inference",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Sebastien Han",
+        "assignee": "Kerry Stone",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,

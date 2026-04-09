@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Christian Vogt",
+    "displayName": "Onyx Walsh",
     "accountId": "712020:ce710f80-369e-4b6d-95e2-ca6c9e58d9fb"
   },
   "fixVersions": [],
@@ -37,7 +37,7 @@
       "status": "In Progress",
       "statusCategory": "In Progress",
       "priority": "Critical",
-      "assignee": "Former Member 9",
+      "assignee": "Onyx Ingram",
       "components": [
         "Documentation"
       ],
@@ -60,7 +60,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Critical",
-          "assignee": "Manushri Pandya",
+          "assignee": "Kerry Carter",
           "components": [
             "Documentation"
           ],
@@ -83,7 +83,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Manushri Pandya",
+          "assignee": "Kerry Carter",
           "components": [
             "Documentation"
           ],
@@ -321,7 +321,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Christian Vogt",
+          "assignee": "Onyx Walsh",
           "components": [
             "AI Core Dashboard"
           ],
@@ -362,7 +362,7 @@
         "summary": "[ccs Epic] Perses Dashboard Integration for RHOAI End-to-End Implementation",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Manushri Pandya",
+        "assignee": "Kerry Carter",
         "totalIssues": 2,
         "doneIssues": 0,
         "progressPct": 0,

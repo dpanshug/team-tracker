@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Anish Asthana",
+    "displayName": "Kerry Lane",
     "accountId": "70121:fcaeccc6-4cc5-4dc0-81e0-3fdf5a709419"
   },
   "fixVersions": [],
@@ -98,7 +98,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Former Member 11",
+      "assignee": "Merit Dean",
       "components": [
         "Documentation",
         "llm-d"
@@ -132,7 +132,7 @@
         "summary": "[ccs] llm-d: Establish End-to-End Observability",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Sara Thomas",
+        "assignee": "Kerry Emery",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

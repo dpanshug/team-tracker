@@ -30,7 +30,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Former Member 16",
+      "assignee": "Kerry Vaughn",
       "components": [
         "Documentation",
         "Workload Orchestration"
@@ -68,7 +68,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Olivia Brown",
+          "assignee": "Frankie Finn",
           "components": [
             "Documentation",
             "Workload Orchestration"
@@ -108,7 +108,7 @@
         "summary": "[ccs Epic] Create RBAC documentation for Kueue, KFTO",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Olivia Brown",
+        "assignee": "Frankie Finn",
         "totalIssues": 2,
         "doneIssues": 0,
         "progressPct": 0,

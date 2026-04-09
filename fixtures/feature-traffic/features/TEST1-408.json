@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Major",
   "assignee": {
-    "displayName": "Luca Burgazzoli",
+    "displayName": "Frankie Park",
     "accountId": "5b335d1d2975df4c55ea6f83"
   },
   "fixVersions": [],
@@ -84,7 +84,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Christian Zaccaria",
+          "assignee": "Gray Nolan",
           "components": [
             "Workload Orchestration"
           ],
@@ -105,7 +105,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Christian Zaccaria",
+          "assignee": "Gray Nolan",
           "components": [
             "Workload Orchestration"
           ],
@@ -123,7 +123,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Breda McColgan",
+          "assignee": "Onyx Grant",
           "components": [
             "Documentation",
             "Workload Orchestration"

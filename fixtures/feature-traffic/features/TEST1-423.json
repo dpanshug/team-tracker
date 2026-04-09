@@ -30,7 +30,7 @@
       "status": "Closed",
       "statusCategory": "Done",
       "priority": "Critical",
-      "assignee": "Former Member 15",
+      "assignee": "Onyx Lane",
       "components": [
         "Security"
       ],
@@ -47,7 +47,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Jay Koehler",
+          "assignee": "Onyx Kelley",
           "components": [
             "DevOps"
           ],
@@ -65,7 +65,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Maor Friedman",
+          "assignee": "Onyx Jensen",
           "components": [
             "Security"
           ],
@@ -83,7 +83,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Maor Friedman",
+          "assignee": "Onyx Jensen",
           "components": [
             "DevOps"
           ],
@@ -102,7 +102,7 @@
       "status": "Closed",
       "statusCategory": "Done",
       "priority": "Undefined",
-      "assignee": "Former Member 15",
+      "assignee": "Onyx Lane",
       "components": [
         "Security"
       ],
@@ -193,7 +193,7 @@
         "summary": "Enable branch protections for ODH",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Maor Friedman",
+        "assignee": "Onyx Jensen",
         "totalIssues": 3,
         "doneIssues": 3,
         "progressPct": 100,
@@ -206,7 +206,7 @@
         "summary": "Enable branch protections for RHDS",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Maor Friedman",
+        "assignee": "Onyx Jensen",
         "totalIssues": 1,
         "doneIssues": 0,
         "progressPct": 0,

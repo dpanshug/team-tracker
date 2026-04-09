@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Andrew Ballantyne",
+    "displayName": "Gray Walsh",
     "accountId": "5fdb88f09edf280075ce339d"
   },
   "fixVersions": [],
@@ -225,7 +225,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -265,7 +265,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -325,7 +325,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -345,7 +345,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -365,7 +365,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -405,7 +405,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Pierangelo Di Pilato",
+          "assignee": "Onyx Oliver",
           "components": [
             "llm-d",
             "Model Serving"
@@ -425,7 +425,7 @@
       "status": "Resolved",
       "statusCategory": "Done",
       "priority": "Critical",
-      "assignee": "Former Member 5",
+      "assignee": "Merit Upton",
       "components": [
         "DevOps"
       ],
@@ -464,7 +464,7 @@
       "status": "New",
       "statusCategory": "To Do",
       "priority": "Undefined",
-      "assignee": "Former Member 6",
+      "assignee": "Gray Noble",
       "components": [
         "Documentation"
       ],
@@ -481,7 +481,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Shumaila Yaseen",
+          "assignee": "Kerry Lloyd",
           "components": [
             "Documentation"
           ],
@@ -522,7 +522,7 @@
         "summary": "LLMd Gateway discovery UI",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Emily Samoylov",
+        "assignee": "Merit Carter",
         "totalIssues": 8,
         "doneIssues": 6,
         "progressPct": 75,
@@ -535,7 +535,7 @@
         "summary": "LLMInferenceService Gateway discover API",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Pierangelo Di Pilato",
+        "assignee": "Onyx Oliver",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,
@@ -548,7 +548,7 @@
         "summary": "ODH Konflux CI Build Onboarding [odh-model-serving-api]",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Peter Keappock",
+        "assignee": "Merit Oates",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -561,7 +561,7 @@
         "summary": "RHOAI Konflux Onboarding [odh-model-serving-api]",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Waldemar Znoinski",
+        "assignee": "Kerry Xu",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -574,7 +574,7 @@
         "summary": "[ccs Epic] Document how to create Gateway(s) for llm-d / llmisvc through UI - GA 3.4",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Shumaila Yaseen",
+        "assignee": "Kerry Lloyd",
         "totalIssues": 1,
         "doneIssues": 0,
         "progressPct": 0,

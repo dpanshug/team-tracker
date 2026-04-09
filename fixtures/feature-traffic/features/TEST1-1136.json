@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Critical",
   "assignee": {
-    "displayName": "Bob Gregor",
+    "displayName": "Merit Winn",
     "accountId": "712020:6933584a-f175-48eb-84b9-47f7bb496833"
   },
   "fixVersions": [],
@@ -124,7 +124,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Anish Surti",
+          "assignee": "Kerry Hale",
           "components": [
             "AI Core Dashboard"
           ],
@@ -142,7 +142,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -160,7 +160,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -178,7 +178,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -196,7 +196,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -232,7 +232,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -250,7 +250,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -268,7 +268,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -286,7 +286,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -304,7 +304,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -322,7 +322,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Juntao Wang",
+          "assignee": "Frankie Nolan",
           "components": [
             "AI Core Dashboard"
           ],
@@ -396,7 +396,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Federico Alonso",
+          "assignee": "Kerry Ives",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -428,7 +428,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Bob Gregor",
+          "assignee": "Merit Winn",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -476,7 +476,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Jenny Yi",
+          "assignee": "Gray Bennett",
           "components": [],
           "labels": [],
           "storyPoints": 0,
@@ -528,7 +528,7 @@
         "summary": "Project permissions – Assign/Manage roles flow",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Juntao Wang",
+        "assignee": "Frankie Nolan",
         "totalIssues": 12,
         "doneIssues": 12,
         "progressPct": 100,
@@ -541,7 +541,7 @@
         "summary": "General Availability - ODH and RHOAI Integrations [Project RBAC MVP]",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Juntao Wang",
+        "assignee": "Frankie Nolan",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -554,7 +554,7 @@
         "summary": "Feature signoff - GA",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Bob Gregor",
+        "assignee": "Merit Winn",
         "totalIssues": 8,
         "doneIssues": 2,
         "progressPct": 25,

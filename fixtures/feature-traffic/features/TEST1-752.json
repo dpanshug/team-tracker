@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Major",
   "assignee": {
-    "displayName": "Roy Nissim",
+    "displayName": "Frankie Mead",
     "accountId": "712020:3e6483d7-a7f9-4847-950f-102899cadf8f"
   },
   "fixVersions": [],
@@ -77,7 +77,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Arik Hadas",
+          "assignee": "Merit Kelley",
           "components": [
             "Inference Extensions"
           ],
@@ -95,7 +95,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Tal Gitelman",
+          "assignee": "Merit Lambert",
           "components": [
             "AI Core Platform",
             "Inference Extensions"

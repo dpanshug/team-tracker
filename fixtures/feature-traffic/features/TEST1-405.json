@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Andrej Smigala",
+    "displayName": "Merit Udall",
     "accountId": "70121:5e822225-2e64-4b3f-a491-76b55b3d07b1"
   },
   "fixVersions": [],
@@ -46,7 +46,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Normal",
-          "assignee": "Andrej Smigala",
+          "assignee": "Merit Udall",
           "components": [
             "AI Core Platform"
           ],
@@ -185,7 +185,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Andrej Smigala",
+          "assignee": "Merit Udall",
           "components": [
             "AI Core Platform"
           ],
@@ -227,7 +227,7 @@
         "summary": "Phase 2: Document specific steps for each issue in the templates",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Andrej Smigala",
+        "assignee": "Merit Udall",
         "totalIssues": 2,
         "doneIssues": 0,
         "progressPct": 0,
@@ -266,7 +266,7 @@
         "summary": " Phase 1: Capture current state in NotebookLM",
         "status": "Resolved",
         "statusCategory": "Done",
-        "assignee": "Andrej Smigala",
+        "assignee": "Merit Udall",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,

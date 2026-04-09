@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Jay Koehler",
+    "displayName": "Onyx Kelley",
     "accountId": "606b693110a0a9006fd7ca32"
   },
   "fixVersions": [],
@@ -89,7 +89,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Andrew Ballantyne",
+          "assignee": "Gray Walsh",
           "components": [
             "AI Core Dashboard"
           ],
@@ -411,7 +411,7 @@
       "status": "Closed",
       "statusCategory": "Done",
       "priority": "Critical",
-      "assignee": "Former Member 22",
+      "assignee": "Gray Owens",
       "components": [
         "AI Core Dashboard"
       ],
@@ -433,7 +433,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Alex Creasy",
+          "assignee": "Onyx Brock",
           "components": [
             "AI Core Dashboard"
           ],
@@ -453,7 +453,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Alex Creasy",
+          "assignee": "Onyx Brock",
           "components": [
             "AI Core Dashboard"
           ],
@@ -473,7 +473,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Alex Creasy",
+          "assignee": "Onyx Brock",
           "components": [
             "AI Core Dashboard"
           ],
@@ -498,7 +498,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Alex Creasy",
+          "assignee": "Onyx Brock",
           "components": [
             "AI Core Dashboard"
           ],
@@ -522,7 +522,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Alex Creasy",
+          "assignee": "Onyx Brock",
           "components": [
             "AI Core Dashboard"
           ],
@@ -1482,7 +1482,7 @@
       "status": "Backlog",
       "statusCategory": "To Do",
       "priority": "Critical",
-      "assignee": "Former Member 23",
+      "assignee": "Onyx Fischer",
       "components": [
         "AI Core Platform"
       ],
@@ -1521,7 +1521,7 @@
         "summary": "T42: Avoid relying on untrusted data for server-side selection",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Andrew Ballantyne",
+        "assignee": "Gray Walsh",
         "totalIssues": 1,
         "doneIssues": 1,
         "progressPct": 100,
@@ -1534,7 +1534,7 @@
         "summary": "T1945: Do not disable NamespaceLifecycle admission controller (OpenShift)",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Ugo Giordano",
+        "assignee": "Gray Vaughn",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1586,7 +1586,7 @@
         "summary": "T1144: Prevent Server-Side Template Injection (SSTI)",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Marek Lassak",
+        "assignee": "Kerry Reeves",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1690,7 +1690,7 @@
         "summary": "T1365: Mitigate Server Side Request Forgery",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Alex Creasy",
+        "assignee": "Onyx Brock",
         "totalIssues": 5,
         "doneIssues": 5,
         "progressPct": 100,
@@ -1807,7 +1807,7 @@
         "summary": "T1468: Encrypt sensitive data at rest in the browser",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Andrew Ballantyne",
+        "assignee": "Gray Walsh",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -1963,7 +1963,7 @@
         "summary": "T2001: Limit the use of privileged containers (OpenShift)",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Ugo Giordano",
+        "assignee": "Gray Vaughn",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2067,7 +2067,7 @@
         "summary": "T50: Use indirect object reference maps if accessing files",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Marek Lassak",
+        "assignee": "Kerry Reeves",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2106,7 +2106,7 @@
         "summary": "T1918: Integrate with SSO",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "James Tanner",
+        "assignee": "Gray Palmer",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2210,7 +2210,7 @@
         "summary": "T1989: Run pods with the most restrictive Security Context Constraints possible (OpenShift)",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Ugo Giordano",
+        "assignee": "Gray Vaughn",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2223,7 +2223,7 @@
         "summary": "T17: Do not only rely on client-side authorization",
         "status": "Closed",
         "statusCategory": "Done",
-        "assignee": "Ugo Giordano",
+        "assignee": "Gray Vaughn",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,
@@ -2262,7 +2262,7 @@
         "summary": "RHOAI network policy",
         "status": "Backlog",
         "statusCategory": "To Do",
-        "assignee": "Georgios Zaronikas Karagiannis",
+        "assignee": "Kerry Fischer",
         "totalIssues": 0,
         "doneIssues": 0,
         "progressPct": 0,

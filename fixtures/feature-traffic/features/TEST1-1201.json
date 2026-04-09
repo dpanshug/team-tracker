@@ -5,7 +5,7 @@
   "statusCategory": "In Progress",
   "priority": "Major",
   "assignee": {
-    "displayName": "Roy Nissim",
+    "displayName": "Frankie Mead",
     "accountId": "712020:3e6483d7-a7f9-4847-950f-102899cadf8f"
   },
   "fixVersions": [
@@ -162,7 +162,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Sri Sai Sowjanya Darna",
+          "assignee": "Gray Frost",
           "components": [
             "AI Core Dashboard"
           ],
@@ -182,7 +182,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Edgar Hernandez Garcia",
+          "assignee": "Onyx Young",
           "components": [
             "AI Core Dashboard"
           ],
@@ -202,7 +202,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ashley McEntee",
+          "assignee": "Frankie Zimmerman",
           "components": [
             "AI Core Dashboard"
           ],
@@ -222,7 +222,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Emily Samoylov",
+          "assignee": "Merit Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -243,7 +243,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Sri Sai Sowjanya Darna",
+          "assignee": "Gray Frost",
           "components": [
             "AI Core Dashboard"
           ],
@@ -263,7 +263,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Katelynn Perry",
+          "assignee": "Onyx Abbott",
           "components": [
             "AI Core Dashboard"
           ],
@@ -303,7 +303,7 @@
           "status": "Backlog",
           "statusCategory": "To Do",
           "priority": "Normal",
-          "assignee": "Griffin Sullivan",
+          "assignee": "Kerry Day",
           "components": [
             "AI Core Dashboard"
           ],
@@ -323,7 +323,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Griffin Sullivan",
+          "assignee": "Kerry Day",
           "components": [
             "AI Core Dashboard"
           ],
@@ -344,7 +344,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Katelynn Perry",
+          "assignee": "Onyx Abbott",
           "components": [
             "AI Core Dashboard"
           ],
@@ -365,7 +365,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Griffin Sullivan",
+          "assignee": "Kerry Day",
           "components": [
             "AI Core Dashboard"
           ],
@@ -385,7 +385,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Katelynn Perry",
+          "assignee": "Onyx Abbott",
           "components": [
             "AI Core Dashboard"
           ],
@@ -406,7 +406,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Griffin Sullivan",
+          "assignee": "Kerry Day",
           "components": [
             "AI Core Dashboard"
           ],
@@ -427,7 +427,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Griffin Sullivan",
+          "assignee": "Kerry Day",
           "components": [
             "AI Core Dashboard"
           ],
@@ -447,7 +447,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Katelynn Perry",
+          "assignee": "Onyx Abbott",
           "components": [
             "AI Core Dashboard"
           ],
@@ -467,7 +467,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Katelynn Perry",
+          "assignee": "Onyx Abbott",
           "components": [
             "AI Core Dashboard"
           ],
@@ -487,7 +487,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Claudia Alphonse",
+          "assignee": "Kerry Winn",
           "components": [
             "AI Core Dashboard"
           ],
@@ -507,7 +507,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Katelynn Perry",
+          "assignee": "Onyx Abbott",
           "components": [
             "AI Core Dashboard"
           ],
@@ -527,7 +527,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Normal",
-          "assignee": "Dipanshu Gupta",
+          "assignee": "Kerry Jay",
           "components": [
             "AI Core Dashboard"
           ],
@@ -547,7 +547,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Dipanshu Gupta",
+          "assignee": "Kerry Jay",
           "components": [
             "AI Core Dashboard"
           ],
@@ -567,7 +567,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Wen Liang",
+          "assignee": "Gray Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -587,7 +587,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Griffin Sullivan",
+          "assignee": "Kerry Day",
           "components": [
             "AI Core Dashboard"
           ],
@@ -607,7 +607,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Wen Liang",
+          "assignee": "Gray Carter",
           "components": [
             "AI Core Dashboard"
           ],
@@ -647,7 +647,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Claudia Alphonse",
+          "assignee": "Kerry Winn",
           "components": [
             "AI Core Dashboard"
           ],
@@ -669,7 +669,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Critical",
-          "assignee": "Dipanshu Gupta",
+          "assignee": "Kerry Jay",
           "components": [
             "AI Core Dashboard"
           ],
@@ -691,7 +691,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Major",
-          "assignee": "Katelynn Perry",
+          "assignee": "Onyx Abbott",
           "components": [
             "AI Core Dashboard"
           ],
@@ -749,7 +749,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -767,7 +767,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -803,7 +803,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -821,7 +821,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -839,7 +839,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -857,7 +857,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -875,7 +875,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -893,7 +893,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -911,7 +911,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -929,7 +929,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -947,7 +947,7 @@
           "status": "Review",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -965,7 +965,7 @@
           "status": "In Progress",
           "statusCategory": "In Progress",
           "priority": "Undefined",
-          "assignee": "Jim Rhyness",
+          "assignee": "Frankie Day",
           "components": [
             "Model as a Service"
           ],
@@ -983,7 +983,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -1001,7 +1001,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -1019,7 +1019,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Yuriy Teodorovych",
+          "assignee": "Gray York",
           "components": [
             "Model as a Service"
           ],
@@ -1037,7 +1037,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -1055,7 +1055,7 @@
           "status": "New",
           "statusCategory": "To Do",
           "priority": "Undefined",
-          "assignee": "Lindani Phiri",
+          "assignee": "Onyx Xu",
           "components": [
             "Model as a Service"
           ],
@@ -1073,7 +1073,7 @@
           "status": "Testing",
           "statusCategory": "In Progress",
           "priority": "Blocker",
-          "assignee": "Yuriy Teodorovych",
+          "assignee": "Gray York",
           "components": [
             "Model as a Service"
           ],
@@ -1091,7 +1091,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Blocker",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -1109,7 +1109,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -1127,7 +1127,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Chaitanya Kulkarni",
+          "assignee": "Onyx Ives",
           "components": [
             "Model as a Service"
           ],
@@ -1145,7 +1145,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Wen Liang",
+          "assignee": "Gray Carter",
           "components": [
             "Model as a Service"
           ],
@@ -1163,7 +1163,7 @@
           "status": "Closed",
           "statusCategory": "Done",
           "priority": "Undefined",
-          "assignee": "Ishita Sequeira",
+          "assignee": "Kerry Oates",
           "components": [
             "Model as a Service"
           ],
@@ -1224,7 +1224,7 @@
         "summary": "Dashboard MaaS API Keys and Quality Hardening",
         "status": "In Progress",
         "statusCategory": "In Progress",
-        "assignee": "Griffin Sullivan",
+        "assignee": "Kerry Day",
         "totalIssues": 28,
         "doneIssues": 22,
         "progressPct": 79,

@@ -5,7 +5,7 @@
   "statusCategory": "To Do",
   "priority": "Major",
   "assignee": {
-    "displayName": "Kezia Cook",
+    "displayName": "Merit Kirk",
     "accountId": "62867943d9ddcc006e9ec0b3"
   },
   "fixVersions": [],
@@ -129,7 +129,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Jitendra Yejare",
+          "assignee": "Gray Kelley",
           "components": [
             "Feature Store"
           ],
@@ -147,7 +147,7 @@
           "status": "Resolved",
           "statusCategory": "Done",
           "priority": "Major",
-          "assignee": "Jitendra Yejare",
+          "assignee": "Gray Kelley",
           "components": [
             "Feature Store"
           ],
@@ -184,7 +184,7 @@
         "summary": "[Feature Store] Feast-Workbench Integration by Discovery",
         "status": "New",
         "statusCategory": "To Do",
-        "assignee": "Jitendra Yejare",
+        "assignee": "Gray Kelley",
         "totalIssues": 2,
         "doneIssues": 2,
         "progressPct": 100,
