@@ -46,19 +46,24 @@
           <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mt-2 max-w-3xl">
             {{ riskLegendText }}
           </p>
-          <div class="flex gap-1 mt-4 border-b border-gray-200 dark:border-gray-700">
-            <button
-              v-for="tab in tabs"
-              :key="tab.key"
-              class="px-4 py-2 text-sm font-medium transition-colors -mb-px"
-              :class="activeTab === tab.key
-                ? 'border-b-2 border-gray-900 dark:border-gray-100 text-gray-900 dark:text-gray-100'
-                : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-b-2 hover:border-gray-300 dark:hover:border-gray-600'"
-              @click="activeTab = tab.key"
-            >
-              {{ tab.label }}
-            </button>
-          </div>
+          <ReleaseFilterBar
+            class="mt-4"
+            :selected-products="selectedProducts"
+            :selected-versions="selectedVersions"
+            :visible-products="visibleProducts"
+            :visible-versions="visibleVersions"
+            :filtered-count="filteredReleases.length"
+            :total-count="allReleases.length"
+            :toggle-product="toggleProduct"
+            :toggle-version="toggleVersion"
+            :clear-products="clearProducts"
+            :clear-versions="clearVersions"
+            :reset-filters="resetFilters"
+          />
+        </div>
+
+        <div v-if="!filteredReleases.length" class="text-sm text-gray-500 dark:text-gray-400">
+          No releases match the current filters.
         </div>
 
         <article
@@ -311,6 +316,92 @@
               </table>
             </div>
           </details>
+
+          <details
+            v-if="mcInputsMap.get(release.releaseNumber)"
+            class="group rounded-lg border border-gray-200 dark:border-gray-700 open:bg-gray-50/50 dark:open:bg-gray-800/30"
+          >
+            <summary class="cursor-pointer select-none px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 list-none flex items-center gap-2">
+              <span class="text-gray-400 group-open:rotate-90 transition-transform">▸</span>
+              <span>Forecasting using Monte Carlo Simulation</span>
+              <span class="text-xs font-normal text-gray-500 dark:text-gray-400">
+                {{ mcInputsMap.get(release.releaseNumber).notDoneCount }} remaining · {{ mcInputsMap.get(release.releaseNumber).totalVelocity }} issues/14d throughput
+              </span>
+            </summary>
+            <div class="px-3 pb-3 border-t border-gray-100 dark:border-gray-800">
+              <div class="flex items-center justify-between gap-3 mt-3 mb-3">
+                <div class="inline-flex rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 p-0.5">
+                  <div class="relative group/cf">
+                    <button
+                      class="px-3 py-1 rounded-md text-xs font-medium transition-all duration-150"
+                      :disabled="!release.codeFreezeDate"
+                      :class="!release.codeFreezeDate
+                        ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed'
+                        : getMcTarget(release.releaseNumber) === 'codeFreeze'
+                          ? 'bg-white dark:bg-gray-700 text-blue-700 dark:text-blue-300 shadow-sm ring-1 ring-gray-200/60 dark:ring-gray-600/60'
+                          : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'"
+                      @click="setMcTarget(release.releaseNumber, 'codeFreeze')"
+                    >
+                      Code Freeze
+                    </button>
+                    <div v-if="!release.codeFreezeDate" class="pointer-events-none absolute top-full left-1/2 -translate-x-1/2 mt-2 hidden group-hover/cf:flex z-10">
+                      <div class="whitespace-nowrap rounded-md bg-gray-900 dark:bg-gray-700 px-2.5 py-1.5 text-[11px] font-medium text-white shadow-lg">
+                        <div class="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900 dark:border-b-gray-700" />
+                        No code freeze date available
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative group/ga">
+                    <button
+                      class="px-3 py-1 rounded-md text-xs font-medium transition-all duration-150"
+                      :disabled="!release.dueDate"
+                      :class="!release.dueDate
+                        ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed'
+                        : getMcTarget(release.releaseNumber) === 'ga'
+                          ? 'bg-white dark:bg-gray-700 text-purple-700 dark:text-purple-300 shadow-sm ring-1 ring-gray-200/60 dark:ring-gray-600/60'
+                          : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'"
+                      @click="setMcTarget(release.releaseNumber, 'ga')"
+                    >
+                      GA
+                    </button>
+                    <div v-if="!release.dueDate" class="pointer-events-none absolute top-full left-1/2 -translate-x-1/2 mt-2 hidden group-hover/ga:flex z-10">
+                      <div class="whitespace-nowrap rounded-md bg-gray-900 dark:bg-gray-700 px-2.5 py-1.5 text-[11px] font-medium text-white shadow-lg">
+                        <div class="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900 dark:border-b-gray-700" />
+                        No GA date available
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4 rounded-lg bg-gray-50/80 dark:bg-gray-800/40 border border-gray-200/60 dark:border-gray-700/40 px-4 py-3 text-xs text-gray-600 dark:text-gray-400 leading-relaxed space-y-1.5">
+                <p>
+                  This forecast runs <span class="font-semibold text-gray-700 dark:text-gray-300">1,000 Monte Carlo simulations</span> to probabilistically predict when all remaining work for this release will be completed.
+                </p>
+                <p>
+                  <span class="font-medium text-gray-700 dark:text-gray-300">Inputs:</span>
+                  <span class="font-semibold text-gray-700 dark:text-gray-300">{{ mcInputsMap.get(release.releaseNumber).notDoneCount }}</span> not-done issues (To-Do + In-Progress) as the scope, and the aggregated historical
+                  <span class="font-semibold text-gray-700 dark:text-gray-300">{{ mcInputsMap.get(release.releaseNumber).totalVelocity }} issues / 14 days</span> throughput from contributing component teams as the delivery rate, measured against the
+                  <template v-if="mcInputsMap.get(release.releaseNumber).activeTarget === 'codeFreeze'">
+                    code freeze date of <span class="font-semibold text-gray-700 dark:text-gray-300">{{ formatDueDate(mcInputsMap.get(release.releaseNumber).codeFreezeDate) }}</span>
+                    (GA: {{ formatDueDate(mcInputsMap.get(release.releaseNumber).releaseDate) }}).
+                  </template>
+                  <template v-else>
+                    GA date of <span class="font-semibold text-gray-700 dark:text-gray-300">{{ formatDueDate(mcInputsMap.get(release.releaseNumber).releaseDate) }}</span><template v-if="mcInputsMap.get(release.releaseNumber).codeFreezeDate">
+                    (code freeze: {{ formatDueDate(mcInputsMap.get(release.releaseNumber).codeFreezeDate) }})</template>.
+                  </template>
+                </p>
+                <p>
+                  Each iteration samples a random completion timeline using the throughput rate with natural variance (Gamma distribution), producing a distribution of likely finish dates. The histogram below shows how often each date range appeared, and the confidence markers indicate when delivery is statistically likely.
+                </p>
+              </div>
+              <MonteCarloChart
+                :not-done-count="mcInputsMap.get(release.releaseNumber).notDoneCount"
+                :velocity="mcInputsMap.get(release.releaseNumber).totalVelocity"
+                :due-date="mcInputsMap.get(release.releaseNumber).dueDate"
+                :deadline-label="mcInputsMap.get(release.releaseNumber).activeTarget === 'codeFreeze' ? 'Code Freeze' : 'GA'"
+              />
+            </div>
+          </details>
         </article>
       </section>
     </template>
@@ -318,12 +409,102 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, reactive } from 'vue'
 import { useReleaseAnalysis } from '../composables/useReleaseAnalysis'
+import { useReleaseFilter } from '../composables/useReleaseFilter'
+import MonteCarloChart from '../components/MonteCarloChart.vue'
+import ReleaseFilterBar from '../components/ReleaseFilterBar.vue'
 
 const { loading, error, analysis, refreshAnalysis } = useReleaseAnalysis()
 
-const activeTab = ref('all')
+const allReleases = computed(() => analysis.value?.releases || [])
+
+const {
+  selectedProducts,
+  selectedVersions,
+  visibleProducts,
+  visibleVersions,
+  filteredReleases,
+  toggleProduct,
+  toggleVersion,
+  clearProducts,
+  clearVersions,
+  resetFilters
+} = useReleaseFilter(allReleases)
+
+// ── Monte Carlo state ──
+
+const mcTargets = reactive({})
+
+function getMcTarget(releaseNum) {
+  return mcTargets[releaseNum] || 'codeFreeze'
+}
+
+function setMcTarget(releaseNum, target) {
+  mcTargets[releaseNum] = target
+}
+
+function lookupHistoricalVelocity(componentNames) {
+  const cv = analysis.value?.componentVelocity || {}
+  let total = 0
+  const seen = new Set()
+  for (const name of componentNames) {
+    if (seen.has(name)) continue
+    seen.add(name)
+    const entry = cv[name]
+    if (entry) total += entry.velocity
+  }
+  return Math.round(total * 10) / 10
+}
+
+function getMonteCarloInputs(release) {
+  const issues = releaseIssues(release)
+  if (!issues.length) return null
+
+  const cfDate = release.codeFreezeDate || null
+  const gaDate = release.dueDate || null
+
+  let activeTarget = getMcTarget(release.releaseNumber)
+  if (activeTarget === 'codeFreeze' && !cfDate) activeTarget = 'ga'
+  if (activeTarget === 'ga' && !gaDate) activeTarget = 'codeFreeze'
+
+  const deadline = activeTarget === 'codeFreeze' ? cfDate : gaDate
+  if (!deadline) return null
+
+  let notDoneCount = 0
+  const componentNames = new Set()
+  for (const issue of issues) {
+    if (issue.statusBucket !== 'done') notDoneCount++
+    const comps = issue.components?.length ? issue.components : ['(No component)']
+    for (const c of comps) componentNames.add(c)
+  }
+
+  const totalVelocity = lookupHistoricalVelocity([...componentNames])
+
+  return {
+    notDoneCount,
+    totalVelocity,
+    dueDate: deadline,
+    releaseDate: gaDate,
+    codeFreezeDate: cfDate,
+    activeTarget
+  }
+}
+
+function formatDueDate(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00')
+  if (isNaN(d.getTime())) return '—'
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+}
+
+const mcInputsMap = computed(() => {
+  const map = new Map()
+  for (const r of filteredReleases.value) {
+    const inputs = getMonteCarloInputs(r)
+    if (inputs) map.set(r.releaseNumber, inputs)
+  }
+  return map
+})
 
 const metricInfo = {
   remaining: 'Remaining = Total weighted points (story points or feature weight) for issues in To Do + Doing status. Formula: Σ weight(issue) where status ≠ Done.',
@@ -332,28 +513,6 @@ const metricInfo = {
   requiredPerDay: 'Required/day = The daily throughput rate needed to finish all remaining work by the due date. Formula: Remaining ÷ Days remaining. If days = 0 and work remains, this is ∞.',
   availablePerDay: 'Available/day = Historical daily throughput capacity for this team. Formula: Baseline per month ÷ 30. Baseline = P90 (or Avg) of monthly completed weighted points over the trailing window (default 180 days).'
 }
-
-const tabs = computed(() => {
-  const releases = analysis.value?.releases || []
-  const products = [...new Set(releases.map(r => {
-    const num = (r.releaseNumber || '').toLowerCase()
-    const dash = num.indexOf('-')
-    return dash > 0 ? num.slice(0, dash) : num
-  }).filter(Boolean))]
-  products.sort()
-  return [
-    { key: 'all', label: 'All' },
-    ...products.map(p => ({ key: p, label: p }))
-  ]
-})
-
-const filteredReleases = computed(() => {
-  if (!analysis.value?.releases) return []
-  if (activeTab.value === 'all') return analysis.value.releases
-  return analysis.value.releases.filter(r =>
-    (r.releaseNumber || '').toLowerCase().startsWith(activeTab.value)
-  )
-})
 
 const riskLegendText = computed(() => {
   const a = analysis.value
