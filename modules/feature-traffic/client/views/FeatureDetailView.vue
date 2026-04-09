@@ -23,7 +23,7 @@ function renderAdf(node) {
         else if (mark.type === 'em') html = `<em>${html}</em>`
         else if (mark.type === 'underline') html = `<u>${html}</u>`
         else if (mark.type === 'code') html = `<code class="px-1 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-xs font-mono">${html}</code>`
-        else if (mark.type === 'link' && mark.attrs?.href) html = `<a href="${escAttr(mark.attrs.href)}" target="_blank" class="text-primary-600 dark:text-blue-400 hover:underline">${html}</a>`
+        else if (mark.type === 'link' && mark.attrs?.href && isSafeUrl(mark.attrs.href)) html = `<a href="${escAttr(mark.attrs.href)}" target="_blank" class="text-primary-600 dark:text-blue-400 hover:underline">${html}</a>`
         else if (mark.type === 'textColor') html = `<span style="color:${escAttr(mark.attrs?.color || '')}">${html}</span>`
       }
     }
@@ -36,24 +36,24 @@ function renderAdf(node) {
     case 'doc': return children
     case 'paragraph': return `<p class="mb-2 last:mb-0">${children || '&nbsp;'}</p>`
     case 'heading': {
-      const level = node.attrs?.level || 3
+      const level = Math.min(6, Math.max(1, Number(node.attrs?.level) || 3))
       const cls = level <= 2 ? 'text-base font-semibold mb-1' : 'text-sm font-semibold mb-1'
       return `<h${level} class="${cls}">${children}</h${level}>`
     }
     case 'bulletList': return `<ul class="list-disc list-inside mb-2 space-y-0.5">${children}</ul>`
     case 'listItem': return `<li>${children}</li>`
     case 'hardBreak': return '<br/>'
-    case 'emoji': return node.attrs?.text || node.attrs?.shortName || ''
+    case 'emoji': return escHtml(node.attrs?.text || node.attrs?.shortName || '')
     case 'mention': return `<span class="text-primary-600 dark:text-blue-400 font-medium">@${escHtml(node.attrs?.text || node.attrs?.id || '')}</span>`
     case 'date': {
       const ts = node.attrs?.timestamp
-      if (ts) { try { return new Date(Number(ts)).toLocaleDateString() } catch { return ts } }
+      if (ts) { try { return new Date(Number(ts)).toLocaleDateString() } catch { return escHtml(String(ts)) } }
       return ''
     }
     case 'inlineCard': {
       const url = node.attrs?.url || ''
       const label = url.includes('/browse/') ? url.split('/browse/')[1] : url
-      return url ? `<a href="${escAttr(url)}" target="_blank" class="text-primary-600 dark:text-blue-400 hover:underline">${escHtml(label)}</a>` : ''
+      return url && isSafeUrl(url) ? `<a href="${escAttr(url)}" target="_blank" class="text-primary-600 dark:text-blue-400 hover:underline">${escHtml(label)}</a>` : escHtml(label)
     }
     default: return children
   }
@@ -64,6 +64,10 @@ function escHtml(s) {
 }
 function escAttr(s) {
   return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+}
+function isSafeUrl(url) {
+  try { return ['http:', 'https:', 'mailto:'].includes(new URL(url).protocol) }
+  catch { return false }
 }
 
 function renderStatusNotes(notes) {
