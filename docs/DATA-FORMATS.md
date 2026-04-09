@@ -258,6 +258,12 @@ Team key is sanitized: `::` becomes `--`, special chars become `_`. The filename
 
 Large file containing the full org/team hierarchy with members. See `shared/server/roster-sync/` for the code that builds it.
 
+**Derived roster API response (`GET /api/roster`):**
+- When multiple org roots share the same explicitly-configured `displayName` in roster-sync-config, `deriveRoster()` merges them into a single org entry.
+- The merged org's `key` is the alphabetically-first root UID among the merged roots.
+- Merged orgs include a `mergedKeys` array (sorted alphabetically) listing all root UIDs that were combined.
+- Non-merged orgs do not have a `mergedKeys` field.
+
 ## Allowlist — `data/allowlist.json`
 
 ```json
