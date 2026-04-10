@@ -38,47 +38,69 @@
         </p>
       </div>
 
-      <!-- Release selector -->
-      <div class="flex items-center gap-3 flex-wrap">
-        <label for="release-select" class="text-sm font-medium text-gray-700 dark:text-gray-300 shrink-0">Release</label>
-        <select
-          id="release-select"
-          v-model="activeRelease"
-          class="block w-full max-w-md rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-3 py-2 text-sm text-gray-900 dark:text-gray-100 shadow-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 dark:focus:border-blue-400 dark:focus:ring-blue-400 appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22%236b7280%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M5.23%207.21a.75.75%200%20011.06.02L10%2011.168l3.71-3.938a.75.75%200%20111.08%201.04l-4.25%204.5a.75.75%200%2001-1.08%200l-4.25-4.5a.75.75%200%2001.02-1.06z%22%20clip-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25rem] bg-[right_0.5rem_center] bg-no-repeat pr-9"
-        >
-          <option v-for="tab in releaseTabs" :key="tab.key" :value="tab.key">
-            {{ tab.label }} ({{ tab.issueCount }} issues)
-          </option>
-        </select>
-        <div v-if="selectedRelease" class="flex items-center gap-2 shrink-0">
-          <span v-if="selectedRelease.codeFreezeDate" class="inline-flex items-center gap-1.5 rounded-full border border-blue-200 dark:border-blue-700/50 bg-blue-50 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
-            <span class="h-1.5 w-1.5 rounded-full bg-blue-500" />
-            Code Freeze: {{ formatDueDate(selectedRelease.codeFreezeDate) }}
-          </span>
-          <span class="inline-flex items-center gap-1.5 rounded-full border border-purple-200 dark:border-purple-700/50 bg-purple-50 dark:bg-purple-900/30 px-3 py-1 text-xs font-medium text-purple-700 dark:text-purple-300">
-            <span class="h-1.5 w-1.5 rounded-full bg-purple-500" />
-            Release: {{ formatDueDate(selectedRelease.dueDate) }}
+      <ReleaseFilterBar
+        :selected-products="selectedProducts"
+        :selected-versions="selectedVersions"
+        :visible-products="visibleProducts"
+        :visible-versions="visibleVersions"
+        :filtered-count="enrichedReleases.length"
+        :total-count="allReleases.length"
+        :toggle-product="toggleProduct"
+        :toggle-version="toggleVersion"
+        :clear-products="clearProducts"
+        :clear-versions="clearVersions"
+        :reset-filters="resetFilters"
+      />
+
+      <div v-if="!enrichedReleases.length" class="text-sm text-gray-500 dark:text-gray-400">
+        No releases match the current filters.
+      </div>
+
+      <article
+        v-for="release in enrichedReleases"
+        :key="release.releaseNumber"
+        class="rounded-xl border border-gray-200/80 dark:border-gray-700/80 bg-white dark:bg-gray-900/40 p-4 shadow-[0_1px_3px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)] flex flex-col gap-4"
+      >
+        <!-- Release header -->
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-gray-100 dark:border-gray-800 pb-3">
+          <div class="flex items-center gap-3 min-w-0">
+            <p class="font-bold text-gray-900 dark:text-gray-100 text-base">{{ release.releaseNumber }}</p>
+            <span
+              v-if="release.codeFreezeDate"
+              class="inline-flex items-center gap-1.5 rounded-full border border-pink-200 dark:border-pink-700/50 bg-pink-50 dark:bg-pink-900/30 px-2.5 py-1 text-[11px] font-medium text-pink-700 dark:text-pink-300 shadow-sm"
+            >
+              <svg class="h-3.5 w-3.5 text-pink-500 dark:text-pink-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clip-rule="evenodd" /></svg>
+              Code Freeze · {{ formatDueDate(release.codeFreezeDate) }}
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 rounded-full border border-purple-200 dark:border-purple-700/50 bg-purple-50 dark:bg-purple-900/30 px-2.5 py-1 text-[11px] font-medium text-purple-700 dark:text-purple-300 shadow-sm"
+            >
+              <svg class="h-3.5 w-3.5 text-purple-500 dark:text-purple-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" /></svg>
+              Release · {{ formatDueDate(release.dueDate) }}
+            </span>
+          </div>
+          <span class="text-xs text-gray-500 dark:text-gray-400 shrink-0">
+            {{ release.issues?.length || 0 }} issues
           </span>
         </div>
-      </div>
 
-      <div v-if="!projectGroups.length" class="text-sm text-gray-500 dark:text-gray-400">
-        No issues found for the selected release.
-      </div>
+        <div v-if="!release.projectGroups.length" class="text-sm text-gray-500 dark:text-gray-400">
+          No issues found for this release.
+        </div>
 
-      <!-- ═══ LAYER 1 — Project ═══ -->
-      <div class="space-y-3">
-        <div
-          v-for="project in projectGroups"
-          :key="project.projectKey"
-          class="rounded-xl border border-gray-200/80 dark:border-gray-700/80 bg-white dark:bg-gray-900/40 shadow-[0_1px_3px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)] overflow-hidden"
-        >
+        <!-- ═══ LAYER 1 — Project ═══ -->
+        <div class="space-y-3">
+          <div
+            v-for="project in release.projectGroups"
+            :key="`${release.releaseNumber}::${project.projectKey}`"
+            class="rounded-xl border border-gray-200/80 dark:border-gray-700/80 bg-gray-50/50 dark:bg-gray-800/30 overflow-hidden"
+          >
           <button
             class="w-full flex items-center justify-between gap-3 px-4 py-3 text-left hover:bg-gray-50/60 dark:hover:bg-gray-800/40 transition-colors"
-            @click="toggleProject(project.projectKey)"
+            @click="toggleProject(release.releaseNumber, project.projectKey)"
           >
             <div class="flex items-center gap-3 min-w-0">
-              <span class="text-gray-400 dark:text-gray-500 transition-transform text-xs" :class="{ 'rotate-90': expandedProjects.has(project.projectKey) }">▸</span>
+              <span class="text-gray-400 dark:text-gray-500 transition-transform text-xs" :class="{ 'rotate-90': isProjectExpanded(release.releaseNumber, project.projectKey) }">▸</span>
               <span class="font-semibold text-gray-900 dark:text-gray-100 text-sm uppercase tracking-wide">{{ project.projectKey }}</span>
               <span class="text-xs text-gray-500 dark:text-gray-400">{{ project.allIssues.length }} issue{{ project.allIssues.length !== 1 ? 's' : '' }}</span>
               <span class="inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-semibold" :class="confidenceBadgeClass(project.forecast.level)">
@@ -101,7 +123,7 @@
           </button>
 
           <!-- Expanded project → confidence detail strip + component list -->
-          <div v-if="expandedProjects.has(project.projectKey)" class="border-t border-gray-100 dark:border-gray-800">
+          <div v-if="isProjectExpanded(release.releaseNumber, project.projectKey)" class="border-t border-gray-100 dark:border-gray-800">
 
             <!-- Project-level capacity forecast -->
             <div class="px-4 py-2.5 pl-10 bg-gray-50/60 dark:bg-gray-800/30 border-b border-gray-100 dark:border-gray-800">
@@ -157,10 +179,10 @@
             >
               <button
                 class="w-full flex items-center justify-between gap-3 px-4 py-2.5 pl-10 text-left hover:bg-gray-50/50 dark:hover:bg-gray-800/30 transition-colors"
-                @click="toggleComponent(project.projectKey, comp.name)"
+                @click="toggleComponent(release.releaseNumber, project.projectKey, comp.name)"
               >
                 <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
-                  <span class="text-gray-400 dark:text-gray-500 transition-transform text-[10px]" :class="{ 'rotate-90': isComponentExpanded(project.projectKey, comp.name) }">▸</span>
+                  <span class="text-gray-400 dark:text-gray-500 transition-transform text-[10px]" :class="{ 'rotate-90': isComponentExpanded(release.releaseNumber, project.projectKey, comp.name) }">▸</span>
                   <span class="font-medium text-gray-700 dark:text-gray-300 text-sm">{{ comp.name }}</span>
                   <span class="text-xs text-gray-400 dark:text-gray-500">{{ comp.allIssues.length }} issue{{ comp.allIssues.length !== 1 ? 's' : '' }}</span>
                   <span class="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-semibold" :class="confidenceBadgeClass(comp.forecast.level)">
@@ -176,7 +198,7 @@
               </button>
 
               <!-- Expanded component content -->
-              <div v-if="isComponentExpanded(project.projectKey, comp.name)" class="pl-10 pb-2">
+              <div v-if="isComponentExpanded(release.releaseNumber, project.projectKey, comp.name)" class="pl-10 pb-2">
 
                 <!-- Component-level capacity forecast -->
                 <div class="mx-4 mt-2 mb-2 rounded-lg bg-gray-50/80 dark:bg-gray-800/40 border border-gray-200/60 dark:border-gray-700/40 px-4 py-2.5">
@@ -221,10 +243,10 @@
                 >
                   <button
                     class="w-full flex items-center justify-between gap-3 px-4 py-2 pl-6 text-left hover:bg-gray-50/40 dark:hover:bg-gray-800/20 transition-colors"
-                    @click="toggleStrategic(project.projectKey, comp.name, si.key)"
+                    @click="toggleStrategic(release.releaseNumber, project.projectKey, comp.name, si.key)"
                   >
                     <div class="flex items-center gap-2 min-w-0 flex-wrap">
-                      <span class="text-gray-400 dark:text-gray-500 transition-transform text-[10px]" :class="{ 'rotate-90': isStrategicExpanded(project.projectKey, comp.name, si.key) }">▸</span>
+                      <span class="text-gray-400 dark:text-gray-500 transition-transform text-[10px]" :class="{ 'rotate-90': isStrategicExpanded(release.releaseNumber, project.projectKey, comp.name, si.key) }">▸</span>
                       <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wider" :class="issueTypePillClass(si.issueType)">{{ si.issueType }}</span>
                       <a :href="si.link" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline text-xs font-medium" @click.stop>{{ si.key }}</a>
                       <span class="text-xs text-gray-700 dark:text-gray-300 truncate">{{ si.summary }}</span>
@@ -241,7 +263,7 @@
                   </button>
 
                   <!-- ═══ LAYER 4 — Tactical children ═══ -->
-                  <div v-if="isStrategicExpanded(project.projectKey, comp.name, si.key) && si.children.length" class="px-4 pb-2 pl-12">
+                  <div v-if="isStrategicExpanded(release.releaseNumber, project.projectKey, comp.name, si.key) && si.children.length" class="px-4 pb-2 pl-12">
                     <div class="overflow-x-auto rounded-lg border border-gray-200/80 dark:border-gray-700/80">
                       <table class="min-w-full text-sm">
                         <thead class="bg-gray-50 dark:bg-gray-800/60 text-left text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">
@@ -270,7 +292,7 @@
                       </table>
                     </div>
                   </div>
-                  <div v-else-if="isStrategicExpanded(project.projectKey, comp.name, si.key) && !si.children.length" class="px-4 pb-2 pl-12">
+                  <div v-else-if="isStrategicExpanded(release.releaseNumber, project.projectKey, comp.name, si.key) && !si.children.length" class="px-4 pb-2 pl-12">
                     <p class="text-[10px] text-gray-400 dark:text-gray-500 italic">No child issues in this release.</p>
                   </div>
                 </div>
@@ -279,10 +301,10 @@
                 <div v-if="comp.otherItems.length" class="border-t border-gray-100/60 dark:border-gray-800/60">
                   <button
                     class="w-full flex items-center justify-between gap-3 px-4 py-2 pl-6 text-left hover:bg-gray-50/40 dark:hover:bg-gray-800/20 transition-colors"
-                    @click="toggleStrategic(project.projectKey, comp.name, '__other__')"
+                    @click="toggleStrategic(release.releaseNumber, project.projectKey, comp.name, '__other__')"
                   >
                     <div class="flex items-center gap-2 min-w-0">
-                      <span class="text-gray-400 dark:text-gray-500 transition-transform text-[10px]" :class="{ 'rotate-90': isStrategicExpanded(project.projectKey, comp.name, '__other__') }">▸</span>
+                      <span class="text-gray-400 dark:text-gray-500 transition-transform text-[10px]" :class="{ 'rotate-90': isStrategicExpanded(release.releaseNumber, project.projectKey, comp.name, '__other__') }">▸</span>
                       <span class="font-medium text-gray-500 dark:text-gray-400 text-xs italic">Other items</span>
                       <span class="text-[10px] text-gray-400 dark:text-gray-500">{{ comp.otherItems.length }}</span>
                     </div>
@@ -293,7 +315,7 @@
                     </div>
                   </button>
 
-                  <div v-if="isStrategicExpanded(project.projectKey, comp.name, '__other__')" class="px-4 pb-2 pl-12">
+                  <div v-if="isStrategicExpanded(release.releaseNumber, project.projectKey, comp.name, '__other__')" class="px-4 pb-2 pl-12">
                     <div class="overflow-x-auto rounded-lg border border-gray-200/80 dark:border-gray-700/80">
                       <table class="min-w-full text-sm">
                         <thead class="bg-gray-50 dark:bg-gray-800/60 text-left text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">
@@ -325,191 +347,52 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Monte Carlo Forecast -->
-      <div
-        v-if="releaseMonteCarloInputs"
-        class="rounded-xl border border-gray-200/80 dark:border-gray-700/80 bg-white dark:bg-gray-900/40 shadow-[0_1px_3px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)] overflow-hidden"
-      >
-        <div class="flex items-center justify-between gap-3 px-4 py-3">
-          <button
-            class="flex items-center gap-2.5 text-left hover:opacity-80 transition-opacity"
-            @click="showMonteCarlo = !showMonteCarlo"
-          >
-            <span class="text-gray-400 dark:text-gray-500 transition-transform text-xs" :class="{ 'rotate-90': showMonteCarlo }">▸</span>
-            <span class="font-semibold text-gray-900 dark:text-gray-100 text-sm">Forecasting using Monte Carlo Simulation</span>
-            <span class="text-xs text-gray-500 dark:text-gray-400">
-              {{ releaseMonteCarloInputs.notDoneCount }} remaining · {{ releaseMonteCarloInputs.totalVelocity }} issues/14d throughput
-            </span>
-          </button>
-
-          <!-- Target Date Toggle -->
-          <div class="flex items-center shrink-0" @click.stop>
-            <div class="inline-flex rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 p-0.5">
-              <div class="relative group/cf">
-                <button
-                  class="px-3 py-1 rounded-md text-xs font-medium transition-all duration-150"
-                  :disabled="!hasCodeFreezeDate"
-                  :class="!hasCodeFreezeDate
-                    ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed'
-                    : monteCarloTarget === 'codeFreeze'
-                      ? 'bg-white dark:bg-gray-700 text-blue-700 dark:text-blue-300 shadow-sm ring-1 ring-gray-200/60 dark:ring-gray-600/60'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'"
-                  @click="monteCarloTarget = 'codeFreeze'"
-                >
-                  Code Freeze
-                </button>
-                <div v-if="!hasCodeFreezeDate" class="pointer-events-none absolute top-full left-1/2 -translate-x-1/2 mt-2 hidden group-hover/cf:flex z-10">
-                  <div class="whitespace-nowrap rounded-md bg-gray-900 dark:bg-gray-700 px-2.5 py-1.5 text-[11px] font-medium text-white shadow-lg">
-                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900 dark:border-b-gray-700" />
-                    No code freeze date available
-                  </div>
-                </div>
-              </div>
-              <div class="relative group/ga">
-                <button
-                  class="px-3 py-1 rounded-md text-xs font-medium transition-all duration-150"
-                  :disabled="!hasGaDate"
-                  :class="!hasGaDate
-                    ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed'
-                    : monteCarloTarget === 'ga'
-                      ? 'bg-white dark:bg-gray-700 text-purple-700 dark:text-purple-300 shadow-sm ring-1 ring-gray-200/60 dark:ring-gray-600/60'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'"
-                  @click="monteCarloTarget = 'ga'"
-                >
-                  GA
-                </button>
-                <div v-if="!hasGaDate" class="pointer-events-none absolute top-full left-1/2 -translate-x-1/2 mt-2 hidden group-hover/ga:flex z-10">
-                  <div class="whitespace-nowrap rounded-md bg-gray-900 dark:bg-gray-700 px-2.5 py-1.5 text-[11px] font-medium text-white shadow-lg">
-                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900 dark:border-b-gray-700" />
-                    No GA date available
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-        <div v-if="showMonteCarlo" class="px-4 pb-4 border-t border-gray-100 dark:border-gray-800">
-          <div class="mt-3 mb-4 rounded-lg bg-gray-50/80 dark:bg-gray-800/40 border border-gray-200/60 dark:border-gray-700/40 px-4 py-3 text-xs text-gray-600 dark:text-gray-400 leading-relaxed space-y-1.5">
-            <p>
-              This forecast runs <span class="font-semibold text-gray-700 dark:text-gray-300">1,000 Monte Carlo simulations</span> to probabilistically predict when all remaining work for this release will be completed.
-            </p>
-            <p>
-              <span class="font-medium text-gray-700 dark:text-gray-300">Inputs:</span>
-              <span class="font-semibold text-gray-700 dark:text-gray-300">{{ releaseMonteCarloInputs.notDoneCount }}</span> not-done issues (To-Do + In-Progress) as the scope, and the aggregated historical
-              <span class="font-semibold text-gray-700 dark:text-gray-300">{{ releaseMonteCarloInputs.totalVelocity }} issues / 14 days</span> throughput from contributing component teams as the delivery rate, measured against the
-              <template v-if="releaseMonteCarloInputs.activeTarget === 'codeFreeze'">
-                code freeze date of <span class="font-semibold text-gray-700 dark:text-gray-300">{{ formatDueDate(releaseMonteCarloInputs.codeFreezeDate) }}</span>
-                (GA: {{ formatDueDate(releaseMonteCarloInputs.releaseDate) }}).
-              </template>
-              <template v-else>
-                GA date of <span class="font-semibold text-gray-700 dark:text-gray-300">{{ formatDueDate(releaseMonteCarloInputs.releaseDate) }}</span><template v-if="releaseMonteCarloInputs.codeFreezeDate">
-                (code freeze: {{ formatDueDate(releaseMonteCarloInputs.codeFreezeDate) }})</template>.
-              </template>
-            </p>
-            <p>
-              Each iteration samples a random completion timeline using the throughput rate with natural variance (Gamma distribution), producing a distribution of likely finish dates. The histogram below shows how often each date range appeared, and the confidence markers indicate when delivery is statistically likely.
-            </p>
-          </div>
-          <MonteCarloChart
-            :not-done-count="releaseMonteCarloInputs.notDoneCount"
-            :velocity="releaseMonteCarloInputs.totalVelocity"
-            :due-date="releaseMonteCarloInputs.dueDate"
-            :deadline-label="releaseMonteCarloInputs.activeTarget === 'codeFreeze' ? 'Code Freeze' : 'GA'"
-          />
-        </div>
-      </div>
+      </article>
+
     </template>
   </div>
 </template>
 
 <script setup>
-import { computed, ref, reactive, watch } from 'vue'
+import { computed, reactive } from 'vue'
 import { useReleaseAnalysis } from '../composables/useReleaseAnalysis'
-import MonteCarloChart from '../components/MonteCarloChart.vue'
+import { useReleaseFilter } from '../composables/useReleaseFilter'
+import ReleaseFilterBar from '../components/ReleaseFilterBar.vue'
 
 const STRATEGIC_TYPES = new Set(['feature', 'initiative', 'spike'])
 
-const activeRelease = ref('')
 const expandedProjects = reactive(new Set())
 const expandedComponents = reactive(new Set())
 const expandedStrategic = reactive(new Set())
 
-function initActiveRelease() {
-  const tabs = releaseTabs.value
-  if (tabs.length && !activeRelease.value) activeRelease.value = tabs[0].key
-}
-
-const { loading, error, analysis, refreshAnalysis } = useReleaseAnalysis({
-  onLoaded: initActiveRelease
-})
+const { loading, error, analysis, refreshAnalysis } = useReleaseAnalysis()
 
 function normalizeType(t) { return (t || '').toLowerCase().trim() }
 
+const allReleases = computed(() => analysis.value?.releases || [])
 
-const releaseTabs = computed(() => {
-  const releases = analysis.value?.releases || []
-  return releases.map(r => ({
-    key: r.releaseNumber,
-    label: r.releaseNumber,
-    issueCount: r.issues?.length || 0
+const {
+  selectedProducts,
+  selectedVersions,
+  visibleProducts,
+  visibleVersions,
+  filteredReleases,
+  toggleProduct,
+  toggleVersion,
+  clearProducts,
+  clearVersions,
+  resetFilters
+} = useReleaseFilter(allReleases)
+
+const enrichedReleases = computed(() =>
+  filteredReleases.value.map(r => ({
+    ...r,
+    projectGroups: buildProjectGroups(r)
   }))
-})
-
-const selectedRelease = computed(() => {
-  if (!analysis.value?.releases) return null
-  return analysis.value.releases.find(r => r.releaseNumber === activeRelease.value) || null
-})
-
-const showMonteCarlo = ref(true)
-const monteCarloTarget = ref('codeFreeze')
-
-// Reset target when release changes — prefer code freeze when available
-watch(selectedRelease, (release) => {
-  if (release?.codeFreezeDate) monteCarloTarget.value = 'codeFreeze'
-  else if (release?.dueDate) monteCarloTarget.value = 'ga'
-})
-
-const hasCodeFreezeDate = computed(() => !!selectedRelease.value?.codeFreezeDate)
-const hasGaDate = computed(() => !!selectedRelease.value?.dueDate)
-
-const releaseMonteCarloInputs = computed(() => {
-  const release = selectedRelease.value
-  if (!release?.issues?.length) return null
-
-  const cfDate = release.codeFreezeDate || null
-  const gaDate = release.dueDate || null
-
-  let activeTarget = monteCarloTarget.value
-  if (activeTarget === 'codeFreeze' && !cfDate) activeTarget = 'ga'
-  if (activeTarget === 'ga' && !gaDate) activeTarget = 'codeFreeze'
-
-  const deadline = activeTarget === 'codeFreeze' ? cfDate : gaDate
-  if (!deadline) return null
-
-  let notDoneCount = 0
-  const componentNames = new Set()
-
-  for (const issue of release.issues) {
-    if (issue.statusBucket !== 'done') notDoneCount++
-    const comps = issue.components?.length ? issue.components : ['(No component)']
-    for (const c of comps) componentNames.add(c)
-  }
-
-  const totalVelocity = lookupHistoricalVelocity([...componentNames])
-
-  return {
-    notDoneCount,
-    totalVelocity,
-    dueDate: deadline,
-    releaseDate: gaDate,
-    codeFreezeDate: cfDate,
-    activeTarget
-  }
-})
+)
 
 /**
  * Computes calendar days from today to the given ISO date string.
@@ -627,8 +510,7 @@ function countByBucket(issues) {
  *       Layer 4 — Tactical children of the strategic item
  *     + "Other items" for unlinked issues
  */
-const projectGroups = computed(() => {
-  const release = selectedRelease.value
+function buildProjectGroups(release) {
   if (!release?.issues?.length) return []
 
   const daysRemaining = daysUntil(effectiveDeadline(release))
@@ -738,25 +620,32 @@ const projectGroups = computed(() => {
       }
     })
     .sort((a, b) => a.projectKey.localeCompare(b.projectKey))
-})
+}
 
 // ── Expand / collapse ──
 
-function toggleProject(projectKey) {
-  if (expandedProjects.has(projectKey)) {
-    expandedProjects.delete(projectKey)
-    const prefix = `${projectKey}::`
+function projectId(releaseNumber, projectKey) { return `${releaseNumber}::${projectKey}` }
+
+function isProjectExpanded(releaseNumber, projectKey) {
+  return expandedProjects.has(projectId(releaseNumber, projectKey))
+}
+
+function toggleProject(releaseNumber, projectKey) {
+  const key = projectId(releaseNumber, projectKey)
+  if (expandedProjects.has(key)) {
+    expandedProjects.delete(key)
+    const prefix = `${key}::`
     for (const k of [...expandedComponents]) { if (k.startsWith(prefix)) expandedComponents.delete(k) }
     for (const k of [...expandedStrategic]) { if (k.startsWith(prefix)) expandedStrategic.delete(k) }
   } else {
-    expandedProjects.add(projectKey)
+    expandedProjects.add(key)
   }
 }
 
-function componentId(projectKey, compName) { return `${projectKey}::${compName}` }
+function componentId(releaseNumber, projectKey, compName) { return `${releaseNumber}::${projectKey}::${compName}` }
 
-function toggleComponent(projectKey, compName) {
-  const k = componentId(projectKey, compName)
+function toggleComponent(releaseNumber, projectKey, compName) {
+  const k = componentId(releaseNumber, projectKey, compName)
   if (expandedComponents.has(k)) {
     expandedComponents.delete(k)
     const prefix = `${k}::`
@@ -766,20 +655,20 @@ function toggleComponent(projectKey, compName) {
   }
 }
 
-function isComponentExpanded(projectKey, compName) {
-  return expandedComponents.has(componentId(projectKey, compName))
+function isComponentExpanded(releaseNumber, projectKey, compName) {
+  return expandedComponents.has(componentId(releaseNumber, projectKey, compName))
 }
 
-function strategicKey(projectKey, compName, itemKey) { return `${projectKey}::${compName}::${itemKey}` }
+function strategicKey(releaseNumber, projectKey, compName, itemKey) { return `${releaseNumber}::${projectKey}::${compName}::${itemKey}` }
 
-function toggleStrategic(projectKey, compName, itemKey) {
-  const k = strategicKey(projectKey, compName, itemKey)
+function toggleStrategic(releaseNumber, projectKey, compName, itemKey) {
+  const k = strategicKey(releaseNumber, projectKey, compName, itemKey)
   if (expandedStrategic.has(k)) expandedStrategic.delete(k)
   else expandedStrategic.add(k)
 }
 
-function isStrategicExpanded(projectKey, compName, itemKey) {
-  return expandedStrategic.has(strategicKey(projectKey, compName, itemKey))
+function isStrategicExpanded(releaseNumber, projectKey, compName, itemKey) {
+  return expandedStrategic.has(strategicKey(releaseNumber, projectKey, compName, itemKey))
 }
 
 // ── Styling helpers ──
